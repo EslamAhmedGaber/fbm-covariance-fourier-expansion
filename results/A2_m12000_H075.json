@@ -1,0 +1,12 @@
+{
+ "m": 12000,
+ "H": 0.75,
+ "avail_GiB_before": 1.3379936218261719,
+ "gp_strong_build_s": 29.209743699990213,
+ "gp_strong_factor_s": 10.462439800030552,
+ "gp_strong_total_s_excl_targets": 39.672183500020765,
+ "cf_total_s_reps": [
+  28.158436300000176,
+  25.277414600015618
+ ]
+}

@@ -1,0 +1,60 @@
+% Figure 1: the general procedure, abstraction (header strips) paired with realisation (glyphs).
+% Topology: two rows x four columns at final width; top row = basis fixed before any input,
+% bottom row = one pass per input; vertical arrows carry the basis into the signal path.
+% Glyphs are produced by make_fig1_glyphs.py from the covfourier engine (H = 0.75, T = 1);
+% build with build_fig1.py.  Style: tikz-house-style.tex (tikz-paper-figures, MIT licence; see THIRD_PARTY_NOTICES.md).
+\documentclass[10pt,border=1pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc}
+\input{tikz-house-style}
+\graphicspath{{../fig1_parts/}}
+\newcommand{\stage}[9]{%
+  % #1 name, #2 x-left, #3 y-bottom, #4 line colour, #5 header fill, #6 category, #7 claim, #8 detail, #9 glyph
+  \node[rectangle, draw=#4, fill=white, line width=0.6pt, minimum width=3.65cm, minimum height=3.05cm,
+        anchor=south west, inner sep=0pt, outer sep=0pt] (#1) at (#2,#3) {};
+  \fill[#5] ($(#1.north west)+(0.3pt,-0.3pt)$) rectangle ($(#1.north east)+(-0.3pt,-1.32cm)$);
+  \draw[#4, line width=0.4pt] ($(#1.north west)+(0,-1.32cm)$) -- ($(#1.north east)+(0,-1.32cm)$);
+  \node[anchor=north, text width=3.5cm, align=center, inner sep=0pt, text=ink,
+        execute at begin node={\hyphenpenalty=10000\thickmuskip=5mu\medmuskip=4mu\thinmuskip=3mu\relax}] at ($(#1.north)+(0,-0.085cm)$)
+        {\figcat{#6}\\[1pt]\figclaim{#7}\\[1pt]\figdetail{#8}};
+  \node[anchor=south, inner sep=0pt] at ($(#1.south)+(0,0.05cm)$) {\includegraphics{#9}};
+}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\def\xa{0.5}\def\xb{4.6}\def\xc{8.7}\def\xd{12.8}
+\def\ytop{3.85}\def\ybot{0}
+% ---------------- basis: fixed before any input (depends on H, T, D only)
+\stage{n}{\xa}{\ytop}{primaryline}{primaryfill}{covariance norm}
+  {\boldmath$\|f\|_H=\|U_Hf\|_{L^2(\mathbb R)}$}{$U_Hf=\sqrt{c_H}\,|\xi|^{1/2-H}\,\mathcal Ff$}{g1_weight}
+\stage{r}{\xb}{\ytop}{primaryline}{primaryfill}{raw nested sequence}
+  {\boldmath$\phi_0,\phi_1,\phi_2,\phi_3,\ldots$}{$T^{-1/2},\ t/T,\ (t/T)^2,\ h_{k\geq1}$}{g2_raw}
+\stage{g}{\xc}{\ytop}{primaryline}{primaryfill}{Gram, factored once}
+  {\boldmath$A_D=C_DC_D^{\top}$}{$\tfrac12W\preceq S_+\preceq W$ (cosines)}{g3_gram}
+\stage{v}{\xd}{\ytop}{primaryline}{primaryfill}{orthonormal, nested in $D$}
+  {\boldmath$v=C_D^{-1}\phi$}{$\langle v_i,v_j\rangle_H=\delta_{ij}$}{g4_basis}
+% ---------------- signal: one pass per input, same rule for every admissible input
+\stage{f}{\xa}{\ybot}{accentline}{accentfill}{input: samples or integrals}
+  {any $f$ with \boldmath$\|f\|_H<\infty$}{same rule for every $f$}{g5_input}
+\stage{b}{\xb}{\ybot}{accentline}{accentfill}{moments}
+  {\boldmath$b_D(f)=(\langle f,\phi_j\rangle_H)_{j<D}$}{endpoint-corrected DCT}{g6_moments}
+\stage{c}{\xc}{\ybot}{accentline}{accentfill}{fixed coefficient rule}
+  {\boldmath$\gamma=C_D^{-1}b_D(f)$}{$e_D(f)^2=\|f\|_H^2-|\gamma|^2$}{g7_coeffs}
+\stage{o}{\xd}{\ybot}{accentline}{accentfill}{Wiener integral}
+  {\boldmath$I_H(f)\approx\sum_{j<D}\gamma_jZ_j$}{one $Z\sim N(0,I_D)$ for all $f$}{g8_paths}
+% ---------------- flow inside each row (header mid-height)
+\foreach \a/\b in {r/g, g/v, f/b, b/c, c/o} {
+  \draw[flow] ($(\a.north east)+(0.04,-0.62)$) -- ($(\b.north west)+(-0.04,-0.62)$);
+}
+% ---------------- the basis enters the signal path
+\foreach \a/\b/\lab in {n/f/{admits $f$}, r/b/{$\phi_j$}, g/c/{$C_D$}, v/o/{$Z_j=I_H(v_j)$}} {
+  \draw[thinflow] (\a.south) -- (\b.north) node[midway, right, inner sep=2pt, text=ink] {\figdetail{\lab}};
+}
+% ---------------- row tags (left margin, rotated: never collide with arrows)
+\node[rotate=90, anchor=center, text=primaryline] at (0.22, \ytop+1.525) {\figcat{fixed basis}};
+\node[rotate=90, anchor=center, text=accentline] at (0.22, 1.525) {\figcat{each input}};
+\end{tikzpicture}
+\end{document}

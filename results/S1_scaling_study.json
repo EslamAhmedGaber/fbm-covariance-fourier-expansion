@@ -1,0 +1,4060 @@
+{
+ "study": "S1 scaling of the stable double-precision covariance-Fourier engine",
+ "note": "D = n + 2 (n cosines + t, t^2). Inputs via exact classical coefficients; errors via e^T G e.",
+ "rows": [
+  {
+   "H": 0.55,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 3.156273171445234,
+   "norm2_aux": 3.1562731714454277,
+   "error2_enriched": 6.396544018460532e-18,
+   "error2_cosine_only": 1.3701292651216608e-07,
+   "error2_subtractive": -1.674216321134736e-13,
+   "rel_rms_enriched": 1.4235915599481655e-09,
+   "rel_rms_cosine_only": 0.00020834998783893287,
+   "project_seconds": 1.46487139997771
+  },
+  {
+   "H": 0.55,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.28129798462768524,
+   "norm2_aux": 0.28129798462760364,
+   "error2_enriched": 0.2789175495227662,
+   "error2_cosine_only": 0.28040038045461196,
+   "error2_subtractive": 0.27891754952284803,
+   "rel_rms_enriched": 0.995759847810918,
+   "rel_rms_cosine_only": 0.9984032566593165,
+   "project_seconds": 1.4694902999908663
+  },
+  {
+   "H": 0.55,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.2310108436960665,
+   "norm2_aux": 0.23101084369253821,
+   "error2_enriched": 0.23096250085435893,
+   "error2_cosine_only": 0.23099793656521386,
+   "error2_subtractive": 0.23096250085788647,
+   "rel_rms_enriched": 0.9998953612515897,
+   "rel_rms_cosine_only": 0.999972063408498,
+   "project_seconds": 1.412243099999614
+  },
+  {
+   "H": 0.55,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.265970445169564,
+   "norm2_aux": 0.2659703521543816,
+   "error2_enriched": 0.0008874060412360166,
+   "error2_cosine_only": 0.0008885245705348116,
+   "error2_subtractive": 0.0008874990564184393,
+   "rel_rms_enriched": 0.05776230300366817,
+   "rel_rms_cosine_only": 0.05779869473365161,
+   "project_seconds": 1.4627337999991141
+  },
+  {
+   "H": 0.55,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.07790854702206572,
+   "norm2_aux": 0.07790854702208447,
+   "error2_enriched": 3.2173130430417563e-08,
+   "error2_cosine_only": 6.048054989008083e-08,
+   "error2_subtractive": 3.2173111660926956e-08,
+   "rel_rms_enriched": 0.0006426198069677532,
+   "rel_rms_cosine_only": 0.0008810799390874874,
+   "project_seconds": 1.5076060999999754
+  },
+  {
+   "H": 0.55,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.9211984754421836,
+   "norm2_aux": 1.9211535868293796,
+   "error2_enriched": 0.004208911196139292,
+   "error2_cosine_only": 0.009279191987703855,
+   "error2_subtractive": 0.0042537998089544615,
+   "rel_rms_enriched": 0.04680570215215389,
+   "rel_rms_cosine_only": 0.06949746500918973,
+   "project_seconds": 1.3879595000180416
+  },
+  {
+   "H": 0.55,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 3.156273171445234,
+   "norm2_aux": 3.1562731714454277,
+   "error2_enriched": 4.215555738797995e-20,
+   "error2_cosine_only": 1.5278473415115023e-08,
+   "error2_subtractive": -1.674216321134736e-13,
+   "rel_rms_enriched": 1.1556867286979399e-10,
+   "rel_rms_cosine_only": 6.957491581622076e-05,
+   "project_seconds": 1.5654840999632142
+  },
+  {
+   "H": 0.55,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.28129798462768524,
+   "norm2_aux": 0.28129798462760364,
+   "error2_enriched": 0.2756779626514477,
+   "error2_cosine_only": 0.2760511884052615,
+   "error2_subtractive": 0.2756779626515302,
+   "rel_rms_enriched": 0.9899601548945843,
+   "rel_rms_cosine_only": 0.9906300554766114,
+   "project_seconds": 1.4439632999710739
+  },
+  {
+   "H": 0.55,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.2310108436960665,
+   "norm2_aux": 0.23101084369253821,
+   "error2_enriched": 0.2309138965391888,
+   "error2_cosine_only": 0.23098471611783555,
+   "error2_subtractive": 0.23091389654271705,
+   "rel_rms_enriched": 0.999790145499682,
+   "rel_rms_cosine_only": 0.9999434478559122,
+   "project_seconds": 1.5171005000011064
+  },
+  {
+   "H": 0.55,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.265970445169564,
+   "norm2_aux": 0.2659703521543816,
+   "error2_enriched": 0.00041265752881104414,
+   "error2_cosine_only": 0.00041286587324512833,
+   "error2_subtractive": 0.00041275054399347866,
+   "rel_rms_enriched": 0.039389293973935625,
+   "rel_rms_cosine_only": 0.03939923624326496,
+   "project_seconds": 1.6514756999677047
+  },
+  {
+   "H": 0.55,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.07790854702206572,
+   "norm2_aux": 0.07790854702208447,
+   "error2_enriched": 3.669678255586844e-09,
+   "error2_cosine_only": 7.064755793374051e-09,
+   "error2_subtractive": 3.6696594790663895e-09,
+   "rel_rms_enriched": 0.00021703083524333768,
+   "rel_rms_cosine_only": 0.0003011313871114008,
+   "project_seconds": 1.493084599962458
+  },
+  {
+   "H": 0.55,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.9211984754421836,
+   "norm2_aux": 1.9211535868293796,
+   "error2_enriched": 0.00274010622427992,
+   "error2_cosine_only": 0.006061577543080806,
+   "error2_subtractive": 0.002784994837095045,
+   "rel_rms_enriched": 0.03776570382949407,
+   "rel_rms_cosine_only": 0.05617029645126628,
+   "project_seconds": 1.5024606000515632
+  },
+  {
+   "H": 0.55,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 3.156273171445234,
+   "norm2_aux": 3.1562731714454277,
+   "error2_enriched": 2.9219627412774516e-22,
+   "error2_cosine_only": 1.7426837996861027e-09,
+   "error2_subtractive": -1.6830981053317373e-13,
+   "rel_rms_enriched": 9.621660859897774e-12,
+   "rel_rms_cosine_only": 2.34975187631833e-05,
+   "project_seconds": 1.4823975000181235
+  },
+  {
+   "H": 0.55,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.28129798462768524,
+   "norm2_aux": 0.28129798462760364,
+   "error2_enriched": 1.1187105350195743e-06,
+   "error2_cosine_only": 0.0001248900914884806,
+   "error2_subtractive": 1.1187106172538819e-06,
+   "rel_rms_enriched": 0.0019942314160825425,
+   "rel_rms_cosine_only": 0.0210707833423956,
+   "project_seconds": 1.4561782000237145
+  },
+  {
+   "H": 0.55,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.2310108436960665,
+   "norm2_aux": 0.23101084369253821,
+   "error2_enriched": 0.23082532675764977,
+   "error2_cosine_only": 0.230956922682392,
+   "error2_subtractive": 0.23082532676117803,
+   "rel_rms_enriched": 0.9995983863874223,
+   "rel_rms_cosine_only": 0.9998832865166629,
+   "project_seconds": 1.5233423999743536
+  },
+  {
+   "H": 0.55,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.265970445169564,
+   "norm2_aux": 0.2659703521543816,
+   "error2_enriched": 0.00019204123531462388,
+   "error2_cosine_only": 0.00019205152075577392,
+   "error2_subtractive": 0.00019213425049702249,
+   "rel_rms_enriched": 0.02687079745614637,
+   "rel_rms_cosine_only": 0.026871517026359867,
+   "project_seconds": 1.4538364000036381
+  },
+  {
+   "H": 0.55,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.07790854702206572,
+   "norm2_aux": 0.07790854702208447,
+   "error2_enriched": 4.230422414608064e-10,
+   "error2_cosine_only": 8.242764588073059e-10,
+   "error2_subtractive": 4.230234773583419e-10,
+   "rel_rms_enriched": 7.368843190697663e-05,
+   "rel_rms_cosine_only": 0.00010285937849403726,
+   "project_seconds": 1.4984017999959178
+  },
+  {
+   "H": 0.55,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.9211984754421836,
+   "norm2_aux": 1.9211535868293796,
+   "error2_enriched": 0.0017839383885806435,
+   "error2_cosine_only": 0.003968101980965297,
+   "error2_subtractive": 0.0018288270013955277,
+   "rel_rms_enriched": 0.030472199917976537,
+   "rel_rms_cosine_only": 0.04544700790710529,
+   "project_seconds": 1.4827326000086032
+  },
+  {
+   "H": 0.55,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 3.156273171445234,
+   "norm2_aux": 3.1562731714454277,
+   "error2_enriched": 2.0842043345822277e-24,
+   "error2_cosine_only": 2.010066703206884e-10,
+   "error2_subtractive": -1.6830981053317373e-13,
+   "rel_rms_enriched": 8.126112967229575e-13,
+   "rel_rms_cosine_only": 7.980276570834593e-06,
+   "project_seconds": 1.4923280000220984
+  },
+  {
+   "H": 0.55,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.28129798462768524,
+   "norm2_aux": 0.28129798462760364,
+   "error2_enriched": 4.279229211710772e-09,
+   "error2_cosine_only": 1.02123172492743e-05,
+   "error2_subtractive": 4.2793113497197055e-09,
+   "rel_rms_enriched": 0.0001233387277862595,
+   "rel_rms_cosine_only": 0.006025302265176335,
+   "project_seconds": 1.5110302000539377
+  },
+  {
+   "H": 0.55,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.2310108436960665,
+   "norm2_aux": 0.23101084369253821,
+   "error2_enriched": 0.23072214442631664,
+   "error2_cosine_only": 0.23088524222453205,
+   "error2_subtractive": 0.23072214442984465,
+   "rel_rms_enriched": 0.9993749437905768,
+   "rel_rms_cosine_only": 0.9997281111426061,
+   "project_seconds": 1.4428267999901436
+  },
+  {
+   "H": 0.55,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.265970445169564,
+   "norm2_aux": 0.2659703521543816,
+   "error2_enriched": 8.915646832035426e-05,
+   "error2_cosine_only": 8.915887734631143e-05,
+   "error2_subtractive": 8.92494835027513e-05,
+   "rel_rms_enriched": 0.018308794001537513,
+   "rel_rms_cosine_only": 0.01830904135354062,
+   "project_seconds": 1.5311340999905951
+  },
+  {
+   "H": 0.55,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.07790854702206572,
+   "norm2_aux": 0.07790854702208447,
+   "error2_enriched": 4.9047026741285974e-11,
+   "error2_cosine_only": 9.614396387962501e-11,
+   "error2_subtractive": 4.9028267556927574e-11,
+   "rel_rms_enriched": 2.509075849190255e-05,
+   "rel_rms_cosine_only": 3.5129216146024834e-05,
+   "project_seconds": 1.4353759000077844
+  },
+  {
+   "H": 0.55,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.9211984754421836,
+   "norm2_aux": 1.9211535868293796,
+   "error2_enriched": 0.0011570479445037673,
+   "error2_cosine_only": 0.002596231998154972,
+   "error2_subtractive": 0.0012019365573188168,
+   "rel_rms_enriched": 0.024540847738434162,
+   "rel_rms_cosine_only": 0.036760857421200985,
+   "project_seconds": 1.4905197999905795
+  },
+  {
+   "H": 0.55,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 3.156273171445234,
+   "norm2_aux": 3.1562731714454277,
+   "error2_enriched": 1.7575408329783853e-26,
+   "error2_cosine_only": 2.3313905410464262e-11,
+   "error2_subtractive": -1.687538997430238e-13,
+   "rel_rms_enriched": 7.462174832672964e-14,
+   "rel_rms_cosine_only": 2.717817077104514e-06,
+   "project_seconds": 1.503444300033152
+  },
+  {
+   "H": 0.55,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.28129798462768524,
+   "norm2_aux": 0.28129798462760364,
+   "error2_enriched": 2.6945069291437063e-11,
+   "error2_cosine_only": 1.101008950433776e-06,
+   "error2_subtractive": 2.7027158289172348e-11,
+   "rel_rms_enriched": 9.787152199257232e-06,
+   "rel_rms_cosine_only": 0.0019783909395734646,
+   "project_seconds": 1.4429406999843195
+  },
+  {
+   "H": 0.55,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.2310108436960665,
+   "norm2_aux": 0.23101084369253821,
+   "error2_enriched": 0.0009349387331983957,
+   "error2_cosine_only": 0.0019099479800522875,
+   "error2_subtractive": 0.0009349387367262318,
+   "rel_rms_enriched": 0.06361732342496539,
+   "rel_rms_cosine_only": 0.09092736092118192,
+   "project_seconds": 1.5783577000256628
+  },
+  {
+   "H": 0.55,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.265970445169564,
+   "norm2_aux": 0.2659703521543816,
+   "error2_enriched": 4.140479303976297e-05,
+   "error2_cosine_only": 4.140499917510985e-05,
+   "error2_subtractive": 4.149780822221283e-05,
+   "rel_rms_enriched": 0.012476955294602717,
+   "rel_rms_cosine_only": 0.0124769863530638,
+   "project_seconds": 1.4475940000265837
+  },
+  {
+   "H": 0.55,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.07790854702206572,
+   "norm2_aux": 0.07790854702208447,
+   "error2_enriched": 5.703188535758373e-12,
+   "error2_cosine_only": 1.121346131549708e-11,
+   "error2_subtractive": 5.684425152807648e-12,
+   "rel_rms_enriched": 8.555912055428804e-06,
+   "rel_rms_cosine_only": 1.1997127990386612e-05,
+   "project_seconds": 1.47974909999175
+  },
+  {
+   "H": 0.55,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.9211984754421836,
+   "norm2_aux": 1.9211535868293796,
+   "error2_enriched": 0.0007444363267185816,
+   "error2_cosine_only": 0.0016939346676206602,
+   "error2_subtractive": 0.0007893249395334312,
+   "rel_rms_enriched": 0.019684648404635043,
+   "rel_rms_cosine_only": 0.02969355607622279,
+   "project_seconds": 1.472390400012955
+  },
+  {
+   "H": 0.55,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 3.156273171445234,
+   "norm2_aux": 3.1562731714454277,
+   "error2_enriched": 2.1094551437658814e-27,
+   "error2_cosine_only": 2.7115869513199977e-12,
+   "error2_subtractive": -1.6830981053317373e-13,
+   "rel_rms_enriched": 2.5852220740272017e-14,
+   "rel_rms_cosine_only": 9.268820586946313e-07,
+   "project_seconds": 1.4488083999603987
+  },
+  {
+   "H": 0.55,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.28129798462768524,
+   "norm2_aux": 0.28129798462760364,
+   "error2_enriched": 1.8891931708661623e-13,
+   "error2_cosine_only": 1.2580798997957428e-07,
+   "error2_subtractive": 2.7106095146223197e-13,
+   "rel_rms_enriched": 8.195111619994992e-07,
+   "rel_rms_cosine_only": 0.0006687607890872353,
+   "project_seconds": 1.5033933999948204
+  },
+  {
+   "H": 0.55,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.2310108436960665,
+   "norm2_aux": 0.23101084369253821,
+   "error2_enriched": 4.5292228639332587e-08,
+   "error2_cosine_only": 8.891271551783204e-06,
+   "error2_subtractive": 4.529575642342465e-08,
+   "rel_rms_enriched": 0.000442787816309645,
+   "rel_rms_cosine_only": 0.006203913788328248,
+   "project_seconds": 1.4882910000160336
+  },
+  {
+   "H": 0.55,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.265970445169564,
+   "norm2_aux": 0.2659703521543816,
+   "error2_enriched": 1.926172980639835e-05,
+   "error2_cosine_only": 1.926176733210252e-05,
+   "error2_subtractive": 1.935474498887535e-05,
+   "rel_rms_enriched": 0.008510027297320933,
+   "rel_rms_cosine_only": 0.008510035586934963,
+   "project_seconds": 1.4649545999709517
+  },
+  {
+   "H": 0.55,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.07790854702206572,
+   "norm2_aux": 0.07790854702208447,
+   "error2_enriched": 6.641565237148306e-13,
+   "error2_cosine_only": 1.307826355040988e-12,
+   "error2_subtractive": 6.454281553658348e-13,
+   "rel_rms_enriched": 2.9197298437242264e-06,
+   "rel_rms_cosine_only": 4.097155904595256e-06,
+   "project_seconds": 1.5341111000161618
+  },
+  {
+   "H": 0.55,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.9211984754421836,
+   "norm2_aux": 1.9211535868293796,
+   "error2_enriched": 0.0004721989636704079,
+   "error2_cosine_only": 0.0010992701987012673,
+   "error2_subtractive": 0.0005170875764846095,
+   "rel_rms_enriched": 0.015677485152095123,
+   "rel_rms_cosine_only": 0.023920271821818728,
+   "project_seconds": 1.615681700001005
+  },
+  {
+   "H": 0.55,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 3.156273171445234,
+   "norm2_aux": 3.1562731714454277,
+   "error2_enriched": 1.8939048187619648e-27,
+   "error2_cosine_only": 3.158184374376576e-13,
+   "error2_subtractive": -1.638689184346731e-13,
+   "rel_rms_enriched": 2.4495808749505986e-14,
+   "rel_rms_cosine_only": 3.1632349346771283e-07,
+   "project_seconds": 1.6360531999962404
+  },
+  {
+   "H": 0.55,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.28129798462768524,
+   "norm2_aux": 0.28129798462760364,
+   "error2_enriched": 1.3614848587413157e-15,
+   "error2_cosine_only": 1.4587822197250307e-08,
+   "error2_subtractive": 8.343326030058051e-14,
+   "rel_rms_enriched": 6.95701752879158e-08,
+   "rel_rms_cosine_only": 0.00022772563425039457,
+   "project_seconds": 1.5307993000023998
+  },
+  {
+   "H": 0.55,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.2310108436960665,
+   "norm2_aux": 0.23101084369253821,
+   "error2_enriched": 2.0696026663918137e-10,
+   "error2_cosine_only": 8.012637885293543e-07,
+   "error2_subtractive": 2.1048809917267874e-10,
+   "rel_rms_enriched": 2.9931418860245386e-05,
+   "rel_rms_cosine_only": 0.0018623940477070229,
+   "project_seconds": 1.5467749999952503
+  },
+  {
+   "H": 0.55,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.265970445169564,
+   "norm2_aux": 0.2659703521543816,
+   "error2_enriched": 8.934810432896095e-06,
+   "error2_cosine_only": 8.934812271047232e-06,
+   "error2_subtractive": 9.027825615404161e-06,
+   "rel_rms_enriched": 0.005795968029317506,
+   "rel_rms_cosine_only": 0.005795968625517323,
+   "project_seconds": 1.6305937000433914
+  },
+  {
+   "H": 0.55,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.07790854702206572,
+   "norm2_aux": 0.07790854702208447,
+   "error2_enriched": 7.740136129197795e-14,
+   "error2_cosine_only": 1.52531861801495e-13,
+   "error2_subtractive": 5.866140906363171e-14,
+   "rel_rms_enriched": 9.967396781619587e-07,
+   "rel_rms_cosine_only": 1.3992255705422763e-06,
+   "project_seconds": 1.6051964999642223
+  },
+  {
+   "H": 0.55,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.9211984754421836,
+   "norm2_aux": 1.9211535868293796,
+   "error2_enriched": 0.000292265678552957,
+   "error2_cosine_only": 0.0007068033516375311,
+   "error2_subtractive": 0.00033715429136638164,
+   "rel_rms_enriched": 0.012333967291842754,
+   "rel_rms_cosine_only": 0.019180643943334033,
+   "project_seconds": 1.6061637999955565
+  },
+  {
+   "H": 0.55,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "exp(t)",
+   "norm2_exact": 3.156273171445234,
+   "norm2_aux": 3.1562731714454535,
+   "error2_enriched": 3.515712017108639e-27,
+   "error2_cosine_only": 3.680820641371325e-14,
+   "error2_subtractive": -7.37188088351104e-14,
+   "rel_rms_enriched": 3.337485248533394e-14,
+   "rel_rms_cosine_only": 1.0799037168693158e-07,
+   "project_seconds": 3.2445391000364907,
+   "pcg_iterations_last": [
+    10,
+    9
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.28129798462768524,
+   "norm2_aux": 0.28129798462767713,
+   "error2_enriched": 9.879899100308038e-18,
+   "error2_cosine_only": 1.6982505181232006e-09,
+   "error2_subtractive": 8.93729534823251e-15,
+   "rel_rms_enriched": 5.9264270692950235e-09,
+   "rel_rms_cosine_only": 7.76993825369914e-05,
+   "project_seconds": 2.978448899986688,
+   "pcg_iterations_last": [
+    8,
+    10
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.2310108436960665,
+   "norm2_aux": 0.2310108436956158,
+   "error2_enriched": 1.3573583132378829e-12,
+   "error2_cosine_only": 8.822203902359932e-08,
+   "error2_subtractive": 1.8082202402069925e-12,
+   "rel_rms_enriched": 2.4239913764099166e-06,
+   "rel_rms_cosine_only": 0.0006179770721839794,
+   "project_seconds": 3.4118631000164896,
+   "pcg_iterations_last": [
+    7,
+    10
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.265970445169564,
+   "norm2_aux": 0.2659704017765562,
+   "error2_enriched": 4.167105559621594e-06,
+   "error2_cosine_only": 4.167105999689983e-06,
+   "error2_subtractive": 4.210498567303045e-06,
+   "rel_rms_enriched": 0.00395822576046722,
+   "rel_rms_cosine_only": 0.003958225969472003,
+   "project_seconds": 3.573166200018022,
+   "pcg_iterations_last": [
+    10,
+    10
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.07790854702206572,
+   "norm2_aux": 0.07790854702207002,
+   "error2_enriched": 9.023841660657587e-15,
+   "error2_cosine_only": 1.778966347171577e-14,
+   "error2_subtractive": 4.6074255521944e-15,
+   "rel_rms_enriched": 3.4033230933572007e-07,
+   "rel_rms_cosine_only": 4.778496957529838e-07,
+   "project_seconds": 3.9431936999899335,
+   "pcg_iterations_last": [
+    8,
+    8
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "t^-0.25",
+   "norm2_exact": 1.9211984754421836,
+   "norm2_aux": 1.9211688600191734,
+   "error2_enriched": 0.00019279814505478702,
+   "error2_cosine_only": 0.00046626113911487,
+   "error2_subtractive": 0.00022241356806107504,
+   "rel_rms_enriched": 0.010017637424639235,
+   "rel_rms_cosine_only": 0.01557860240727177,
+   "project_seconds": 3.935249100031797,
+   "pcg_iterations_last": [
+    10,
+    10
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "exp(t)",
+   "norm2_exact": 3.156273171445234,
+   "norm2_aux": 3.1562731714454877,
+   "error2_enriched": 6.558112866898387e-27,
+   "error2_cosine_only": 4.291427387964571e-15,
+   "error2_subtractive": -5.10702591327572e-14,
+   "rel_rms_enriched": 4.55829209676921e-14,
+   "rel_rms_cosine_only": 3.687343462063624e-08,
+   "project_seconds": 6.077467399998568,
+   "pcg_iterations_last": [
+    10,
+    9
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.28129798462768524,
+   "norm2_aux": 0.2812979846276954,
+   "error2_enriched": 7.137338289246494e-20,
+   "error2_cosine_only": 1.9793736986894935e-10,
+   "error2_subtractive": -2.7755575615628914e-16,
+   "rel_rms_enriched": 5.037149381267893e-10,
+   "rel_rms_cosine_only": 2.6526538837737087e-05,
+   "project_seconds": 6.656783599988557,
+   "pcg_iterations_last": [
+    8,
+    10
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.2310108436960665,
+   "norm2_aux": 0.23101084369599978,
+   "error2_enriched": 9.636040533595988e-15,
+   "error2_cosine_only": 1.0144217916847852e-08,
+   "error2_subtractive": 7.613354391367011e-14,
+   "rel_rms_enriched": 2.0423639024202277e-07,
+   "rel_rms_cosine_only": 0.00020955262328885038,
+   "project_seconds": 6.999313400010578,
+   "pcg_iterations_last": [
+    7,
+    10
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.265970445169564,
+   "norm2_aux": 0.2659704249260429,
+   "error2_enriched": 1.9436124961599142e-06,
+   "error2_cosine_only": 1.943612534275117e-06,
+   "error2_subtractive": 1.9638560164181307e-06,
+   "rel_rms_enriched": 0.0027032620727268234,
+   "rel_rms_cosine_only": 0.0027032620992329765,
+   "project_seconds": 6.269556299957912,
+   "pcg_iterations_last": [
+    10,
+    10
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.07790854702206572,
+   "norm2_aux": 0.07790854702206741,
+   "error2_enriched": 1.0522437547928083e-15,
+   "error2_cosine_only": 2.0747930215218312e-15,
+   "error2_subtractive": 2.7755575615628914e-17,
+   "rel_rms_enriched": 1.1621592037159527e-07,
+   "rel_rms_cosine_only": 1.6319048638801384e-07,
+   "project_seconds": 6.099979300051928,
+   "pcg_iterations_last": [
+    8,
+    8
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "t^-0.25",
+   "norm2_exact": 1.9211984754421836,
+   "norm2_aux": 1.9211789365552863,
+   "error2_enriched": 0.00012719099607666777,
+   "error2_cosine_only": 0.0003075994360560526,
+   "error2_subtractive": 0.00014672988297559364,
+   "rel_rms_enriched": 0.008136583160902775,
+   "rel_rms_cosine_only": 0.012653382914574976,
+   "project_seconds": 6.159953200025484,
+   "pcg_iterations_last": [
+    10,
+    10
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "exp(t)",
+   "norm2_exact": 3.156273171445234,
+   "norm2_aux": 3.1562731714454957,
+   "error2_enriched": 1.223750702452961e-26,
+   "error2_cosine_only": 5.0041905255623585e-16,
+   "error2_subtractive": -5.10702591327572e-14,
+   "rel_rms_enriched": 6.22671782249104e-14,
+   "rel_rms_cosine_only": 1.2591562521905358e-08,
+   "project_seconds": 12.685848099994473,
+   "pcg_iterations_last": [
+    10,
+    9
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.28129798462768524,
+   "norm2_aux": 0.2812979846276549,
+   "error2_enriched": 1.0957856399265932e-21,
+   "error2_cosine_only": 2.3079345667104794e-11,
+   "error2_subtractive": -1.2212453270876722e-15,
+   "rel_rms_enriched": 6.241363718868487e-11,
+   "rel_rms_cosine_only": 9.057919059573315e-06,
+   "project_seconds": 12.089187300007325,
+   "pcg_iterations_last": [
+    8,
+    10
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.2310108436960665,
+   "norm2_aux": 0.23101084369605196,
+   "error2_enriched": 6.952675733681019e-17,
+   "error2_cosine_only": 1.1788360833565156e-09,
+   "error2_subtractive": 1.8457457784393227e-14,
+   "rel_rms_enriched": 1.7348415067477785e-08,
+   "rel_rms_cosine_only": 7.143491417663014e-05,
+   "project_seconds": 11.916727499978151,
+   "pcg_iterations_last": [
+    7,
+    10
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.265970445169564,
+   "norm2_aux": 0.26597043572562584,
+   "error2_enriched": 9.067133080668642e-07,
+   "error2_cosine_only": 9.067133149979107e-07,
+   "error2_subtractive": 9.161572465110623e-07,
+   "rel_rms_enriched": 0.0018463681712304614,
+   "rel_rms_cosine_only": 0.001846368178287413,
+   "project_seconds": 11.98077020002529,
+   "pcg_iterations_last": [
+    10,
+    10
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.07790854702206572,
+   "norm2_aux": 0.0779085470220708,
+   "error2_enriched": 1.2271066125306843e-16,
+   "error2_cosine_only": 2.4198129577317584e-16,
+   "error2_subtractive": -1.3877787807814457e-17,
+   "rel_rms_enriched": 3.9687029659648146e-08,
+   "rel_rms_cosine_only": 5.5731193862724434e-08,
+   "project_seconds": 11.827213800046593,
+   "pcg_iterations_last": [
+    8,
+    8
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "t^-0.25",
+   "norm2_exact": 1.9211984754421836,
+   "norm2_aux": 1.921185584586106,
+   "error2_enriched": 8.391201080036194e-05,
+   "error2_cosine_only": 0.0002029339432313313,
+   "error2_subtractive": 9.680286687818729e-05,
+   "rel_rms_enriched": 0.006608850800632846,
+   "rel_rms_cosine_only": 0.01027758862553614,
+   "project_seconds": 12.471085200028028,
+   "pcg_iterations_last": [
+    10,
+    10
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 3.0417552506093086,
+   "norm2_aux": 3.0417552506093677,
+   "error2_enriched": 5.535468400628084e-19,
+   "error2_cosine_only": 1.2457482638099822e-08,
+   "error2_subtractive": -4.440892098500626e-16,
+   "rel_rms_enriched": 4.2659430638650894e-10,
+   "rel_rms_cosine_only": 6.39960268715017e-05,
+   "project_seconds": 2.0325379999703728
+  },
+  {
+   "H": 0.75,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.022483089675745166,
+   "norm2_aux": 0.02248308967573873,
+   "error2_enriched": 0.022211378904939554,
+   "error2_cosine_only": 0.02236863636351759,
+   "error2_subtractive": 0.02221137890494605,
+   "rel_rms_enriched": 0.9939390740538061,
+   "rel_rms_cosine_only": 0.9974514324773894,
+   "project_seconds": 1.3910073000006378
+  },
+  {
+   "H": 0.75,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.008389182589054753,
+   "norm2_aux": 0.008389182588928007,
+   "error2_enriched": 0.00838602177100745,
+   "error2_cosine_only": 0.008387761649161088,
+   "error2_subtractive": 0.0083860217711342,
+   "rel_rms_enriched": 0.9998115957187947,
+   "rel_rms_cosine_only": 0.9999153075968644,
+   "project_seconds": 1.409595499979332
+  },
+  {
+   "H": 0.75,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.1643167672515498,
+   "norm2_aux": 0.1643167669846471,
+   "error2_enriched": 7.12803294513877e-05,
+   "error2_cosine_only": 7.14178261135693e-05,
+   "error2_subtractive": 7.12805963539731e-05,
+   "rel_rms_enriched": 0.020827824430827806,
+   "rel_rms_cosine_only": 0.020847902737681213,
+   "project_seconds": 1.492364700010512
+  },
+  {
+   "H": 0.75,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06530096874093536,
+   "norm2_aux": 0.06530096874093573,
+   "error2_enriched": 3.123115947155325e-09,
+   "error2_cosine_only": 5.638184729049989e-09,
+   "error2_subtractive": 3.1231155717126313e-09,
+   "rel_rms_enriched": 0.00021869267757121486,
+   "rel_rms_cosine_only": 0.0002938392713782467,
+   "project_seconds": 1.516532100038603
+  },
+  {
+   "H": 0.75,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7972103521033878,
+   "norm2_aux": 1.7972104788982142,
+   "error2_enriched": 0.0001609046460031594,
+   "error2_cosine_only": 0.000521353129928442,
+   "error2_subtractive": 0.00016077785118095989,
+   "rel_rms_enriched": 0.009462041235177597,
+   "rel_rms_cosine_only": 0.017032034840833873,
+   "project_seconds": 1.381067999987863
+  },
+  {
+   "H": 0.75,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 3.0417552506093086,
+   "norm2_aux": 3.0417552506093677,
+   "error2_enriched": 2.7498504323498553e-21,
+   "error2_cosine_only": 1.0467563541573236e-09,
+   "error2_subtractive": -4.440892098500626e-16,
+   "rel_rms_enriched": 3.006715961791419e-11,
+   "rel_rms_cosine_only": 1.8550715703202622e-05,
+   "project_seconds": 1.3752003999543376
+  },
+  {
+   "H": 0.75,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.022483089675745166,
+   "norm2_aux": 0.02248308967573873,
+   "error2_enriched": 0.02197030080875355,
+   "error2_cosine_only": 0.021981075880781468,
+   "error2_subtractive": 0.02197030080876005,
+   "rel_rms_enriched": 0.9885303445334312,
+   "rel_rms_cosine_only": 0.9887727212788264,
+   "project_seconds": 1.417543499963358
+  },
+  {
+   "H": 0.75,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.008389182589054753,
+   "norm2_aux": 0.008389182588928007,
+   "error2_enriched": 0.008383776570296873,
+   "error2_cosine_only": 0.008386913557499395,
+   "error2_subtractive": 0.008383776570423612,
+   "rel_rms_enriched": 0.9996777463182152,
+   "rel_rms_cosine_only": 0.9998647552977364,
+   "project_seconds": 1.4192212999914773
+  },
+  {
+   "H": 0.75,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.1643167672515498,
+   "norm2_aux": 0.1643167669846471,
+   "error2_enriched": 2.50990934605799e-05,
+   "error2_cosine_only": 2.5118591470536258e-05,
+   "error2_subtractive": 2.5099360363212142e-05,
+   "rel_rms_enriched": 0.012359135020654883,
+   "rel_rms_cosine_only": 0.012363934631360311,
+   "project_seconds": 1.4946601999690756
+  },
+  {
+   "H": 0.75,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06530096874093536,
+   "norm2_aux": 0.06530096874093573,
+   "error2_enriched": 2.6928777057349874e-10,
+   "error2_cosine_only": 4.992982096583779e-10,
+   "error2_subtractive": 2.692873840581811e-10,
+   "rel_rms_enriched": 6.421677678694288e-05,
+   "rel_rms_cosine_only": 8.744202214480962e-05,
+   "project_seconds": 1.3954098999965936
+  },
+  {
+   "H": 0.75,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7972103521033878,
+   "norm2_aux": 1.7972104788982142,
+   "error2_enriched": 7.954431370910844e-05,
+   "error2_cosine_only": 0.0002576228025796795,
+   "error2_subtractive": 7.941751888673743e-05,
+   "rel_rms_enriched": 0.006652809898790379,
+   "rel_rms_cosine_only": 0.011972716374053725,
+   "project_seconds": 1.3927207000087947
+  },
+  {
+   "H": 0.75,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 3.0417552506093086,
+   "norm2_aux": 3.0417552506093677,
+   "error2_enriched": 1.4403906820513997e-23,
+   "error2_cosine_only": 9.022600250422042e-11,
+   "error2_subtractive": 4.440892098500626e-16,
+   "rel_rms_enriched": 2.176095838496094e-12,
+   "rel_rms_cosine_only": 5.446327149023986e-06,
+   "project_seconds": 1.4909376000287011
+  },
+  {
+   "H": 0.75,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.022483089675745166,
+   "norm2_aux": 0.02248308967573873,
+   "error2_enriched": 5.687941839127668e-08,
+   "error2_cosine_only": 6.649408351530216e-06,
+   "error2_subtractive": 5.6879424843725435e-08,
+   "rel_rms_enriched": 0.0015905582445138867,
+   "rel_rms_cosine_only": 0.01719742823917753,
+   "project_seconds": 1.4396490999497473
+  },
+  {
+   "H": 0.75,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.008389182589054753,
+   "norm2_aux": 0.008389182588928007,
+   "error2_enriched": 0.008379628131034456,
+   "error2_cosine_only": 0.008385414288522023,
+   "error2_subtractive": 0.008379628131161183,
+   "rel_rms_enriched": 0.9994303866993443,
+   "rel_rms_cosine_only": 0.9997753819424937,
+   "project_seconds": 1.4270274000009522
+  },
+  {
+   "H": 0.75,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.1643167672515498,
+   "norm2_aux": 0.1643167669846471,
+   "error2_enriched": 8.848177987481745e-06,
+   "error2_cosine_only": 8.848908650159745e-06,
+   "error2_subtractive": 8.84844489013048e-06,
+   "rel_rms_enriched": 0.0073381398464645855,
+   "rel_rms_cosine_only": 0.007338442823768756,
+   "project_seconds": 1.4733349999878556
+  },
+  {
+   "H": 0.75,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06530096874093536,
+   "norm2_aux": 0.06530096874093573,
+   "error2_enriched": 2.349343762905144e-11,
+   "error2_cosine_only": 4.4152603462945454e-11,
+   "error2_subtractive": 2.349304084603432e-11,
+   "rel_rms_enriched": 1.896764760033182e-05,
+   "rel_rms_cosine_only": 2.6002694070092272e-05,
+   "project_seconds": 1.3906302999821492
+  },
+  {
+   "H": 0.75,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7972103521033878,
+   "norm2_aux": 1.7972104788982142,
+   "error2_enriched": 3.955956395847578e-05,
+   "error2_cosine_only": 0.0001280834360991002,
+   "error2_subtractive": 3.943276913620508e-05,
+   "rel_rms_enriched": 0.00469165741322944,
+   "rel_rms_cosine_only": 0.008442032683430177,
+   "project_seconds": 1.3634204000118189
+  },
+  {
+   "H": 0.75,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 3.0417552506093086,
+   "norm2_aux": 3.0417552506093677,
+   "error2_enriched": 7.760929153516243e-26,
+   "error2_cosine_only": 7.8757627082936e-12,
+   "error2_subtractive": 8.881784197001252e-16,
+   "rel_rms_enriched": 1.5973302865432998e-13,
+   "rel_rms_cosine_only": 1.6091042359921996e-06,
+   "project_seconds": 1.4210917999735102
+  },
+  {
+   "H": 0.75,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.022483089675745166,
+   "norm2_aux": 0.02248308967573873,
+   "error2_enriched": 1.6077405508401686e-10,
+   "error2_cosine_only": 4.026915853857516e-07,
+   "error2_subtractive": 1.6078050002477084e-10,
+   "rel_rms_enriched": 8.456292303315224e-05,
+   "rel_rms_cosine_only": 0.004232122997171119,
+   "project_seconds": 1.4294699000311084
+  },
+  {
+   "H": 0.75,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.008389182589054753,
+   "norm2_aux": 0.008389182588928007,
+   "error2_enriched": 0.008373776683359214,
+   "error2_cosine_only": 0.00838205485945197,
+   "error2_subtractive": 0.008373776683485957,
+   "rel_rms_enriched": 0.9990813774232503,
+   "rel_rms_cosine_only": 0.9995750930344005,
+   "project_seconds": 1.4135616999701597
+  },
+  {
+   "H": 0.75,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.1643167672515498,
+   "norm2_aux": 0.1643167669846471,
+   "error2_enriched": 3.109870618946846e-06,
+   "error2_cosine_only": 3.109999899615894e-06,
+   "error2_subtractive": 3.1101375215780713e-06,
+   "rel_rms_enriched": 0.004350410311325359,
+   "rel_rms_cosine_only": 0.0043505007360052856,
+   "project_seconds": 1.416527799970936
+  },
+  {
+   "H": 0.75,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06530096874093536,
+   "norm2_aux": 0.06530096874093573,
+   "error2_enriched": 2.0627200336375617e-12,
+   "error2_cosine_only": 3.903002855478819e-12,
+   "error2_subtractive": 2.062322534968075e-12,
+   "rel_rms_enriched": 5.6203107841241e-06,
+   "rel_rms_cosine_only": 7.731070301032568e-06,
+   "project_seconds": 1.3995195000316016
+  },
+  {
+   "H": 0.75,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7972103521033878,
+   "norm2_aux": 1.7972104788982142,
+   "error2_enriched": 1.9733450193557156e-05,
+   "error2_cosine_only": 6.387885300434485e-05,
+   "error2_subtractive": 1.960665537148465e-05,
+   "rel_rms_enriched": 0.0033136150661959556,
+   "rel_rms_cosine_only": 0.005961823285582956,
+   "project_seconds": 1.4070892999880016
+  },
+  {
+   "H": 0.75,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 3.0417552506093086,
+   "norm2_aux": 3.0417552506093677,
+   "error2_enriched": 4.456331152702833e-28,
+   "error2_cosine_only": 6.917926555415257e-13,
+   "error2_subtractive": 2.220446049250313e-15,
+   "rel_rms_enriched": 1.2103935335469514e-14,
+   "rel_rms_cosine_only": 4.768983724643292e-07,
+   "project_seconds": 1.3663800999638624
+  },
+  {
+   "H": 0.75,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.022483089675745166,
+   "norm2_aux": 0.02248308967573873,
+   "error2_enriched": 7.62657980422603e-13,
+   "error2_cosine_only": 3.272209301622076e-08,
+   "error2_subtractive": 7.691104697560291e-13,
+   "rel_rms_enriched": 5.8242084912800575e-06,
+   "rel_rms_cosine_only": 0.0012064033682498677,
+   "project_seconds": 1.4379743000026792
+  },
+  {
+   "H": 0.75,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.008389182589054753,
+   "norm2_aux": 0.008389182588928007,
+   "error2_enriched": 3.165731694938405e-05,
+   "error2_cosine_only": 6.61577734552886e-05,
+   "error2_subtractive": 3.165731707611627e-05,
+   "rel_rms_enriched": 0.061429535124554985,
+   "rel_rms_cosine_only": 0.08880360918385152,
+   "project_seconds": 1.4026688000303693
+  },
+  {
+   "H": 0.75,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.1643167672515498,
+   "norm2_aux": 0.1643167669846471,
+   "error2_enriched": 1.0943518441328945e-06,
+   "error2_cosine_only": 1.094360212869442e-06,
+   "error2_subtractive": 1.094618746755316e-06,
+   "rel_rms_enriched": 0.0025807001437572106,
+   "rel_rms_cosine_only": 0.0025807100113141752,
+   "project_seconds": 1.4026657000067644
+  },
+  {
+   "H": 0.75,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06530096874093536,
+   "norm2_aux": 0.06530096874093573,
+   "error2_enriched": 1.817053410495044e-13,
+   "error2_cosine_only": 3.4498839683882343e-13,
+   "error2_subtractive": 1.8129941992128806e-13,
+   "rel_rms_enriched": 1.6681074981968999e-06,
+   "rel_rms_cosine_only": 2.2984890134002857e-06,
+   "project_seconds": 1.4641367999720387
+  },
+  {
+   "H": 0.75,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7972103521033878,
+   "norm2_aux": 1.7972104788982142,
+   "error2_enriched": 9.854694306887387e-06,
+   "error2_cosine_only": 3.1910927330557244e-05,
+   "error2_subtractive": 9.727899485056923e-06,
+   "rel_rms_enriched": 0.0023416507546345578,
+   "rel_rms_cosine_only": 0.004213764468405408,
+   "project_seconds": 1.3850298000033945
+  },
+  {
+   "H": 0.75,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 3.0417552506093086,
+   "norm2_aux": 3.0417552506093677,
+   "error2_enriched": 1.4961528735688743e-29,
+   "error2_cosine_only": 6.095620428545472e-14,
+   "error2_subtractive": 4.884981308350689e-15,
+   "rel_rms_enriched": 2.217817736484687e-15,
+   "rel_rms_cosine_only": 1.4156204399566884e-07,
+   "project_seconds": 1.4517291999654844
+  },
+  {
+   "H": 0.75,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.022483089675745166,
+   "norm2_aux": 0.02248308967573873,
+   "error2_enriched": 4.0457832085044154e-15,
+   "error2_cosine_only": 2.829313529967761e-09,
+   "error2_subtractive": 1.0495077029659683e-14,
+   "rel_rms_enriched": 4.24202581828066e-07,
+   "rel_rms_cosine_only": 0.0003547419441669009,
+   "project_seconds": 1.392650900001172
+  },
+  {
+   "H": 0.75,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.008389182589054753,
+   "norm2_aux": 0.008389182588928007,
+   "error2_enriched": 9.924225515376944e-10,
+   "error2_cosine_only": 2.041523861787907e-07,
+   "error2_subtractive": 9.925492858164908e-10,
+   "rel_rms_enriched": 0.0003439445948540809,
+   "rel_rms_cosine_only": 0.004933071461516523,
+   "project_seconds": 1.4139625999960117
+  },
+  {
+   "H": 0.75,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.1643167672515498,
+   "norm2_aux": 0.1643167669846471,
+   "error2_enriched": 3.8661232608521004e-07,
+   "error2_cosine_only": 3.866134809050488e-07,
+   "error2_subtractive": 3.868792287642364e-07,
+   "rel_rms_enriched": 0.0015338995041918944,
+   "rel_rms_cosine_only": 0.0015339017950865912,
+   "project_seconds": 1.3940924999769777
+  },
+  {
+   "H": 0.75,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06530096874093536,
+   "norm2_aux": 0.06530096874093573,
+   "error2_enriched": 1.6033364964612327e-14,
+   "error2_cosine_only": 3.0493143602906467e-14,
+   "error2_subtractive": 1.5668022435022522e-14,
+   "rel_rms_enriched": 4.955101182881217e-07,
+   "rel_rms_cosine_only": 6.833469926417995e-07,
+   "project_seconds": 1.4252581000328064
+  },
+  {
+   "H": 0.75,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7972103521033878,
+   "norm2_aux": 1.7972104788982142,
+   "error2_enriched": 4.915918342134272e-06,
+   "error2_cosine_only": 1.5953990365863175e-05,
+   "error2_subtractive": 4.789123520865246e-06,
+   "rel_rms_enriched": 0.0016538757308865288,
+   "rel_rms_cosine_only": 0.0029794438621056985,
+   "project_seconds": 1.4617836000397801
+  },
+  {
+   "H": 0.75,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 3.0417552506093086,
+   "norm2_aux": 3.0417552506093677,
+   "error2_enriched": 1.2005458534430685e-29,
+   "error2_cosine_only": 5.379534616638327e-15,
+   "error2_subtractive": 5.773159728050814e-15,
+   "rel_rms_enriched": 1.9866769035383756e-15,
+   "rel_rms_cosine_only": 4.2054281753783184e-08,
+   "project_seconds": 1.520053599961102
+  },
+  {
+   "H": 0.75,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.022483089675745166,
+   "norm2_aux": 0.02248308967573873,
+   "error2_enriched": 2.2086495789735645e-17,
+   "error2_cosine_only": 2.485111434318093e-10,
+   "error2_subtractive": 6.480926906249351e-15,
+   "rel_rms_enriched": 3.13426282821543e-08,
+   "rel_rms_cosine_only": 0.00010513442346139323,
+   "project_seconds": 1.4711174000403844
+  },
+  {
+   "H": 0.75,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.008389182589054753,
+   "norm2_aux": 0.008389182588928007,
+   "error2_enriched": 3.375116162415011e-12,
+   "error2_cosine_only": 1.37157935601806e-08,
+   "error2_subtractive": 3.501849851761385e-12,
+   "rel_rms_enriched": 2.0057857377636028e-05,
+   "rel_rms_cosine_only": 0.0012786469483960967,
+   "project_seconds": 1.5354792999569327
+  },
+  {
+   "H": 0.75,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.1643167672515498,
+   "norm2_aux": 0.1643167669846471,
+   "error2_enriched": 1.364849982020834e-07,
+   "error2_cosine_only": 1.3648504107516481e-07,
+   "error2_subtractive": 1.3675190094208922e-07,
+   "rel_rms_enriched": 0.0009113842480067408,
+   "rel_rms_cosine_only": 0.0009113843911501212,
+   "project_seconds": 1.4821041999966837
+  },
+  {
+   "H": 0.75,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06530096874093536,
+   "norm2_aux": 0.06530096874093573,
+   "error2_enriched": 1.4159549946930556e-15,
+   "error2_cosine_only": 2.695264741122331e-15,
+   "error2_subtractive": 1.0685896612017132e-15,
+   "rel_rms_enriched": 1.4725325815210667e-07,
+   "rel_rms_cosine_only": 2.0316126248165274e-07,
+   "project_seconds": 1.5394743999931961
+  },
+  {
+   "H": 0.75,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7972103521033878,
+   "norm2_aux": 1.7972104788982142,
+   "error2_enriched": 2.43804454625051e-06,
+   "error2_cosine_only": 7.974882773004624e-06,
+   "error2_subtractive": 2.3112497240518337e-06,
+   "rel_rms_enriched": 0.0011647195426361268,
+   "rel_rms_cosine_only": 0.002106505988844058,
+   "project_seconds": 1.7113494999939576
+  },
+  {
+   "H": 0.75,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "exp(t)",
+   "norm2_exact": 3.0417552506093086,
+   "norm2_aux": 3.041755250609378,
+   "error2_enriched": 1.7243658420840206e-29,
+   "error2_cosine_only": 4.751177797362827e-16,
+   "error2_subtractive": 3.1086244689504383e-15,
+   "rel_rms_enriched": 2.3809625938725334e-15,
+   "rel_rms_cosine_only": 1.2497942095398547e-08,
+   "project_seconds": 2.994372899993323,
+   "pcg_iterations_last": [
+    13,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.022483089675745166,
+   "norm2_aux": 0.02248308967574453,
+   "error2_enriched": 1.214788487430626e-19,
+   "error2_cosine_only": 2.1921599979148046e-11,
+   "error2_subtractive": 6.696032617270475e-16,
+   "rel_rms_enriched": 2.3244613929752308e-09,
+   "rel_rms_cosine_only": 3.122540844832763e-05,
+   "project_seconds": 3.045499400002882,
+   "pcg_iterations_last": [
+    10,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.008389182589054753,
+   "norm2_aux": 0.008389182589038572,
+   "error2_enriched": 1.670622142529033e-14,
+   "error2_cosine_only": 1.1401474031168993e-09,
+   "error2_subtractive": 3.288515293409233e-14,
+   "rel_rms_enriched": 1.41116986345488e-06,
+   "rel_rms_cosine_only": 0.00036865546623503383,
+   "project_seconds": 3.1773334000026807,
+   "pcg_iterations_last": [
+    9,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.1643167672515498,
+   "norm2_aux": 0.16431676715718696,
+   "error2_enriched": 4.823703188217677e-08,
+   "error2_cosine_only": 4.8237039659406646e-08,
+   "error2_subtractive": 4.833139483073623e-08,
+   "rel_rms_enriched": 0.000541812908145362,
+   "rel_rms_cosine_only": 0.0005418129518234574,
+   "project_seconds": 3.046031599980779,
+   "pcg_iterations_last": [
+    13,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06530096874093536,
+   "norm2_aux": 0.06530096874093536,
+   "error2_enriched": 1.2510053747795324e-16,
+   "error2_cosine_only": 2.3822991573612047e-16,
+   "error2_subtractive": 6.938893903907228e-17,
+   "rel_rms_enriched": 4.37693176095275e-08,
+   "rel_rms_cosine_only": 6.040019441459317e-08,
+   "project_seconds": 2.9162012999877334,
+   "pcg_iterations_last": [
+    10,
+    10
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7972103521033878,
+   "norm2_aux": 1.7972104155015047,
+   "error2_enriched": 1.2187946322616062e-06,
+   "error2_cosine_only": 3.986709778583865e-06,
+   "error2_subtractive": 1.15539652090213e-06,
+   "rel_rms_enriched": 0.00082350418520443,
+   "rel_rms_cosine_only": 0.001489388015521945,
+   "project_seconds": 3.0044994999771006,
+   "pcg_iterations_last": [
+    13,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "exp(t)",
+   "norm2_exact": 3.0417552506093086,
+   "norm2_aux": 3.0417552506093797,
+   "error2_enriched": 3.976228223419296e-29,
+   "error2_cosine_only": 4.197851762210903e-17,
+   "error2_subtractive": 3.1086244689504383e-15,
+   "rel_rms_enriched": 3.615542896837453e-15,
+   "rel_rms_cosine_only": 3.714936682151139e-09,
+   "project_seconds": 6.232894299959298,
+   "pcg_iterations_last": [
+    13,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.022483089675745166,
+   "norm2_aux": 0.02248308967574409,
+   "error2_enriched": 6.688821221589274e-22,
+   "error2_cosine_only": 1.9362324978889345e-12,
+   "error2_subtractive": -5.204170427930421e-17,
+   "rel_rms_enriched": 1.724831987928134e-10,
+   "rel_rms_cosine_only": 9.280059402590381e-06,
+   "project_seconds": 6.0909270999836735,
+   "pcg_iterations_last": [
+    10,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.008389182589054753,
+   "norm2_aux": 0.008389182589052364,
+   "error2_enriched": 8.979607876321024e-17,
+   "error2_cosine_only": 9.926041089598184e-11,
+   "error2_subtractive": 2.473715676742927e-15,
+   "rel_rms_enriched": 1.0345913967835118e-07,
+   "rel_rms_cosine_only": 0.0001087747793278636,
+   "project_seconds": 6.057920799998101,
+   "pcg_iterations_last": [
+    10,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.1643167672515498,
+   "norm2_aux": 0.164316767218187,
+   "error2_enriched": 1.7049490837891903e-08,
+   "error2_cosine_only": 1.7049491348331705e-08,
+   "error2_subtractive": 1.7082853298600043e-08,
+   "rel_rms_enriched": 0.00032211783085440185,
+   "rel_rms_cosine_only": 0.0003221178356762983,
+   "project_seconds": 6.22011019999627,
+   "pcg_iterations_last": [
+    13,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06530096874093536,
+   "norm2_aux": 0.06530096874093608,
+   "error2_enriched": 1.1055069589592108e-17,
+   "error2_cosine_only": 2.1056742503773675e-17,
+   "error2_subtractive": -2.636779683484747e-16,
+   "rel_rms_enriched": 1.301130712615011e-08,
+   "rel_rms_cosine_only": 1.7957082631679697e-08,
+   "project_seconds": 6.070025600027293,
+   "pcg_iterations_last": [
+    10,
+    10
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7972103521033878,
+   "norm2_aux": 1.797210383802652,
+   "error2_enriched": 6.093404122633107e-07,
+   "error2_cosine_only": 1.99317203527899e-06,
+   "error2_subtractive": 5.77641144250407e-07,
+   "rel_rms_enriched": 0.0005822782060102112,
+   "rel_rms_cosine_only": 0.0010531080605262338,
+   "project_seconds": 6.188784300000407,
+   "pcg_iterations_last": [
+    13,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "exp(t)",
+   "norm2_exact": 3.0417552506093086,
+   "norm2_aux": 3.041755250609381,
+   "error2_enriched": 1.8468320378343365e-28,
+   "error2_cosine_only": 3.709689141238715e-18,
+   "error2_subtractive": 1.3322676295501878e-15,
+   "rel_rms_enriched": 7.792047058752279e-15,
+   "rel_rms_cosine_only": 1.1043497220496338e-09,
+   "project_seconds": 12.099511099979281,
+   "pcg_iterations_last": [
+    13,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.022483089675745166,
+   "norm2_aux": 0.022483089675741103,
+   "error2_enriched": 2.5743770287191373e-23,
+   "error2_cosine_only": 1.710916152138503e-13,
+   "error2_subtractive": -1.4224732503009818e-16,
+   "rel_rms_enriched": 3.383826439223323e-11,
+   "rel_rms_cosine_only": 2.758584977431452e-06,
+   "project_seconds": 12.034848500043154,
+   "pcg_iterations_last": [
+    10,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.008389182589054753,
+   "norm2_aux": 0.008389182589053938,
+   "error2_enriched": 4.925134060337363e-19,
+   "error2_cosine_only": 8.739580067771783e-12,
+   "error2_subtractive": 6.574601973952099e-16,
+   "rel_rms_enriched": 7.662124505202087e-09,
+   "rel_rms_cosine_only": 3.227642752161522e-05,
+   "project_seconds": 12.20611240004655,
+   "pcg_iterations_last": [
+    10,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.1643167672515498,
+   "norm2_aux": 0.16431676723975408,
+   "error2_enriched": 6.027779637254108e-09,
+   "error2_cosine_only": 6.0277797075997735e-09,
+   "error2_subtractive": 6.039575284333409e-09,
+   "rel_rms_enriched": 0.00019153041182927883,
+   "rel_rms_cosine_only": 0.00019153041294688223,
+   "project_seconds": 12.224147000000812,
+   "pcg_iterations_last": [
+    14,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06530096874093536,
+   "norm2_aux": 0.06530096874093619,
+   "error2_enriched": 9.770350066754715e-19,
+   "error2_cosine_only": 1.8611703511186865e-18,
+   "error2_subtractive": -5.689893001203927e-16,
+   "rel_rms_enriched": 3.868078241909256e-09,
+   "rel_rms_cosine_only": 5.3386721405218994e-09,
+   "project_seconds": 12.120116400008556,
+   "pcg_iterations_last": [
+    11,
+    11
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7972103521033878,
+   "norm2_aux": 1.7972103679530849,
+   "error2_enriched": 3.046559810643935e-07,
+   "error2_cosine_only": 9.965403101209972e-07,
+   "error2_subtractive": 2.8880628244465356e-07,
+   "rel_rms_enriched": 0.0004117232559805928,
+   "rel_rms_cosine_only": 0.0007446427741484233,
+   "project_seconds": 12.21508160000667,
+   "pcg_iterations_last": [
+    13,
+    13
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 2.9670928047697704,
+   "norm2_aux": 2.9670928047697904,
+   "error2_enriched": 1.662078056551166e-20,
+   "error2_cosine_only": 4.042001547882117e-10,
+   "error2_subtractive": 4.440892098500626e-16,
+   "rel_rms_enriched": 7.484454330447964e-11,
+   "rel_rms_cosine_only": 1.1671661199826101e-05,
+   "project_seconds": 1.4476105999783613
+  },
+  {
+   "H": 0.95,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.0006047271927435671,
+   "norm2_aux": 0.0006047271927434484,
+   "error2_enriched": 0.0005917915588703534,
+   "error2_cosine_only": 0.0005969765737919044,
+   "error2_subtractive": 0.0005917915588704737,
+   "rel_rms_enriched": 0.9892467545548245,
+   "rel_rms_cosine_only": 0.9935709739393834,
+   "project_seconds": 1.6863836999982595
+  },
+  {
+   "H": 0.95,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.0001020019873899097,
+   "norm2_aux": 0.00010200198738840331,
+   "error2_enriched": 0.00010183848312296684,
+   "error2_cosine_only": 0.00010187969655924533,
+   "error2_subtractive": 0.0001018384831244727,
+   "rel_rms_enriched": 0.999198202672029,
+   "rel_rms_cosine_only": 0.9994003670438355,
+   "project_seconds": 1.8710351000190713
+  },
+  {
+   "H": 0.95,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.10151503857049494,
+   "norm2_aux": 0.10151503857021883,
+   "error2_enriched": 2.0607486658220402e-06,
+   "error2_cosine_only": 2.0663298504886534e-06,
+   "error2_subtractive": 2.0607489419344205e-06,
+   "rel_rms_enriched": 0.004505544896677102,
+   "rel_rms_cosine_only": 0.004511642019395081,
+   "project_seconds": 1.7694119999650866
+  },
+  {
+   "H": 0.95,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06229317067540337,
+   "norm2_aux": 0.06229317067540338,
+   "error2_enriched": 1.0271395894268537e-10,
+   "error2_cosine_only": 1.8266842903177934e-10,
+   "error2_subtractive": 1.0271393457994549e-10,
+   "rel_rms_enriched": 4.0606402581874864e-05,
+   "rel_rms_cosine_only": 5.415162935735905e-05,
+   "project_seconds": 1.934458400006406
+  },
+  {
+   "H": 0.95,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7769689099855837,
+   "norm2_aux": 1.7769689105387705,
+   "error2_enriched": 2.9979396341184628e-06,
+   "error2_cosine_only": 1.3480957643576634e-05,
+   "error2_subtractive": 2.997386441716543e-06,
+   "rel_rms_enriched": 0.001298887469571775,
+   "rel_rms_cosine_only": 0.0027543584439271747,
+   "project_seconds": 1.6179666999960318
+  },
+  {
+   "H": 0.95,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 2.9670928047697704,
+   "norm2_aux": 2.9670928047697904,
+   "error2_enriched": 6.223836607705316e-23,
+   "error2_cosine_only": 2.5592402303638476e-11,
+   "error2_subtractive": 4.440892098500626e-16,
+   "rel_rms_enriched": 4.579979416349915e-12,
+   "rel_rms_cosine_only": 2.936905427446127e-06,
+   "project_seconds": 1.54390000004787
+  },
+  {
+   "H": 0.95,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.0006047271927435671,
+   "norm2_aux": 0.0006047271927434484,
+   "error2_enriched": 0.0005854660300382839,
+   "error2_cosine_only": 0.0005855269867189669,
+   "error2_subtractive": 0.0005854660300384013,
+   "rel_rms_enriched": 0.9839456311931696,
+   "rel_rms_cosine_only": 0.9839968523533031,
+   "project_seconds": 1.8849180999677628
+  },
+  {
+   "H": 0.95,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.0001020019873899097,
+   "norm2_aux": 0.00010200198738840331,
+   "error2_enriched": 0.00010179760211534177,
+   "error2_cosine_only": 0.00010185372608106488,
+   "error2_subtractive": 0.00010179760211684826,
+   "rel_rms_enriched": 0.9989976285455427,
+   "rel_rms_cosine_only": 0.9992729787585576,
+   "project_seconds": 1.514057899999898
+  },
+  {
+   "H": 0.95,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.10151503857049494,
+   "norm2_aux": 0.10151503857021883,
+   "error2_enriched": 5.494376501875716e-07,
+   "error2_cosine_only": 5.500399005800086e-07,
+   "error2_subtractive": 5.494379262949156e-07,
+   "rel_rms_enriched": 0.0023264515692781092,
+   "rel_rms_cosine_only": 0.0023277262568015262,
+   "project_seconds": 1.452756499988027
+  },
+  {
+   "H": 0.95,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06229317067540337,
+   "norm2_aux": 0.06229317067540338,
+   "error2_enriched": 6.695361026881169e-12,
+   "error2_cosine_only": 1.2263508024904817e-11,
+   "error2_subtractive": 6.695338727880085e-12,
+   "rel_rms_enriched": 1.0367326633206015e-05,
+   "rel_rms_cosine_only": 1.4030952082322357e-05,
+   "project_seconds": 1.610200299997814
+  },
+  {
+   "H": 0.95,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7769689099855837,
+   "norm2_aux": 1.7769689105387705,
+   "error2_enriched": 1.1177673689974024e-06,
+   "error2_cosine_only": 5.023601391097808e-06,
+   "error2_subtractive": 1.1172141767268329e-06,
+   "rel_rms_enriched": 0.0007931143337527183,
+   "rel_rms_cosine_only": 0.0016813869460009416,
+   "project_seconds": 2.141614100022707
+  },
+  {
+   "H": 0.95,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 2.9670928047697704,
+   "norm2_aux": 2.9670928047697904,
+   "error2_enriched": 2.463813795792155e-25,
+   "error2_cosine_only": 1.6670383018547481e-12,
+   "error2_subtractive": 4.440892098500626e-16,
+   "rel_rms_enriched": 2.881631056941932e-13,
+   "rel_rms_cosine_only": 7.495614177041006e-07,
+   "project_seconds": 1.7756890000309795
+  },
+  {
+   "H": 0.95,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.0006047271927435671,
+   "norm2_aux": 0.0006047271927434484,
+   "error2_enriched": 9.981734990693688e-10,
+   "error2_cosine_only": 1.2524418403124295e-07,
+   "error2_subtractive": 9.98173617329165e-10,
+   "rel_rms_enriched": 0.0012847637333661382,
+   "rel_rms_cosine_only": 0.014391267138023578,
+   "project_seconds": 2.110035399964545
+  },
+  {
+   "H": 0.95,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.0001020019873899097,
+   "norm2_aux": 0.00010200198738840331,
+   "error2_enriched": 0.00010173277441873456,
+   "error2_cosine_only": 0.0001018203330751869,
+   "error2_subtractive": 0.00010173277442024066,
+   "rel_rms_enriched": 0.9986794824015676,
+   "rel_rms_cosine_only": 0.9991091582230128,
+   "project_seconds": 1.8907795999548398
+  },
+  {
+   "H": 0.95,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.10151503857049494,
+   "norm2_aux": 0.10151503857021883,
+   "error2_enriched": 1.4669949427558222e-07,
+   "error2_cosine_only": 1.4671662170455738e-07,
+   "error2_subtractive": 1.4669977034531545e-07,
+   "rel_rms_enriched": 0.0012021235808571571,
+   "rel_rms_cosine_only": 0.0012021937538506911,
+   "project_seconds": 2.3309402000159025
+  },
+  {
+   "H": 0.95,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06229317067540337,
+   "norm2_aux": 0.06229317067540338,
+   "error2_enriched": 4.420624599089827e-13,
+   "error2_cosine_only": 8.219100001259004e-13,
+   "error2_subtractive": 4.4204223614841e-13,
+   "rel_rms_enriched": 2.663922583875439e-06,
+   "rel_rms_cosine_only": 3.632385337283254e-06,
+   "project_seconds": 2.1888801000313833
+  },
+  {
+   "H": 0.95,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7769689099855837,
+   "norm2_aux": 1.7769689105387705,
+   "error2_enriched": 4.202461092815286e-07,
+   "error2_cosine_only": 1.8880146888356625e-06,
+   "error2_subtractive": 4.1969291686427823e-07,
+   "rel_rms_enriched": 0.00048630858450401324,
+   "rel_rms_cosine_only": 0.0010307723723391189,
+   "project_seconds": 2.254757599963341
+  },
+  {
+   "H": 0.95,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 2.9670928047697704,
+   "norm2_aux": 2.9670928047697904,
+   "error2_enriched": 1.0044408510589453e-27,
+   "error2_cosine_only": 1.1012246489356846e-13,
+   "error2_subtractive": -4.440892098500626e-16,
+   "rel_rms_enriched": 1.83991016374832e-14,
+   "rel_rms_cosine_only": 1.9265150082205051e-07,
+   "project_seconds": 2.2911972000147216
+  },
+  {
+   "H": 0.95,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.0006047271927435671,
+   "norm2_aux": 0.0006047271927434484,
+   "error2_enriched": 2.093362441795334e-12,
+   "error2_cosine_only": 5.6555403816102325e-09,
+   "error2_subtractive": 2.0934810959424843e-12,
+   "rel_rms_enriched": 5.883590865221808e-05,
+   "rel_rms_cosine_only": 0.0030581395885297055,
+   "project_seconds": 2.2406316999695264
+  },
+  {
+   "H": 0.95,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.0001020019873899097,
+   "norm2_aux": 0.00010200198738840331,
+   "error2_enriched": 0.00010163660022533023,
+   "error2_cosine_only": 0.00010176381628507828,
+   "error2_subtractive": 0.00010163660022683659,
+   "rel_rms_enriched": 0.9982073144852236,
+   "rel_rms_cosine_only": 0.9988318350269406,
+   "project_seconds": 2.3659668000182137
+  },
+  {
+   "H": 0.95,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.10151503857049494,
+   "norm2_aux": 0.10151503857021883,
+   "error2_enriched": 3.9016805789129456e-08,
+   "error2_cosine_only": 3.9019095414877506e-08,
+   "error2_subtractive": 3.9017081870929005e-08,
+   "rel_rms_enriched": 0.0006199557094344241,
+   "rel_rms_cosine_only": 0.0006199738996181438,
+   "project_seconds": 2.0899190999916755
+  },
+  {
+   "H": 0.95,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06229317067540337,
+   "norm2_aux": 0.06229317067540338,
+   "error2_enriched": 2.9392971163645184e-14,
+   "error2_cosine_only": 5.506248743263239e-14,
+   "error2_subtractive": 2.9379276789143205e-14,
+   "rel_rms_enriched": 6.869126684116688e-07,
+   "rel_rms_cosine_only": 9.401728269368316e-07,
+   "project_seconds": 2.376096200023312
+  },
+  {
+   "H": 0.95,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7769689099855837,
+   "norm2_aux": 1.7769689105387705,
+   "error2_enriched": 1.5871360969379446e-07,
+   "error2_cosine_only": 7.126340811346831e-07,
+   "error2_subtractive": 1.5816041742944265e-07,
+   "rel_rms_enriched": 0.0002988595717853177,
+   "rel_rms_cosine_only": 0.000633276510449641,
+   "project_seconds": 2.142805200011935
+  },
+  {
+   "H": 0.95,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 2.9670928047697704,
+   "norm2_aux": 2.9670928047697904,
+   "error2_enriched": 4.3579963163294654e-30,
+   "error2_cosine_only": 7.325513920856077e-15,
+   "error2_subtractive": 1.3322676295501878e-15,
+   "rel_rms_enriched": 1.2119309156357972e-15,
+   "rel_rms_cosine_only": 4.968822511056124e-08,
+   "project_seconds": 2.417829599988181
+  },
+  {
+   "H": 0.95,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.0006047271927435671,
+   "norm2_aux": 0.0006047271927434484,
+   "error2_enriched": 7.487704779569095e-15,
+   "error2_cosine_only": 3.4688485910180204e-10,
+   "error2_subtractive": 7.606220341072056e-15,
+   "rel_rms_enriched": 3.5188001962288657e-06,
+   "rel_rms_cosine_only": 0.000757378413843785,
+   "project_seconds": 1.9185770999756642
+  },
+  {
+   "H": 0.95,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.0001020019873899097,
+   "norm2_aux": 0.00010200198738840331,
+   "error2_enriched": 3.613844238124217e-07,
+   "error2_cosine_only": 7.772134310348781e-07,
+   "error2_subtractive": 3.613844253187319e-07,
+   "rel_rms_enriched": 0.05952239508163011,
+   "rel_rms_cosine_only": 0.08729026897770972,
+   "project_seconds": 2.358304199995473
+  },
+  {
+   "H": 0.95,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.10151503857049494,
+   "norm2_aux": 0.10151503857021883,
+   "error2_enriched": 1.0394207064114849e-08,
+   "error2_cosine_only": 1.0394319198711884e-08,
+   "error2_subtractive": 1.0394483149211986e-08,
+   "rel_rms_enriched": 0.000319985640883118,
+   "rel_rms_cosine_only": 0.0003199873669101205,
+   "project_seconds": 1.845238599984441
+  },
+  {
+   "H": 0.95,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06229317067540337,
+   "norm2_aux": 0.06229317067540338,
+   "error2_enriched": 1.9615238318156684e-15,
+   "error2_cosine_only": 3.688475943237337e-15,
+   "error2_subtractive": 1.9567680809018384e-15,
+   "rel_rms_enriched": 1.7745023391093056e-07,
+   "rel_rms_cosine_only": 2.433342600007734e-07,
+   "project_seconds": 2.4738063999684528
+  },
+  {
+   "H": 0.95,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7769689099855837,
+   "norm2_aux": 1.7769689105387705,
+   "error2_enriched": 6.011165056761955e-08,
+   "error2_cosine_only": 2.696221046886755e-07,
+   "error2_subtractive": 5.95584586093878e-08,
+   "rel_rms_enriched": 0.00018392442706589314,
+   "rel_rms_cosine_only": 0.00038952723897772056,
+   "project_seconds": 2.585433300002478
+  },
+  {
+   "H": 0.95,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 2.9670928047697704,
+   "norm2_aux": 2.9670928047697904,
+   "error2_enriched": 4.430479566225937e-31,
+   "error2_cosine_only": 4.890042411143007e-16,
+   "error2_subtractive": 2.220446049250313e-15,
+   "rel_rms_enriched": 3.8642018469279236e-16,
+   "rel_rms_cosine_only": 1.283780420197733e-08,
+   "project_seconds": 2.5902292000246234
+  },
+  {
+   "H": 0.95,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.0006047271927435671,
+   "norm2_aux": 0.0006047271927434484,
+   "error2_enriched": 3.005993714900962e-17,
+   "error2_cosine_only": 2.2704004838161417e-11,
+   "error2_subtractive": 1.4864411784776266e-16,
+   "rel_rms_enriched": 2.2295349521881581e-07,
+   "rel_rms_cosine_only": 0.00019376328393231053,
+   "project_seconds": 2.5283939000219107
+  },
+  {
+   "H": 0.95,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.0001020019873899097,
+   "norm2_aux": 0.00010200198738840331,
+   "error2_enriched": 7.514798237447071e-12,
+   "error2_cosine_only": 1.6617583517612772e-09,
+   "error2_subtractive": 7.516304541114495e-12,
+   "rel_rms_enriched": 0.0002714278118806583,
+   "rel_rms_cosine_only": 0.004036264500864111,
+   "project_seconds": 2.780881999991834
+  },
+  {
+   "H": 0.95,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.10151503857049494,
+   "norm2_aux": 0.10151503857021883,
+   "error2_enriched": 2.7837022114864274e-09,
+   "error2_cosine_only": 2.783713940449002e-09,
+   "error2_subtractive": 2.78397824238219e-09,
+   "rel_rms_enriched": 0.00016559460945875611,
+   "rel_rms_cosine_only": 0.00016559495831987406,
+   "project_seconds": 3.0828166999854147
+  },
+  {
+   "H": 0.95,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06229317067540337,
+   "norm2_aux": 0.06229317067540338,
+   "error2_enriched": 1.3114593958549438e-16,
+   "error2_cosine_only": 2.470758213067885e-16,
+   "error2_subtractive": 1.1796119636642288e-16,
+   "rel_rms_enriched": 4.588357052984331e-08,
+   "rel_rms_cosine_only": 6.297887601243251e-08,
+   "project_seconds": 2.2055731999571435
+  },
+  {
+   "H": 0.95,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7769689099855837,
+   "norm2_aux": 1.7769689105387705,
+   "error2_enriched": 2.2818572647040312e-08,
+   "error2_cosine_only": 1.021766553641117e-07,
+   "error2_subtractive": 2.2265380428265757e-08,
+   "rel_rms_enriched": 0.00011331941470202499,
+   "rel_rms_cosine_only": 0.0002397926827520587,
+   "project_seconds": 1.814246500027366
+  },
+  {
+   "H": 0.95,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "exp(t)",
+   "norm2_exact": 2.9670928047697704,
+   "norm2_aux": 2.9670928047697904,
+   "error2_enriched": 5.359807494490519e-31,
+   "error2_cosine_only": 3.2699825963582485e-17,
+   "error2_subtractive": 1.3322676295501878e-15,
+   "rel_rms_enriched": 4.250196708450615e-16,
+   "rel_rms_cosine_only": 3.319763574628525e-09,
+   "project_seconds": 1.4289896999835037
+  },
+  {
+   "H": 0.95,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.0006047271927435671,
+   "norm2_aux": 0.0006047271927434484,
+   "error2_enriched": 1.2430705985445753e-19,
+   "error2_cosine_only": 1.5107120266484002e-12,
+   "error2_subtractive": 1.1893697832165984e-16,
+   "rel_rms_enriched": 1.4337325604175982e-08,
+   "rel_rms_cosine_only": 4.998170815600152e-05,
+   "project_seconds": 1.677646600001026
+  },
+  {
+   "H": 0.95,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.0001020019873899097,
+   "norm2_aux": 0.00010200198738840331,
+   "error2_enriched": 1.9078885229177388e-14,
+   "error2_cosine_only": 8.365565206993406e-11,
+   "error2_subtractive": 2.0585150337787406e-14,
+   "rel_rms_enriched": 1.3676412175470427e-05,
+   "rel_rms_cosine_only": 0.000905614416808473,
+   "project_seconds": 1.4303892000461929
+  },
+  {
+   "H": 0.95,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.10151503857049494,
+   "norm2_aux": 0.10151503857021883,
+   "error2_enriched": 7.454619263453601e-10,
+   "error2_cosine_only": 7.454622563743845e-10,
+   "error2_subtractive": 7.457379297415301e-10,
+   "rel_rms_enriched": 8.569343300113409e-05,
+   "rel_rms_cosine_only": 8.569345197012229e-05,
+   "project_seconds": 1.6570225000032224
+  },
+  {
+   "H": 0.95,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06229317067540337,
+   "norm2_aux": 0.06229317067540338,
+   "error2_enriched": 8.776586401502417e-18,
+   "error2_cosine_only": 1.655061415164098e-17,
+   "error2_subtractive": 0.0,
+   "rel_rms_enriched": 1.186977804162034e-08,
+   "rel_rms_cosine_only": 1.629997125941315e-08,
+   "project_seconds": 1.499258900003042
+  },
+  {
+   "H": 0.95,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7769689099855837,
+   "norm2_aux": 1.7769689105387705,
+   "error2_enriched": 8.675553578567368e-09,
+   "error2_cosine_only": 3.878281091317164e-08,
+   "error2_subtractive": 8.122361894180585e-09,
+   "rel_rms_enriched": 6.987288630231807e-05,
+   "rel_rms_cosine_only": 0.0001477337516398539,
+   "project_seconds": 1.4404039999935776
+  },
+  {
+   "H": 0.95,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "exp(t)",
+   "norm2_exact": 2.9670928047697704,
+   "norm2_aux": 2.967092804769791,
+   "error2_enriched": 1.0122051019814801e-27,
+   "error2_cosine_only": 2.1885246200328053e-18,
+   "error2_subtractive": 3.1086244689504383e-15,
+   "rel_rms_enriched": 1.8470076567736086e-14,
+   "rel_rms_cosine_only": 8.588358270742768e-10,
+   "project_seconds": 2.6788550000055693,
+   "pcg_iterations_last": [
+    13,
+    13
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.0006047271927435671,
+   "norm2_aux": 0.0006047271927436014,
+   "error2_enriched": 5.778914712224187e-22,
+   "error2_cosine_only": 1.0097942710914915e-13,
+   "error2_subtractive": -3.5670251474773096e-17,
+   "rel_rms_enriched": 9.775599343104044e-10,
+   "rel_rms_cosine_only": 1.292220725480598e-05,
+   "project_seconds": 2.744188600045163,
+   "pcg_iterations_last": [
+    11,
+    13
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.0001020019873899097,
+   "norm2_aux": 0.00010200198738974,
+   "error2_enriched": 7.132594618098941e-17,
+   "error2_cosine_only": 5.256240202390476e-12,
+   "error2_subtractive": 2.411130106336201e-16,
+   "rel_rms_enriched": 8.362178888468919e-07,
+   "rel_rms_cosine_only": 0.0002270038824638343,
+   "project_seconds": 2.937858999997843,
+   "pcg_iterations_last": [
+    11,
+    13
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.10151503857049494,
+   "norm2_aux": 0.10151503857042062,
+   "error2_enriched": 1.996489190673761e-10,
+   "error2_cosine_only": 1.9964896442966426e-10,
+   "error2_subtractive": 1.9972318243688392e-10,
+   "rel_rms_enriched": 4.4347412919646616e-05,
+   "rel_rms_cosine_only": 4.4347417957740534e-05,
+   "project_seconds": 4.5024798000231385,
+   "pcg_iterations_last": [
+    13,
+    13
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06229317067540337,
+   "norm2_aux": 0.0622931706754034,
+   "error2_enriched": 5.876276493650835e-19,
+   "error2_cosine_only": 1.1086548639291199e-18,
+   "error2_subtractive": -6.938893903907228e-18,
+   "rel_rms_enriched": 3.0713611941908268e-09,
+   "rel_rms_cosine_only": 4.218693414409618e-09,
+   "project_seconds": 6.475613199989311,
+   "pcg_iterations_last": [
+    10,
+    10
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7769689099855837,
+   "norm2_aux": 1.7769689101955037,
+   "error2_enriched": 3.2865790825030925e-09,
+   "error2_cosine_only": 1.4692159253582616e-08,
+   "error2_subtractive": 3.0766571512685914e-09,
+   "rel_rms_enriched": 4.300630481319106e-05,
+   "rel_rms_cosine_only": 9.09291013273066e-05,
+   "project_seconds": 3.6184797000023536,
+   "pcg_iterations_last": [
+    13,
+    13
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "exp(t)",
+   "norm2_exact": 2.9670928047697704,
+   "norm2_aux": 2.967092804769791,
+   "error2_enriched": 3.988423451889173e-29,
+   "error2_cosine_only": 1.4653655021052175e-19,
+   "error2_subtractive": 1.7763568394002505e-15,
+   "rel_rms_enriched": 3.666359656506314e-15,
+   "rel_rms_cosine_only": 2.2223242041068232e-10,
+   "project_seconds": 5.946122199995443,
+   "pcg_iterations_last": [
+    14,
+    13
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.0006047271927435671,
+   "norm2_aux": 0.0006047271927436011,
+   "error2_enriched": 5.960906113396425e-24,
+   "error2_cosine_only": 6.758959776289492e-15,
+   "error2_subtractive": -5.5077470362263625e-17,
+   "rel_rms_enriched": 9.928334295742917e-11,
+   "rel_rms_cosine_only": 3.343183247928367e-06,
+   "project_seconds": 5.749097499996424,
+   "pcg_iterations_last": [
+    11,
+    14
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.0001020019873899097,
+   "norm2_aux": 0.00010200198738990691,
+   "error2_enriched": 2.904841123601363e-19,
+   "error2_cosine_only": 3.4656638216757295e-13,
+   "error2_subtractive": 3.1577388273640317e-18,
+   "rel_rms_enriched": 5.336504442815838e-08,
+   "rel_rms_cosine_only": 5.828930801338673e-05,
+   "project_seconds": 5.943387600011192,
+   "pcg_iterations_last": [
+    11,
+    14
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.10151503857049494,
+   "norm2_aux": 0.10151503857047556,
+   "error2_enriched": 5.347526509475981e-11,
+   "error2_cosine_only": 5.347526735082971e-11,
+   "error2_subtractive": 5.3495347041021546e-11,
+   "rel_rms_enriched": 2.2951510934539487e-05,
+   "rel_rms_cosine_only": 2.2951511418690546e-05,
+   "project_seconds": 6.068230799981393,
+   "pcg_iterations_last": [
+    14,
+    13
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06229317067540337,
+   "norm2_aux": 0.06229317067540341,
+   "error2_enriched": 3.935337128347025e-20,
+   "error2_cosine_only": 7.426410268853179e-20,
+   "error2_subtractive": 8.326672684688674e-17,
+   "rel_rms_enriched": 7.948235988721207e-10,
+   "rel_rms_cosine_only": 1.0918657689057028e-09,
+   "project_seconds": 5.916556100011803,
+   "pcg_iterations_last": [
+    11,
+    11
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7769689099855837,
+   "norm2_aux": 1.7769689100652148,
+   "error2_enriched": 1.2452212760525776e-09,
+   "error2_cosine_only": 5.566571722837763e-09,
+   "error2_subtractive": 1.1655854059711146e-09,
+   "rel_rms_enriched": 2.6471792598052526e-05,
+   "rel_rms_cosine_only": 5.5969830264940125e-05,
+   "project_seconds": 5.955692399991676,
+   "pcg_iterations_last": [
+    14,
+    14
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "exp(t)",
+   "norm2_exact": 2.9670928047697704,
+   "norm2_aux": 2.967092804769791,
+   "error2_enriched": 1.0248546380878116e-28,
+   "error2_cosine_only": 9.813744515982541e-21,
+   "error2_subtractive": 8.43769498715119e-15,
+   "rel_rms_enriched": 5.877133694305747e-15,
+   "rel_rms_cosine_only": 5.751111778786722e-11,
+   "project_seconds": 12.233894800010603,
+   "pcg_iterations_last": [
+    14,
+    14
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "sin(140 pi t)",
+   "norm2_exact": 0.0006047271927435671,
+   "norm2_aux": 0.0006047271927435243,
+   "error2_enriched": 8.229765666991873e-24,
+   "error2_cosine_only": 4.52613240682358e-16,
+   "error2_subtractive": -5.702903427273753e-17,
+   "rel_rms_enriched": 1.1665785471932417e-10,
+   "rel_rms_cosine_only": 8.651349921964126e-07,
+   "project_seconds": 11.789019400021061,
+   "pcg_iterations_last": [
+    11,
+    14
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "sin(1000 pi t)",
+   "norm2_exact": 0.0001020019873899097,
+   "norm2_aux": 0.00010200198738992659,
+   "error2_enriched": 1.6241260977644636e-21,
+   "error2_cosine_only": 2.3121237282512845e-14,
+   "error2_subtractive": -1.814683386197613e-17,
+   "rel_rms_enriched": 3.990300069260202e-09,
+   "rel_rms_cosine_only": 1.5055709226571324e-05,
+   "project_seconds": 11.428191800019704,
+   "pcg_iterations_last": [
+    11,
+    14
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "1[0,0.3)",
+   "norm2_exact": 0.10151503857049494,
+   "norm2_aux": 0.10151503857049472,
+   "error2_enriched": 1.4327964834466799e-11,
+   "error2_cosine_only": 1.432796507010148e-11,
+   "error2_subtractive": 1.4333714770664585e-11,
+   "rel_rms_enriched": 1.1880290533604454e-05,
+   "rel_rms_cosine_only": 1.1880290631294826e-05,
+   "project_seconds": 12.068964599980973,
+   "pcg_iterations_last": [
+    14,
+    14
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "|t-1/2|",
+   "norm2_exact": 0.06229317067540337,
+   "norm2_aux": 0.06229317067540341,
+   "error2_enriched": 2.6358051086650554e-21,
+   "error2_cosine_only": 4.974640674237919e-21,
+   "error2_subtractive": 9.020562075079397e-17,
+   "rel_rms_enriched": 2.057010124834885e-10,
+   "rel_rms_cosine_only": 2.8259250545899223e-10,
+   "project_seconds": 11.422478100052103,
+   "pcg_iterations_last": [
+    11,
+    11
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "input": "t^-0.25",
+   "norm2_exact": 1.7769689099855837,
+   "norm2_aux": 1.77696891001581,
+   "error2_enriched": 4.718204782169827e-10,
+   "error2_cosine_only": 2.109200690481197e-09,
+   "error2_subtractive": 4.416167431742224e-10,
+   "rel_rms_enriched": 1.6294779144487054e-05,
+   "rel_rms_cosine_only": 3.445236484752413e-05,
+   "project_seconds": 12.466395499999635,
+   "pcg_iterations_last": [
+    14,
+    14
+   ]
+  }
+ ],
+ "setups": [
+  {
+   "H": 0.55,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 2.3907435000292026,
+   "cond_cosine_gram": 1.6552554204247363,
+   "schur_tail_S": [
+    [
+     3.294618026317406e-08,
+     3.2946180263118537e-08
+    ],
+    [
+     3.2946180263118537e-08,
+     6.429865073030827e-08
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     3.294618017291029e-08,
+     3.294618017291029e-08
+    ],
+    [
+     3.294618014515471e-08,
+     6.429865037627103e-08
+    ]
+   ],
+   "moment_truncation_error": 2.6645352591003757e-14
+  },
+  {
+   "H": 0.55,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 2.50705710001057,
+   "cond_cosine_gram": 1.7756452025195606,
+   "schur_tail_S": [
+    [
+     3.658087419031877e-09,
+     3.658087419005966e-09
+    ],
+    [
+     3.658087419005966e-09,
+     7.227628933781781e-09
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     3.6580873885583287e-09,
+     3.658087360802753e-09
+    ],
+    [
+     3.658087360802753e-09,
+     7.227628717743073e-09
+    ]
+   ],
+   "moment_truncation_error": 2.6645352591003757e-14
+  },
+  {
+   "H": 0.55,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 2.478414500015788,
+   "cond_cosine_gram": 1.9038919727392136,
+   "schur_tail_S": [
+    [
+     4.1635379158834037e-10,
+     4.1635379157605963e-10
+    ],
+    [
+     4.1635379157605963e-10,
+     8.276670825037897e-10
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     4.163538402934819e-10,
+     4.163537015156038e-10
+    ],
+    [
+     4.1635381253790626e-10,
+     8.276669904994094e-10
+    ]
+   ],
+   "moment_truncation_error": 2.6645352591003757e-14
+  },
+  {
+   "H": 0.55,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 2.545853099960368,
+   "cond_cosine_gram": 2.040956857834223,
+   "schur_tail_S": [
+    [
+     4.7972293515111904e-11,
+     4.7972293509282026e-11
+    ],
+    [
+     4.7972293509282026e-11,
+     9.565416850351176e-11
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     4.7972348315994395e-11,
+     4.797226504926755e-11
+    ],
+    [
+     4.797232056041878e-11,
+     9.565406799971754e-11
+    ]
+   ],
+   "moment_truncation_error": 2.6645352591003757e-14
+  },
+  {
+   "H": 0.55,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 2.593028499977663,
+   "cond_cosine_gram": 2.1876623563243016,
+   "schur_tail_S": [
+    [
+     5.561134302207923e-12,
+     5.561134299500637e-12
+    ],
+    [
+     5.561134299500637e-12,
+     1.1105434474377071e-11
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     5.561107130347409e-12,
+     5.561107130347409e-12
+    ],
+    [
+     5.56116264149864e-12,
+     1.11053111151449e-11
+    ]
+   ],
+   "moment_truncation_error": 2.6645352591003757e-14
+  },
+  {
+   "H": 0.55,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 5.378344300028402,
+   "cond_cosine_gram": 2.344794700877874,
+   "schur_tail_S": [
+    [
+     6.466304225783614e-13,
+     6.466304212840588e-13
+    ],
+    [
+     6.466304212840588e-13,
+     1.292282113767065e-12
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     6.466494006929224e-13,
+     6.467881785710006e-13
+    ],
+    [
+     6.467326674197693e-13,
+     1.2921885783612197e-12
+    ]
+   ],
+   "moment_truncation_error": 2.6645352591003757e-14
+  },
+  {
+   "H": 0.55,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 4.184968000045046,
+   "cond_cosine_gram": null,
+   "schur_tail_S": [
+    [
+     7.530298899260684e-14,
+     7.530298837844806e-14
+    ],
+    [
+     7.530298837844806e-14,
+     1.5054898900119526e-13
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     7.527312106958561e-14,
+     7.532863222081687e-14
+    ],
+    [
+     7.543965452327939e-14,
+     1.5054624213917123e-13
+    ]
+   ],
+   "moment_truncation_error": 2.6645352591003757e-14
+  },
+  {
+   "H": 0.55,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "setup_seconds": 5.581299800018314,
+   "cond_cosine_gram": null,
+   "schur_tail_S": [
+    [
+     8.775875335094856e-15,
+     8.775875049661132e-15
+    ],
+    [
+     8.775875049661132e-15,
+     1.7548429874848243e-14
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     8.826273045769994e-15,
+     8.992806499463768e-15
+    ],
+    [
+     8.770761894538737e-15,
+     1.7541523789077473e-14
+    ]
+   ],
+   "moment_truncation_error": 6.328271240363392e-15,
+   "pcg_iterations_setup": [
+    10,
+    10,
+    10,
+    10
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "setup_seconds": 10.516868600039743,
+   "cond_cosine_gram": null,
+   "schur_tail_S": [
+    [
+     1.0231351673014557e-15,
+     1.0231350344187706e-15
+    ],
+    [
+     1.0231350344187706e-15,
+     2.0460767571497056e-15
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     1.27675647831893e-15,
+     7.771561172376096e-16
+    ],
+    [
+     9.992007221626409e-16,
+     1.915134717478395e-15
+    ]
+   ],
+   "moment_truncation_error": 1.609823385706477e-15,
+   "pcg_iterations_setup": [
+    10,
+    10,
+    10,
+    10
+   ]
+  },
+  {
+   "H": 0.55,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "setup_seconds": 20.145267600018997,
+   "cond_cosine_gram": null,
+   "schur_tail_S": [
+    [
+     1.1930468855818931e-16,
+     1.1930462652315555e-16
+    ],
+    [
+     1.1930462652315555e-16,
+     2.3859809089166143e-16
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     2.220446049250313e-16,
+     -2.7755575615628914e-17
+    ],
+    [
+     1.1102230246251565e-16,
+     3.0531133177191805e-16
+    ]
+   ],
+   "moment_truncation_error": 4.996003610813204e-16,
+   "pcg_iterations_setup": [
+    10,
+    10,
+    10,
+    10
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 2.6952204999979585,
+   "cond_cosine_gram": 15.076284106969895,
+   "schur_tail_S": [
+    [
+     2.9987036340709936e-09,
+     2.9987036340675612e-09
+    ],
+    [
+     2.9987036340675612e-09,
+     5.834510485726345e-09
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     2.9987036187506533e-09,
+     2.9987036187506533e-09
+    ],
+    [
+     2.998703646506229e-09,
+     5.834510541369298e-09
+    ]
+   ],
+   "moment_truncation_error": 6.513886652292911e-16
+  },
+  {
+   "H": 0.75,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 2.3558837000164203,
+   "cond_cosine_gram": 21.43330173473999,
+   "schur_tail_S": [
+    [
+     2.5075626411444797e-10,
+     2.5075626411324354e-10
+    ],
+    [
+     2.5075626411324354e-10,
+     4.9468557191273e-10
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     2.507563046094674e-10,
+     2.50756332365043e-10
+    ],
+    [
+     2.507563046094674e-10,
+     4.946855980403342e-10
+    ]
+   ],
+   "moment_truncation_error": 6.513886652292911e-16
+  },
+  {
+   "H": 0.75,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 2.4151522999745794,
+   "cond_cosine_gram": 30.38440656307513,
+   "schur_tail_S": [
+    [
+     2.1562156876479024e-11,
+     2.1562156876048845e-11
+    ],
+    [
+     2.1562156876048845e-11,
+     4.2830481171897316e-11
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     2.1562140961606246e-11,
+     2.1562085450455015e-11
+    ],
+    [
+     2.1562196472757478e-11,
+     4.2830461399745445e-11
+    ]
+   ],
+   "moment_truncation_error": 6.513886652292911e-16
+  },
+  {
+   "H": 0.75,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 2.337383200007025,
+   "cond_cosine_gram": 43.0180423960142,
+   "schur_tail_S": [
+    [
+     1.8798839480292298e-12,
+     1.879883947874537e-12
+    ],
+    [
+     1.879883947874537e-12,
+     3.746952634602303e-12
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     1.8798851364465463e-12,
+     1.879912892022162e-12
+    ],
+    [
+     1.8798851364465463e-12,
+     3.747030463685519e-12
+    ]
+   ],
+   "moment_truncation_error": 6.513886652292911e-16
+  },
+  {
+   "H": 0.75,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 2.4716521999798715,
+   "cond_cosine_gram": 60.868808550349534,
+   "schur_tail_S": [
+    [
+     1.650264410422848e-13,
+     1.6502644098858836e-13
+    ],
+    [
+     1.6502644098858836e-13,
+     3.294902480320803e-13
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     1.6497914145929826e-13,
+     1.6497914145929826e-13
+    ],
+    [
+     1.6503465261052952e-13,
+     3.295697048599777e-13
+    ]
+   ],
+   "moment_truncation_error": 6.513886652292911e-16
+  },
+  {
+   "H": 0.75,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 5.010398100013845,
+   "cond_cosine_gram": 86.10344212912842,
+   "schur_tail_S": [
+    [
+     1.4536676937404132e-14,
+     1.4536676917678154e-14
+    ],
+    [
+     1.4536676917678154e-14,
+     2.904857059212384e-14
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     1.454392162258955e-14,
+     1.4488410471358293e-14
+    ],
+    [
+     1.4516166046973922e-14,
+     2.90878432451791e-14
+    ]
+   ],
+   "moment_truncation_error": 6.513886652292911e-16
+  },
+  {
+   "H": 0.75,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 3.858185799967032,
+   "cond_cosine_gram": null,
+   "schur_tail_S": [
+    [
+     1.2827049092527478e-15,
+     1.2827049020066969e-15
+    ],
+    [
+     1.2827049020066969e-15,
+     2.564316339335674e-15
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     1.3877787807814457e-15,
+     1.3322676295501878e-15
+    ],
+    [
+     1.3877787807814457e-15,
+     2.609024107869118e-15
+    ]
+   ],
+   "moment_truncation_error": 6.513886652292911e-16
+  },
+  {
+   "H": 0.75,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "setup_seconds": 5.094596699986141,
+   "cond_cosine_gram": null,
+   "schur_tail_S": [
+    [
+     1.1327934741722432e-16,
+     1.1327934487001826e-16
+    ],
+    [
+     1.1327934487001826e-16,
+     2.2651040922136183e-16
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     0.0,
+     1.3877787807814457e-16
+    ],
+    [
+     1.6653345369377348e-16,
+     1.6653345369377348e-16
+    ]
+   ],
+   "moment_truncation_error": 2.983724378680108e-16,
+   "pcg_iterations_setup": [
+    13,
+    13,
+    13,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "setup_seconds": 10.231050400005188,
+   "cond_cosine_gram": null,
+   "schur_tail_S": [
+    [
+     1.0008297491665996e-17,
+     1.000829659436386e-17
+    ],
+    [
+     1.000829659436386e-17,
+     2.0014461926797117e-17
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     0.0,
+     -5.551115123125783e-17
+    ],
+    [
+     1.3877787807814457e-16,
+     0.0
+    ]
+   ],
+   "moment_truncation_error": 2.983724378680108e-16,
+   "pcg_iterations_setup": [
+    13,
+    13,
+    13,
+    13
+   ]
+  },
+  {
+   "H": 0.75,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "setup_seconds": 20.63784670003224,
+   "cond_cosine_gram": null,
+   "schur_tail_S": [
+    [
+     8.844275204046314e-19,
+     8.844272027724332e-19
+    ],
+    [
+     8.844272027724332e-19,
+     1.7687607918263894e-18
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     0.0,
+     2.7755575615628914e-17
+    ],
+    [
+     -2.7755575615628914e-17,
+     2.7755575615628914e-17
+    ]
+   ],
+   "moment_truncation_error": 3.885780586188048e-16,
+   "pcg_iterations_setup": [
+    13,
+    13,
+    13,
+    13
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 63,
+   "D": 65,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 2.269502899958752,
+   "cond_cosine_gram": 405.4465193154615,
+   "schur_tail_S": [
+    [
+     9.739429250160068e-11,
+     9.739429250149198e-11
+    ],
+    [
+     9.739429250149198e-11,
+     1.8895144304121496e-10
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     9.739437034639309e-11,
+     9.739437034639309e-11
+    ],
+    [
+     9.73943981019687e-11,
+     1.889515349740023e-10
+    ]
+   ],
+   "moment_truncation_error": 7.4593109467002705e-16
+  },
+  {
+   "H": 0.95,
+   "n": 127,
+   "D": 129,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 2.795432200015057,
+   "cond_cosine_gram": 765.1879546228546,
+   "schur_tail_S": [
+    [
+     6.133901782581264e-12,
+     6.133901782552445e-12
+    ],
+    [
+     6.133901782552445e-12,
+     1.2083282623107383e-11
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     6.13398221105399e-12,
+     6.13398221105399e-12
+    ],
+    [
+     6.134037722205221e-12,
+     1.2083348210900624e-11
+    ]
+   ],
+   "moment_truncation_error": 7.4593109467002705e-16
+  },
+  {
+   "H": 0.95,
+   "n": 255,
+   "D": 257,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 2.7227778999949805,
+   "cond_cosine_gram": 1435.575796469031,
+   "schur_tail_S": [
+    [
+     3.984891436224849e-13,
+     3.984891436147678e-13
+    ],
+    [
+     3.984891436147678e-13,
+     7.909738267194786e-13
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     3.9862557699166246e-13,
+     3.9859782141604683e-13
+    ],
+    [
+     3.9862557699166246e-13,
+     7.910200272576162e-13
+    ]
+   ],
+   "moment_truncation_error": 7.4593109467002705e-16
+  },
+  {
+   "H": 0.95,
+   "n": 511,
+   "D": 513,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 2.773840400041081,
+   "cond_cosine_gram": 2685.6800857406224,
+   "schur_tail_S": [
+    [
+     2.6288736435410017e-14,
+     2.6288736433328996e-14
+    ],
+    [
+     2.6288736433328996e-14,
+     5.237924150303869e-14
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     2.6478819137309983e-14,
+     2.6367796834847468e-14
+    ],
+    [
+     2.6451063561694355e-14,
+     5.244416012573083e-14
+    ]
+   ],
+   "moment_truncation_error": 7.4593109467002705e-16
+  },
+  {
+   "H": 0.95,
+   "n": 1023,
+   "D": 1025,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 3.832005800039042,
+   "cond_cosine_gram": 5017.603048235435,
+   "schur_tail_S": [
+    [
+     1.747605526133483e-15,
+     1.7476055255981767e-15
+    ],
+    [
+     1.7476055255981767e-15,
+     3.488619312033337e-15
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     1.887379141862766e-15,
+     1.8041124150158794e-15
+    ],
+    [
+     1.8596235662471372e-15,
+     3.524958103184872e-15
+    ]
+   ],
+   "moment_truncation_error": 7.4593109467002705e-16
+  },
+  {
+   "H": 0.95,
+   "n": 2047,
+   "D": 2049,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 11.862155599985272,
+   "cond_cosine_gram": 9368.326210882555,
+   "schur_tail_S": [
+    [
+     1.166201836099546e-16,
+     1.1662018346371358e-16
+    ],
+    [
+     1.1662018346371358e-16,
+     2.3302038319633533e-16
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     1.6653345369377348e-16,
+     1.6653345369377348e-16
+    ],
+    [
+     2.7755575615628914e-16,
+     3.885780586188048e-16
+    ]
+   ],
+   "moment_truncation_error": 7.4593109467002705e-16
+  },
+  {
+   "H": 0.95,
+   "n": 4095,
+   "D": 4097,
+   "solver": "cholesky",
+   "Naux": 262144,
+   "setup_seconds": 4.142224699957296,
+   "cond_cosine_gram": null,
+   "schur_tail_S": [
+    [
+     7.797123820618895e-18,
+     7.797123780774817e-18
+    ],
+    [
+     7.797123780774817e-18,
+     1.5586892947537792e-17
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     2.220446049250313e-16,
+     2.220446049250313e-16
+    ],
+    [
+     2.498001805406602e-16,
+     1.249000902703301e-16
+    ]
+   ],
+   "moment_truncation_error": 7.4593109467002705e-16
+  },
+  {
+   "H": 0.95,
+   "n": 8191,
+   "D": 8193,
+   "solver": "pcg",
+   "Naux": 524288,
+   "setup_seconds": 5.088824899983592,
+   "cond_cosine_gram": null,
+   "schur_tail_S": [
+    [
+     5.218003472783172e-19,
+     5.218003365728828e-19
+    ],
+    [
+     5.218003365728828e-19,
+     1.0433545850959065e-18
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     3.885780586188048e-16,
+     2.220446049250313e-16
+    ],
+    [
+     3.0531133177191805e-16,
+     0.0
+    ]
+   ],
+   "moment_truncation_error": 7.4593109467002705e-16,
+   "pcg_iterations_setup": [
+    13,
+    13,
+    13,
+    13
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 16383,
+   "D": 16385,
+   "solver": "pcg",
+   "Naux": 1048576,
+   "setup_seconds": 11.242528399976436,
+   "cond_cosine_gram": null,
+   "schur_tail_S": [
+    [
+     3.493661415741015e-20,
+     3.4936611322155684e-20
+    ],
+    [
+     3.4936611322155684e-20,
+     6.986498911720668e-20
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     4.996003610813204e-16,
+     0.0
+    ],
+    [
+     3.3306690738754696e-16,
+     6.938893903907228e-17
+    ]
+   ],
+   "moment_truncation_error": 7.4593109467002705e-16,
+   "pcg_iterations_setup": [
+    14,
+    14,
+    14,
+    14
+   ]
+  },
+  {
+   "H": 0.95,
+   "n": 32767,
+   "D": 32769,
+   "solver": "pcg",
+   "Naux": 2097152,
+   "setup_seconds": 19.38997310004197,
+   "cond_cosine_gram": null,
+   "schur_tail_S": [
+    [
+     2.3397010763490867e-21,
+     2.3397003042166127e-21
+    ],
+    [
+     2.3397003042166127e-21,
+     4.6791262167074555e-21
+    ]
+   ],
+   "schur_subtractive": [
+    [
+     -2.220446049250313e-16,
+     4.163336342344337e-16
+    ],
+    [
+     2.220446049250313e-16,
+     6.938893903907228e-17
+    ]
+   ],
+   "moment_truncation_error": 7.4593109467002705e-16,
+   "pcg_iterations_setup": [
+    14,
+    14,
+    14,
+    14
+   ]
+  }
+ ],
+ "seconds": 795.9084377999534,
+ "status": "PASS"
+}

@@ -1,0 +1,18 @@
+{
+ "m": 32000,
+ "n": 256,
+ "D": 258,
+ "N_aux_grid": 2048,
+ "total_s": 76.41168660006952,
+ "coords_s": 61.06893339997623,
+ "peak_working_set_GiB": 0.48847198486328125,
+ "peak_commit_GiB": 0.5623283386230469,
+ "baseline_working_set_GiB_after_imports": 0.053955078125,
+ "tracemalloc_peak_GiB": 0.43912429083138704,
+ "Z_array_GiB": 0.061511993408203125,
+ "dense_K_GiB": 7.62939453125,
+ "sum_E2_over_tau2": 3.6098659766632126e-06,
+ "python": "3.11.16",
+ "numpy": "2.4.6",
+ "platform": "win32"
+}

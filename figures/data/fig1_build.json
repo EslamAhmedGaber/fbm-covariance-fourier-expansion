@@ -1,0 +1,72 @@
+{
+ "width_cm": 16.4,
+ "height_cm": 11.8,
+ "overfull_or_underfull": [],
+ "fonts": [
+  {
+   "name": "ANTVSN+LMMathSymbols8-Regular",
+   "type": "pfa"
+  },
+  {
+   "name": "DGKQGU+LMMathItalic10-Regular",
+   "type": "pfa"
+  },
+  {
+   "name": "DQEBJD+LMMathSymbols10-Regular",
+   "type": "pfa"
+  },
+  {
+   "name": "EFEWPE+LMRoman9-Regular",
+   "type": "pfa"
+  },
+  {
+   "name": "FDQFID+LMMathItalic7-Regular",
+   "type": "pfa"
+  },
+  {
+   "name": "GAJJBS+LMMathItalic9-Regular",
+   "type": "pfa"
+  },
+  {
+   "name": "HJADMU+LMRoman12-Regular",
+   "type": "pfa"
+  },
+  {
+   "name": "INCYJR+LMMathItalic8-Regular",
+   "type": "pfa"
+  },
+  {
+   "name": "LNPUMK+LMRoman7-Regular",
+   "type": "pfa"
+  },
+  {
+   "name": "MNFJLP+LMMathSymbols9-Regular",
+   "type": "pfa"
+  },
+  {
+   "name": "MOZWWU+LMRoman10-Bold",
+   "type": "pfa"
+  },
+  {
+   "name": "MYRQGH+LMRoman8-Regular",
+   "type": "pfa"
+  },
+  {
+   "name": "PLUZHJ+LMRoman10-Regular",
+   "type": "pfa"
+  },
+  {
+   "name": "TNBWRQ+LMMathItalic12-Regular",
+   "type": "pfa"
+  },
+  {
+   "name": "WEXKAH+LMMathSymbols7-Regular",
+   "type": "pfa"
+  },
+  {
+   "name": "WNWPBE+LMMathExtension10-Regular",
+   "type": "pfa"
+  }
+ ],
+ "type3_fonts": []
+}

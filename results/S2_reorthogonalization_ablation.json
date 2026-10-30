@@ -1,0 +1,65 @@
+{
+ "note": "S2 supplement: ablation of the re-orthogonalization step for the two residual directions (Section 5, step 2).\n\nLargeProjector(H, n, N, reorth=False) skips the second solve; the orthogonality defect max |(G d)[:n]| of the normalized\nresidual directions is recorded with and without it, for H in {0.55, 0.75, 0.95}, n in {4095, 32767} and\nN = min(32 (n + 1), 2^20) as in S2_callable_scaling.  Writes results/S2_reorthogonalization_ablation.json (about 3 minutes).\n",
+ "rows": [
+  {
+   "H": 0.55,
+   "n": 4095,
+   "D": 4097,
+   "N": 131072,
+   "defect_single_solve": 3.583145018517147e-10,
+   "setup_s_single_solve": 4.500951000023633,
+   "defect_reorth": 2.1673294940058152e-18,
+   "setup_s_reorth": 3.3794519000221044
+  },
+  {
+   "H": 0.55,
+   "n": 32767,
+   "D": 32769,
+   "N": 1048576,
+   "defect_single_solve": 2.0257238418810002e-08,
+   "setup_s_single_solve": 24.27912970003672,
+   "defect_reorth": 7.765502160630109e-19,
+   "setup_s_reorth": 27.917357099941
+  },
+  {
+   "H": 0.75,
+   "n": 4095,
+   "D": 4097,
+   "N": 131072,
+   "defect_single_solve": 6.198414308857731e-09,
+   "setup_s_single_solve": 3.7727956000017002,
+   "defect_reorth": 3.61010734724958e-18,
+   "setup_s_reorth": 3.4835316999815404
+  },
+  {
+   "H": 0.75,
+   "n": 32767,
+   "D": 32769,
+   "N": 1048576,
+   "defect_single_solve": 1.0931944627490276e-06,
+   "setup_s_single_solve": 25.980049400008284,
+   "defect_reorth": 9.233760618290885e-18,
+   "setup_s_reorth": 28.4223939999938
+  },
+  {
+   "H": 0.95,
+   "n": 4095,
+   "D": 4097,
+   "N": 131072,
+   "defect_single_solve": 1.520399648017075e-08,
+   "setup_s_single_solve": 4.094555600080639,
+   "defect_reorth": 1.7133554430750339e-16,
+   "setup_s_reorth": 3.3545080000767484
+  },
+  {
+   "H": 0.95,
+   "n": 32767,
+   "D": 32769,
+   "N": 1048576,
+   "defect_single_solve": 2.7276474631530197e-06,
+   "setup_s_single_solve": 24.208203800022602,
+   "defect_reorth": 1.0646662004757179e-16,
+   "setup_s_reorth": 29.428819100023247
+  }
+ ]
+}

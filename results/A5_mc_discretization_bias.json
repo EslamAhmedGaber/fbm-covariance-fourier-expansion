@@ -1,0 +1,131 @@
+{
+ "note": "A4/A5 supplement: exact time-discretization bias of the Monte Carlo estimators.\n\nThe Monte Carlo comparators sample exact fBm values on a grid and replace Q_w = int_0^1 w B_H^2 by a quadrature sum\nQ_N = sum_j c_j w(t_j) B_H(t_j)^2.  Q_N is a quadratic form of a Gaussian vector, so its Laplace transform is exact:\nE exp(-a Q_N) = prod_j (1 + 2 a mu_j)^(-1/2), mu_j = eigenvalues of diag(sqrt(c w)) C diag(sqrt(c w)),\nC_ij = (t_i^2H + t_j^2H - |t_i - t_j|^2H) / 2.  The difference to L_w(a) is the bias of the Monte Carlo estimator,\nwhich its confidence interval does not contain.\n  A5 rule (app5_weighted_kl, app5_mc_reference): t_j = j/N, j = 1..N, c_j = 1/N, N = 4096, w in {1, 1/t}.\n  A4 rule (app4_analysis): t_j = j/N, trapezoid c_j = 1/N (j < N), 1/(2N) (j = N), N = 1024, w = 1.\nWrites results/A5_mc_discretization_bias.json (under a minute).\n",
+ "rows": [
+  {
+   "study": "A5",
+   "weight": "one",
+   "H": 0.55,
+   "N": 4096,
+   "rule": "right endpoint",
+   "L_N": 0.69107328104896,
+   "bracket_J1024": [
+    0.6911258410439326,
+    0.6911545110445745
+   ],
+   "bias_interval": [
+    -8.122999561444022e-05,
+    -5.255999497255637e-05
+   ],
+   "min_mu": 5.797579578152802e-09,
+   "seconds": 3.8439870999427512
+  },
+  {
+   "study": "A5",
+   "weight": "one",
+   "H": 0.75,
+   "N": 4096,
+   "rule": "right endpoint",
+   "L_N": 0.7350831651346089,
+   "bracket_J1024": [
+    0.735137826271219,
+    0.7351386307488941
+   ],
+   "bias_interval": [
+    -5.546561428515506e-05,
+    -5.4661136610123506e-05
+   ],
+   "min_mu": 1.105302001915037e-10,
+   "seconds": 3.98394039995037
+  },
+  {
+   "study": "A5",
+   "weight": "one",
+   "H": 0.95,
+   "N": 4096,
+   "rule": "right endpoint",
+   "L_N": 0.7676587585473835,
+   "bracket_J1024": [
+    0.7677151178280117,
+    0.7677151258219327
+   ],
+   "bias_interval": [
+    -5.6367274549162794e-05,
+    -5.6359280628193176e-05
+   ],
+   "min_mu": 7.321719119562307e-13,
+   "seconds": 3.585666900034994
+  },
+  {
+   "study": "A5",
+   "weight": "inv_t",
+   "H": 0.55,
+   "N": 4096,
+   "rule": "right endpoint",
+   "L_N": 0.519646644240348,
+   "bracket_J1024": [
+    0.5196588356564029,
+    0.5198612340347868
+   ],
+   "bias_interval": [
+    -0.0002145897944387798,
+    -1.2191416054907478e-05
+   ],
+   "min_mu": 5.831666349671286e-09,
+   "seconds": 3.7099206999409944
+  },
+  {
+   "study": "A5",
+   "weight": "inv_t",
+   "H": 0.75,
+   "N": 4096,
+   "rule": "right endpoint",
+   "L_N": 0.6240004247419481,
+   "bracket_J1024": [
+    0.6240403185017087,
+    0.6240466256053351
+   ],
+   "bias_interval": [
+    -4.620086338702478e-05,
+    -3.9893759760656344e-05
+   ],
+   "min_mu": 1.112697714640982e-10,
+   "seconds": 3.932552900048904
+  },
+  {
+   "study": "A5",
+   "weight": "inv_t",
+   "H": 0.95,
+   "N": 4096,
+   "rule": "right endpoint",
+   "L_N": 0.6932496897961361,
+   "bracket_J1024": [
+    0.6932925143730875,
+    0.6932925945594379
+   ],
+   "bias_interval": [
+    -4.2904763301820914e-05,
+    -4.282457695137243e-05
+   ],
+   "min_mu": 7.376027016144005e-13,
+   "seconds": 3.9332877000560984
+  },
+  {
+   "study": "A4",
+   "weight": "one",
+   "H": 0.75,
+   "N": 1024,
+   "rule": "trapezoid",
+   "L_N": 0.7351377634055195,
+   "bracket_J4096": [
+    0.7351378262732972,
+    0.7351378765415266
+   ],
+   "bias_interval": [
+    -1.131360071182641e-07,
+    -6.286777765041052e-08
+   ],
+   "min_mu": 3.5369790063456764e-09,
+   "seconds": 0.1572753000073135
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "note": "A2 v2 supplement: a stronger exact-GP baseline, to test how sensitive the measured crossover is to the GP code.\n\nSame windows, data model and targets as app2_noisy_reconstruction_v2.py (same seeds), H = 0.75.  Differences:\n  * only the lower triangle of K is evaluated (all that the Cholesky factorization reads): half the kernel calls;\n  * z <= 8: piecewise Chebyshev with gathered coefficients (Clenshaw, no per-panel masks);\n  * z > 8 : asymptotic series in Horner form in w = z^-2 (one power per entry instead of eleven).\nThe covariance is validated entrywise against the v2 builder at m = 1000; posterior means and variances of the\n25 targets are compared with the v2 GP at every m.  Output: results/A2_gp_baseline_strong.json\n",
+ "H": 0.75,
+ "kernel_2e6_z_0_30": {
+  "faster_s": 0.5066973000066355,
+  "v2_table_s": 1.0299029999878258,
+  "max_rel_diff": 1.2212453270876722e-15
+ },
+ "cases": [
+  {
+   "m": 1000,
+   "K_lower_max_abs_diff_vs_v2": 4.440892098500626e-16,
+   "build_s": 0.25303500005975366,
+   "factor_s": 0.012545400066301227,
+   "solve_s": 0.0025736000388860703,
+   "total_s": 0.26815400016494095,
+   "v2_gp_total_s": 0.5372797000454739,
+   "cf_matched_n": 256,
+   "cf_matched_total_s": 1.8092611000174657,
+   "strong_gp_over_cf": 0.14821188614642317
+  },
+  {
+   "m": 2000,
+   "build_s": 0.8089124000398442,
+   "factor_s": 0.05546549998689443,
+   "solve_s": 0.005269699962809682,
+   "total_s": 0.8696475999895483,
+   "v2_gp_total_s": 2.3957738000899553,
+   "cf_matched_n": 256,
+   "cf_matched_total_s": 3.4782973000546917,
+   "strong_gp_over_cf": 0.2500210663349203
+  },
+  {
+   "m": 4000,
+   "build_s": 2.721495399950072,
+   "factor_s": 0.4028917000396177,
+   "solve_s": 0.015760299982503057,
+   "total_s": 3.140147399972193,
+   "v2_gp_total_s": 8.221415200154297,
+   "cf_matched_n": 256,
+   "cf_matched_total_s": 6.721620099968277,
+   "strong_gp_over_cf": 0.46717121070067813
+  },
+  {
+   "m": 8000,
+   "build_s": 10.075074700056575,
+   "factor_s": 2.774377700057812,
+   "solve_s": 0.08185399998910725,
+   "total_s": 12.931306400103495,
+   "v2_gp_total_s": 34.65737679996528,
+   "cf_matched_n": 256,
+   "cf_matched_total_s": 18.106965200044215,
+   "strong_gp_over_cf": 0.7141619955215862
+  },
+  {
+   "m": 10000,
+   "build_s": 17.4318202000577,
+   "factor_s": 5.016065799980424,
+   "solve_s": 0.18098449998069555,
+   "total_s": 22.62887050001882,
+   "v2_gp_total_s": 66.45316629996523,
+   "cf_matched_n": 256,
+   "cf_matched_total_s": 14.549925299943425,
+   "strong_gp_over_cf": 1.5552568163430234
+  }
+ ]
+}

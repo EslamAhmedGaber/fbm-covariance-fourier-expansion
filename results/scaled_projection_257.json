@@ -1,0 +1,272 @@
+{
+  "status": "PASS",
+  "terms": 257,
+  "runs": [
+    {
+      "H": 0.5,
+      "setup_seconds": 118.87315910001053,
+      "batch": {
+        "status": "coefficients_numerically_resolved",
+        "outputs": 1,
+        "terms": 257,
+        "seconds": 0.5587318000034429,
+        "tolerance": 1e-08,
+        "shared_dual_evaluations": 8064,
+        "scalar_input_evaluations": 8064,
+        "quadrature_error_estimate": 4.441421516420648e-13,
+        "row_refinement_differences": [
+          0.0
+        ],
+        "row_resolved": [
+          true
+        ],
+        "quadrature_status": [
+          0,
+          0
+        ],
+        "qualification": "Estimated coefficient accuracy, not a certified truncation error."
+      },
+      "inputs": [
+        {
+          "input": "high_frequency",
+          "reference_seconds": 0.27227199997287244,
+          "reference_digits": 90,
+          "rows": [
+            {
+              "D": 65,
+              "best_projection_error2": 0.4961172026735764,
+              "computed_error2": 0.4961172026735764,
+              "norm2": 0.5,
+              "relative_rms": 0.9961096352044552,
+              "coefficient_error_l2": 8.912974113214669e-15,
+              "target_met": false
+            },
+            {
+              "D": 129,
+              "best_projection_error2": 0.49020169942349795,
+              "computed_error2": 0.49020169942349795,
+              "norm2": 0.5,
+              "relative_rms": 0.9901532198841733,
+              "coefficient_error_l2": 3.645743651884738e-14,
+              "target_met": false
+            },
+            {
+              "D": 257,
+              "best_projection_error2": 2.2382691408483824e-06,
+              "computed_error2": 2.2382691408483824e-06,
+              "norm2": 0.5,
+              "relative_rms": 0.00211578313673608,
+              "coefficient_error_l2": 1.3102246889662114e-13,
+              "target_met": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "H": 0.75,
+      "setup_seconds": 111.39976379997097,
+      "batch": {
+        "status": "coefficients_numerically_resolved",
+        "outputs": 2,
+        "terms": 257,
+        "seconds": 4.245698000013363,
+        "tolerance": 1e-08,
+        "shared_dual_evaluations": 14742,
+        "scalar_input_evaluations": 29484,
+        "quadrature_error_estimate": 6.231702211459397e-10,
+        "row_refinement_differences": [
+          1.6797358965798996e-19,
+          7.23882245326423e-11
+        ],
+        "row_resolved": [
+          true,
+          true
+        ],
+        "quadrature_status": [
+          0,
+          0
+        ],
+        "qualification": "Estimated coefficient accuracy, not a certified truncation error."
+      },
+      "inputs": [
+        {
+          "input": "high_frequency",
+          "reference_seconds": 1.7615648999926634,
+          "reference_digits": 90,
+          "rows": [
+            {
+              "D": 65,
+              "best_projection_error2": 0.022211378904408056,
+              "computed_error2": 0.022211378904408056,
+              "norm2": 0.022483089675745162,
+              "relative_rms": 0.9939390740419142,
+              "coefficient_error_l2": 4.6423786632875195e-12,
+              "target_met": false
+            },
+            {
+              "D": 129,
+              "best_projection_error2": 0.02197030080864281,
+              "computed_error2": 0.02197030080864281,
+              "norm2": 0.022483089675745162,
+              "relative_rms": 0.98853034453094,
+              "coefficient_error_l2": 1.603186965518484e-11,
+              "target_met": false
+            },
+            {
+              "D": 257,
+              "best_projection_error2": 5.687941453530826e-08,
+              "computed_error2": 5.687941453531123e-08,
+              "norm2": 0.022483089675745162,
+              "relative_rms": 0.0015905581906003807,
+              "coefficient_error_l2": 5.4526866646809374e-11,
+              "target_met": true
+            }
+          ]
+        },
+        {
+          "input": "singular",
+          "reference_seconds": 1.404701900028158,
+          "reference_digits": 90,
+          "rows": [
+            {
+              "D": 65,
+              "best_projection_error2": 0.17625124731308728,
+              "computed_error2": 0.17625124731308728,
+              "norm2": 6.34135147785599,
+              "relative_rms": 0.16671519585624472,
+              "coefficient_error_l2": 2.90295938558666e-11,
+              "target_met": false
+            },
+            {
+              "D": 129,
+              "best_projection_error2": 0.13295019793943233,
+              "computed_error2": 0.13295019793943233,
+              "norm2": 6.34135147785599,
+              "relative_rms": 0.14479500542780233,
+              "coefficient_error_l2": 9.263559904110592e-11,
+              "target_met": false
+            },
+            {
+              "D": 257,
+              "best_projection_error2": 0.10052168106041377,
+              "computed_error2": 0.10052168106041377,
+              "norm2": 6.34135147785599,
+              "relative_rms": 0.12590383500210228,
+              "coefficient_error_l2": 3.094102264623942e-10,
+              "target_met": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "H": 0.95,
+      "setup_seconds": 111.66574259998742,
+      "batch": {
+        "status": "coefficients_numerically_resolved",
+        "outputs": 2,
+        "terms": 257,
+        "seconds": 3.898911700001918,
+        "tolerance": 1e-08,
+        "shared_dual_evaluations": 13986,
+        "scalar_input_evaluations": 27972,
+        "quadrature_error_estimate": 4.731182238850204e-10,
+        "row_refinement_differences": [
+          9.713181206565661e-17,
+          5.061025555519707e-11
+        ],
+        "row_resolved": [
+          true,
+          true
+        ],
+        "quadrature_status": [
+          0,
+          0
+        ],
+        "qualification": "Estimated coefficient accuracy, not a certified truncation error."
+      },
+      "inputs": [
+        {
+          "input": "high_frequency",
+          "reference_seconds": 2.7285262000514194,
+          "reference_digits": 90,
+          "rows": [
+            {
+              "D": 65,
+              "best_projection_error2": 0.0005917915588683761,
+              "computed_error2": 0.0005917915588683761,
+              "norm2": 0.0006047271927435657,
+              "relative_rms": 0.9892467545531729,
+              "coefficient_error_l2": 3.046771798722595e-11,
+              "target_met": false
+            },
+            {
+              "D": 129,
+              "best_projection_error2": 0.0005854660300374465,
+              "computed_error2": 0.0005854660300374465,
+              "norm2": 0.0006047271927435657,
+              "relative_rms": 0.9839456311924669,
+              "coefficient_error_l2": 1.2149607848186235e-10,
+              "target_met": false
+            },
+            {
+              "D": 257,
+              "best_projection_error2": 9.981734846213436e-10,
+              "computed_error2": 9.981734848492105e-10,
+              "norm2": 0.0006047271927435657,
+              "relative_rms": 0.0012847637242146526,
+              "coefficient_error_l2": 4.773541570498315e-10,
+              "target_met": true
+            }
+          ]
+        },
+        {
+          "input": "singular",
+          "reference_seconds": 1.812340700009372,
+          "reference_digits": 90,
+          "rows": [
+            {
+              "D": 65,
+              "best_projection_error2": 0.0022431399938603884,
+              "computed_error2": 0.0022431399938603906,
+              "norm2": 5.044715018965029,
+              "relative_rms": 0.021086760749570423,
+              "coefficient_error_l2": 1.4905956942402478e-09,
+              "target_met": false
+            },
+            {
+              "D": 129,
+              "best_projection_error2": 0.0012763466610583093,
+              "computed_error2": 0.0012763466610583446,
+              "norm2": 5.044715018965029,
+              "relative_rms": 0.0159061840930458,
+              "coefficient_error_l2": 5.945375470768802e-09,
+              "target_met": false
+            },
+            {
+              "D": 257,
+              "best_projection_error2": 0.0007296367767258394,
+              "computed_error2": 0.0007296367767263836,
+              "norm2": 5.044715018965029,
+              "relative_rms": 0.01202638324200912,
+              "coefficient_error_l2": 2.3327414042555866e-08,
+              "target_met": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "target_relative_rms": 0.01,
+  "qualification": "Same production callable procedure; family-specific identities only validate errors. No universal complexity or convergence-rate claim.",
+  "seconds": 358.6660959000001,
+  "source_hashes": {
+    "run_scaled_projection.py": "ef0795d30928cbc8c9e2ad3a8f8828b91e9a0fef62426aa95e19b83c8dadcbcc",
+    "general_applications.py": "1162c3fdfdbf71ede035f545e8bebbe8cc7f5705222cb0642d4b037b1db8d77d",
+    "automatic_expansion.py": "926431c100df4b5505710d039b0a3fd8fff64715fe66ebbc7c5cbf50b622dcbd",
+    "general_expansion.py": "cd4af11da181a2addf3345e162859f60a052c586908609304a81aa9ed9a65da0",
+    "fractional_projection.py": "708449a8286f0229068ced372e48e3cf77ba997ace0e9d7cdbdbb2f2674884cd",
+    "smooth_enrichment.py": "4cba76c8e4abfc134233cd83c8d54d6be8479345820c9ee1219067d8b768c051"
+  }
+}

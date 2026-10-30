@@ -1,0 +1,20 @@
+{
+  "source": "https://www.metoffice.gov.uk/hadobs/crutem5/",
+  "version": "CRUTEM.5.2.0.0",
+  "licence_note": "British Crown Copyright, Met Office; Open Government Licence v3.0. Cite Osborn et al. (2021), JGR Atmospheres 126, e2019JD032352.",
+  "retrieved_date": "2026-10-30",
+  "files": [
+    {
+      "name": "CRUTEM.5.2.0.0.anomalies.nc",
+      "url": "https://www.metoffice.gov.uk/hadobs/crutem5/data/CRUTEM.5.2.0.0/grids/CRUTEM.5.2.0.0.anomalies.nc",
+      "bytes": 13540171,
+      "sha256": "2540836b4a22ba5d8dfecf7877173357ac37bce3cfddd8b37b6b5569d1e231da"
+    },
+    {
+      "name": "stations/CRUTEM.5.2.0.0.station_files.zip",
+      "url": "https://www.metoffice.gov.uk/hadobs/crutem5/data/CRUTEM.5.2.0.0/stations/CRUTEM.5.2.0.0.station_files.zip",
+      "bytes": 138120697,
+      "sha256": "f3f9c81da9b2b167f6caf99634f3ebd0d78f7f92e4fab4d87255575a3d40df90"
+    }
+  ]
+}

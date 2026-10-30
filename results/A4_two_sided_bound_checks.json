@@ -1,0 +1,53 @@
+{
+ "check": "lower bound G >= (1/2) diag(0, w) with unrestricted a_0, and its proof ingredients",
+ "schur_rows": [
+  {
+   "H": 0.501,
+   "N": 2048,
+   "schur_weighted_min": 0.997553054696793,
+   "schur_weighted_max": 1.00000000000001
+  },
+  {
+   "H": 0.55,
+   "N": 2048,
+   "schur_weighted_min": 0.8917576462061415,
+   "schur_weighted_max": 1.0000000000000102
+  },
+  {
+   "H": 0.75,
+   "N": 2048,
+   "schur_weighted_min": 0.6478498973343058,
+   "schur_weighted_max": 1.0000000000000124
+  },
+  {
+   "H": 0.95,
+   "N": 2048,
+   "schur_weighted_min": 0.5657771195756672,
+   "schur_weighted_max": 1.0000000000017153
+  },
+  {
+   "H": 0.99,
+   "N": 2048,
+   "schur_weighted_min": 0.5618495150722185,
+   "schur_weighted_max": 1.0000000000180806
+  }
+ ],
+ "high_precision": [
+  {
+   "H": "0.75",
+   "N": 40,
+   "one_minus_lambda_max": 1.7468933953255179e-29,
+   "lambda_min": 0.7068265171426409
+  },
+  {
+   "H": "0.95",
+   "N": 40,
+   "one_minus_lambda_max": 2.4341986527217196e-29,
+   "lambda_min": 0.6295486829394671
+  }
+ ],
+ "one_minus_F_inf_on_grid": 0.5005005005005005,
+ "one_minus_F_at_x1000": 0.5005005005005005,
+ "K_lambda_formula_vs_quadrature_rel": 2.4249608166813567e-14,
+ "K_lambda_schur_minus_half_min_eig": 0.002190259883925072
+}

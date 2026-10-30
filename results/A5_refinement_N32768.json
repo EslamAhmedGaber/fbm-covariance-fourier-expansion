@@ -1,0 +1,62 @@
+{
+ "note": "A5 supplement: refinement in N of the computed brackets (error-contract item (i), the Fourier stage).\n\nRepeats the w = 1/t cases at J = 1024, n = 2047 with N = 32768 auxiliary cosines (twice the N = 16384 of\nA5_weighted_kl.json) and records the change of the bracket ends for L_w(1).  The change estimates the effect of the\nFourier stage (aliasing and omitted cosine tail) on the computed coordinates; it is an estimate, not a bound.\nWrites results/A5_refinement_N32768.json (about 5 minutes).\n",
+ "J": 1024,
+ "N": 32768,
+ "N_base": 16384,
+ "rows": [
+  {
+   "H": 0.55,
+   "bracket_N": [
+    0.5196588364455772,
+    0.5198608467817192
+   ],
+   "bracket_base": [
+    0.5196588356564029,
+    0.5198612340347868
+   ],
+   "change_lo": 7.891742814791769e-10,
+   "change_hi": -3.872530676130026e-07,
+   "width_base": 0.0002023983783838723,
+   "max_change_over_width": 0.0019133209994327703,
+   "trace_gap_delta": 0.00038866092089318016,
+   "trace_gap_delta_base": 0.0003894073560342104,
+   "seconds": 80.56814799993299
+  },
+  {
+   "H": 0.75,
+   "bracket_N": [
+    0.624040318631529,
+    0.6240466123642551
+   ],
+   "bracket_base": [
+    0.6240403185017087,
+    0.6240466256053351
+   ],
+   "change_lo": 1.2982026564856142e-10,
+   "change_hi": -1.3241080010217843e-08,
+   "width_base": 6.307103626368438e-06,
+   "max_change_over_width": 0.0020993915423967616,
+   "trace_gap_delta": 1.0085407626481135e-05,
+   "trace_gap_delta_base": 1.0106833752465683e-05,
+   "seconds": 84.79880749993026
+  },
+  {
+   "H": 0.95,
+   "bracket_N": [
+    0.6932925144955037,
+    0.693292594128001
+   ],
+   "bracket_base": [
+    0.6932925143730875,
+    0.6932925945594379
+   ],
+   "change_lo": 1.2241618829733625e-10,
+   "change_hi": -4.314368862168294e-10,
+   "width_base": 8.018635044848565e-08,
+   "max_change_over_width": 0.005380428013044423,
+   "trace_gap_delta": 1.1486131923366116e-07,
+   "trace_gap_delta_base": 1.1566019275655037e-07,
+   "seconds": 89.3613751999801
+  }
+ ]
+}

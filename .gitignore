@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+tectonic_cache/
+figures/src/*.log
+figures/src/*.aux
+figures/src/*.pdf
+figures/src/*.out
+
+results/cache/
+results/logs/
+04_DATA/Borehole_NOAA_Huang/huang2016/
+04_DATA/CRUTEM5/*.nc
+04_DATA/CRUTEM5/stations/
+04_DATA/CRUTEM5/derived/
+*.part

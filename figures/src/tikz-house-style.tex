@@ -1,0 +1,65 @@
+% Copied from lowchoonkeat/tikz-paper-figures (MIT licence); style definitions unchanged,
+% commit 2baf5dc9433ab2f3493106df3eadcabc83bdb9ac, assets/tikz-house-style.tex.
+% source https://github.com/lowchoonkeat/tikz-paper-figures; licence text in THIRD_PARTY_NOTICES.md.
+% tikz-house-style.tex
+% Shared palette, node styles and type scale for paper figures.
+% Usage: \input{tikz-house-style} after \usepackage{tikz}.
+% Requires tikz libraries: arrows.meta, calc, fit, backgrounds, shapes.geometric
+
+% ---------------------------------------------------------------- palette
+% Colour carries meaning, not decoration. Reuse the same role for the same
+% meaning across every figure in a manuscript.
+\definecolor{ink}{RGB}{38,42,48}              % body text and rules
+
+\definecolor{primaryfill}{RGB}{231,238,247}   % nominal system under study
+\definecolor{primaryline}{RGB}{62,98,148}
+
+\definecolor{secondaryfill}{RGB}{236,242,236} % repaired, fallback, accepted
+\definecolor{secondaryline}{RGB}{78,112,86}
+
+\definecolor{accentfill}{RGB}{251,240,226}    % alternative branch, learned part
+\definecolor{accentline}{RGB}{176,116,60}
+
+\definecolor{alertfill}{RGB}{252,240,238}     % defect, fault, failure
+\definecolor{alertline}{RGB}{168,60,50}
+
+\definecolor{neutral}{RGB}{96,102,110}        % infrastructure, data rails
+
+% ------------------------------------------------------------- type scale
+% Three levels only. A fourth size is a bug, not a nuance.
+\newcommand{\figcat}[1]{{\scriptsize\itshape #1}}
+\newcommand{\figclaim}[1]{{\footnotesize\bfseries #1}}
+\newcommand{\figdetail}[1]{{\scriptsize #1}}
+\newcommand{\fignote}[1]{{\scriptsize\itshape #1}}
+
+% --------------------------------------------------------------- geometry
+% No blank lines inside \tikzset: an empty line ends the argument and raises
+% "Paragraph ended before \pgfkeys@addpath was complete".
+\tikzset{
+  % Generic container. #1 = border colour, #2 = fill colour.
+  box/.style 2 args={rectangle, draw=#1, fill=#2, line width=0.6pt,
+    align=center, text=ink, inner sep=3pt, outer sep=0pt,
+    execute at begin node={\hyphenpenalty=10000\relax}},
+  % Fixed-size stage cell: equal widths and heights keep rows aligned.
+  stage/.style 2 args={rectangle, draw=#1, fill=#2, line width=0.6pt,
+    align=center, text=ink, text width=3.85cm, minimum height=2.0cm,
+    inner sep=3pt, outer sep=0pt,
+    execute at begin node={\hyphenpenalty=10000\relax}},
+  % Arrows. Nothing thinner than 0.6pt at final size.
+  flow/.style={-{Stealth[length=2.0mm,width=1.5mm]}, line width=0.7pt, draw=ink!75},
+  thinflow/.style={-{Stealth[length=1.8mm,width=1.3mm]}, line width=0.6pt, draw=ink!70},
+  repair/.style={-{Stealth[length=2.2mm,width=1.6mm]}, line width=0.8pt, draw=ink!55},
+  link/.style={<->, line width=0.9pt, draw=primaryline},
+  % Infrastructure rail (bus, backbone, timeline axis).
+  rail/.style={line width=1.4pt, draw=neutral},
+  % Dashed grouping rectangle.
+  group/.style={dashed, draw=ink!45, line width=0.6pt, rounded corners=3pt},
+}
+
+% ------------------------------------------------------------ annotations
+% Broken-link marker: white halo then a cross, so it reads on any line.
+\newcommand{\breakmark}[2]{% #1 = coordinate, #2 = radius
+  \fill[white] (#1) circle (#2);
+  \draw[alertline, line width=1.1pt] ($(#1)+(-#2,-#2)$) -- ($(#1)+(#2,#2)$);
+  \draw[alertline, line width=1.1pt] ($(#1)+(-#2,#2)$) -- ($(#1)+(#2,-#2)$);
+}

@@ -1,0 +1,35 @@
+{
+ "note": "S2 supplement: auxiliary length for a discontinuous input (indicator 1[0,0.3), H = 0.75, D = 1025).\n\nFor N = 32, 64 and 128 times (n + 1) the explicit residual energy is computed (a) from N midpoint samples through\nLargeProjector.from_callables (default class) and (b) from exact classical coefficients truncated at N; both are compared\nwith a converged reference from exact coefficients at N = 2^21.  Writes results/S2_auxiliary_length_indicator.json.\n",
+ "H": 0.75,
+ "n": 1023,
+ "D": 1025,
+ "reference_N": 2097152,
+ "E2_reference": 1.0946069478790188e-06,
+ "reference_s": 63.17307590006385,
+ "rows": [
+  {
+   "N_over_n_plus_1": 32,
+   "N": 32768,
+   "E2_sampled": 1.102743011252293e-06,
+   "E2_exact_truncated": 1.0885792220371672e-06,
+   "sampled_rel_to_reference": 0.007432862900275783,
+   "exact_truncated_rel_to_reference": -0.005506749115316012
+  },
+  {
+   "N_over_n_plus_1": 64,
+   "N": 65536,
+   "E2_sampled": 1.0977626861800757e-06,
+   "E2_exact_truncated": 1.092483559054633e-06,
+   "sampled_rel_to_reference": 0.0028829876396925247,
+   "exact_truncated_rel_to_reference": -0.001939864193718277
+  },
+  {
+   "N_over_n_plus_1": 128,
+   "N": 131072,
+   "E2_sampled": 1.0957985173803718e-06,
+   "E2_exact_truncated": 1.0938638356278717e-06,
+   "sampled_rel_to_reference": 0.0010885820738320007,
+   "exact_truncated_rel_to_reference": -0.0006788850121836054
+  }
+ ]
+}
