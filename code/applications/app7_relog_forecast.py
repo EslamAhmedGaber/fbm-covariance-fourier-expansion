@@ -117,4 +117,8 @@ def main(n=256, H_fit=None, src='A7_borehole_realdata_v2.json'):
 
 
 if __name__ == '__main__':
-    main()
+    if sys.argv[1:2] == ['ms']:
+        # hyperparameters from the model selection with the extended sigma_T grid (A7.11); H = 0.75 as the alternative
+        main(H_fit=0.75, src='A7_borehole_realdata_ms.json')
+    else:
+        main()

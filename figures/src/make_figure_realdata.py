@@ -56,7 +56,7 @@ def history_panel(ax, fname, letter, show_legend):
     return {'country': h['country'], 'n_sites': h['n_sites'], 'z_decades': z.tolist(), 'decades': dd[ok].tolist()}
 
 
-def fig10():
+def fig9():
     fig, axs = plt.subplots(2, 2, figsize=(7.0, 4.9), gridspec_kw={'wspace': 0.32, 'hspace': 0.55})
     out = {}
     out['a'] = history_panel(axs[0, 0], 'A7_regional_history_Canada.json', 'a', True)
@@ -119,9 +119,10 @@ def fig10():
                      'by_prior': {k: {kk: vv for kk, vv in v.items() if kk in ('lpd_contrast', 'chi2', 'dof', 'rmse_change_centred')}
                                   for k, v in p['by_prior'].items()}} for p in pairs]
     MF.letter(ax, 'd')
-    MF.save(fig, 'fig10', out)
+    MF.save(fig, 'fig9', out)
 
 
 if __name__ == '__main__':
     MF.style()
-    fig10()
+    fig9()
+# figures renumbered for the revised paper (CovFourier revision)

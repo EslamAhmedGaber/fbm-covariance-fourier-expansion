@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "Please cite this versioned research software when using the code or its numerical results."
 type: software
-title: "Covariance-orthonormal Fourier expansions for fractional Brownian motion: research code"
-version: "1.1.0"
-date-released: "2026-10-30"
+title: "CovFourier: covariance-orthonormal Fourier expansions for fractional Brownian motion (research code)"
+version: "1.2.0"
+date-released: "2026-10-31"
 authors:
   - family-names: Ahmed
     given-names: Eslam

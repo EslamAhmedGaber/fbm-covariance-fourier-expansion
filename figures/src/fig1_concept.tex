@@ -23,58 +23,65 @@
 }
 \begin{document}
 \begin{tikzpicture}[x=1mm,y=-1mm,font=\plotfont]
-\path[use as bounding box] (0,0) rectangle (164,118);
-% Preparation is fixed before any integrand is seen.
-\draw[draw=soft!85!ink,line width=.5pt,dashed,rounded corners=2pt] (.3,.3) rectangle (163.7,39.0);
-\node[anchor=west,font=\headfont] at (4,5.8) {(a) Prepare once};
-\node[anchor=east,label] at (160,5.8) {Fixed $H$, $T$ and dimension $D$};
-\node[card,minimum width=69mm,minimum height=17.5mm] (raw) at (39,20.5) {};
-\node[font=\headfont] at (39,16.0) {Prescribe one nested sequence};
-\node[font=\mathfont] at (39,23.0)
- {$\displaystyle T^{-1/2},\quad t/T,\quad (t/T)^2,\quad h_1,h_2,\ldots$};
-\node[card,minimum width=69mm,minimum height=17.5mm] (basis) at (125,20.5) {};
-\node[font=\headfont] at (125,16.0) {Build the covariance basis};
-\node[font=\mathfont] at (125,23.0) {$A_D=C_DC_D^\top,\qquad v=C_D^{-1}\phi$};
-\draw[flow] (75.5,20.5) -- (88.5,20.5);
-\node[anchor=west,label] at (4,34.1) {Stable cosine block};
-\node[anchor=west,font=\mathfont] at (42,34.1)
- {$\displaystyle \tfrac12 W\preceq S_+\preceq W
- \quad\Longrightarrow\quad \kappa(W^{-1/2}S_+W^{-1/2})\le2$};
-% The repeated input rule has a single direction.
-\node[anchor=west,font=\headfont] at (1,46.4) {(b) Apply the same rule to each input};
-\draw[dependency] (138,39.0) -- (138,53);
-\node[anchor=west,label,fill=white,inner sep=1pt] at (140,46) {reuse};
-\node[card,minimum width=35mm,minimum height=20mm] (input) at (18.5,64) {};
-\node[font=\headfont] at (18.5,58.6) {Admissible input};
-\node[font=\fontsize{12}{14}\selectfont] at (18.5,65.3) {$f\in\HH$};
-\node[label] at (18.5,70.5) {$1/2\le H<1$};
-\node[card,minimum width=53mm,minimum height=20mm] (moments) at (72.5,64) {};
-\node[font=\headfont] at (72.5,58.6) {Compute fixed moments};
-\node[font=\mathfont] at (72.5,65.4) {$b_D(f)=\bigl(\langle f,\phi_j\rangle_H\bigr)_{j<D}$};
-\node[label] at (72.5,70.7) {Dual weights or cosine coefficients};
-\node[card,draw=coral!75!brown,fill=coral!4,minimum width=53mm,minimum height=20mm,line width=.8pt] (coords) at (137,64) {};
-\node[font=\headfont] at (137,58.6) {Shared coordinates};
-\node[font=\fontsize{12}{14}\selectfont] at (137,66.8) {$\gamma_D(f)=C_D^{-1}b_D(f)$};
-\draw[flow] (37.5,64) -- (44.5,64);
-\draw[flow] (100.5,64) -- (109,64);
-% One coordinate representation serves all downstream calculations.
-\node[anchor=west,font=\headfont] at (1,81.0) {(c) Reuse one representation};
-\draw[draw=ink!65,line width=.6pt] (137,74) -- (137,85) -- (27,85);
-\fill[ink!65] (82,85) circle[radius=.55mm];
-\foreach \x in {27,82,137} \draw[flow] (\x,85) -- (\x,89);
-\node[card,minimum width=52mm,minimum height=19.5mm] (approx) at (27,99.8) {};
-\node[card,minimum width=52mm,minimum height=19.5mm] (joint) at (82,99.8) {};
-\node[card,minimum width=52mm,minimum height=19.5mm] (tail) at (137,99.8) {};
-\node[font=\headfont] at (27,94.9) {Approximate the integrand};
-\node[font=\mathfont] at (27,102.4) {$\displaystyle P_Df=\sum_{j<D}\gamma_j(f)v_j$};
-\node[font=\headfont] at (82,94.9) {Joint Gaussian outputs};
-\node[font=\mathfont] at (82,100.8) {$\mathbf I^{(D)}=\Gamma Z,\qquad Z\sim N(0,\mathrm{Id}_D)$};
-\node[font=\mathfont] at (82,106.1) {$K_D=\Gamma\Gamma^\top$};
-\node[font=\headfont] at (137,94.9) {Quantify truncation};
-\node[font=\mathfont] at (137,100.8) {$\displaystyle e_D(f)^2=\|f-P_Df\|_H^2$};
-\node[font=\mathfont] at (137,106.1) {$=\|f\|_H^2-\|\gamma_D(f)\|_2^2$};
-\node[anchor=west,font=\smallfont] at (1,115.0) {Applications};
-\node[anchor=east,font=\smallfont,text=ink!80] at (163,115.0)
- {KL spectra \quad$\cdot$\quad weighted functionals \quad$\cdot$\quad sensors \quad$\cdot$\quad memory responses};
+\path[use as bounding box] (0,0) rectangle (164,124);
+\newcommand{\step}[1]{\textcolor{coral!80!brown}{#1}\ \ }
+% (a) Preparation: fixed before any integrand is seen.
+\draw[draw=soft!85!ink,line width=.5pt,dashed,rounded corners=2pt] (.3,.3) rectangle (163.7,40.0);
+\node[anchor=west,font=\headfont] at (4,5.8) {(a) Prepare once \ {\normalfont\smallfont steps 2--3}};
+\node[anchor=east,label] at (160,5.8) {independent of the inputs; reused by all of them};
+\node[card,minimum width=48mm,minimum height=24mm] (spec) at (28,24.5) {};
+\node[font=\headfont] at (28,16.0) {\step{2}Specify};
+\node[font=\mathfont] at (28,22.6) {$H\in[\tfrac12,1),\ \ T,\ \ \text{noise}$};
+\node[font=\mathfont] at (28,28.4) {$D=n+2,\ \ N,\ \ \text{tolerance}$};
+\node[label] at (28,33.6) {declared input class};
+\node[card,minimum width=100mm,minimum height=24mm] (basis) at (110,24.5) {};
+\node[font=\headfont] at (110,16.0) {\step{3}Prepare the covariance basis};
+\node[font=\mathfont] at (110,22.6)
+ {$T^{-1/2},\ \ t/T,\ \ (t/T)^2,\ \ h_1,h_2,\ldots\ \ \longmapsto\ \ v=C_D^{-1}\phi$};
+\node[font=\mathfont] at (110,28.6)
+ {$\tfrac12 W\preceq S_+\preceq W\ \ \Longrightarrow\ \ \kappa(W^{-1/2}S_+W^{-1/2})\le2$};
+\node[label] at (110,33.6) {orthonormal in $\|\cdot\|_H$; stable double-precision whitening (Algorithm 2)};
+\draw[flow] (52.5,24.5) -- (59.5,24.5);
+% (b) The same rule for every input.
+\node[anchor=west,font=\headfont] at (1,47.0) {(b) The same rule for every input \ {\normalfont\smallfont steps 1, 4, 5}};
+\draw[dependency] (92,40.0) -- (92,54.5);
+\node[anchor=west,label,fill=white,inner sep=1pt] at (94,47.0) {basis reused};
+\node[card,minimum width=40mm,minimum height=22mm] (express) at (21,66) {};
+\node[font=\headfont] at (21,58.6) {\step{1}Express};
+\node[font=\fontsize{11.5}{13}\selectfont] at (21,65.2) {$I_H(f),\ \ f\in\HH$};
+\node[label] at (21,71.6) {point, window, filter, heat};
+\node[card,draw=coral!75!brown,fill=coral!4,minimum width=50mm,minimum height=22mm,line width=.8pt] (coords) at (74,66) {};
+\node[font=\headfont] at (74,58.6) {\step{4}Coefficients};
+\node[font=\fontsize{11.5}{13}\selectfont] at (74,65.4) {$\gamma(f)=C_D^{-1}b_D(f)$};
+\node[label] at (74,71.6) {one linear rule for every $f$};
+\node[card,minimum width=60mm,minimum height=22mm] (assess) at (133,66) {};
+\node[font=\headfont] at (133,58.6) {\step{5}Assess and refine};
+\node[font=\mathfont] at (133,65.2) {$e_D(f)^2=\|f\|_H^2-\|\gamma(f)\|^2$};
+\node[label] at (133,71.6) {exact identity, computed with allowance};
+\draw[flow] (41.5,66) -- (48.5,66);
+\draw[flow] (99.5,66) -- (102.5,66);
+\draw[dependency] (133,77.2) -- (133,80.2) -- (92,80.2) -- (92,77.2);
+\node[label,fill=white,inner sep=1pt] at (112.5,80.2) {refine $N$ or $D$};
+% (c) Shared coordinates serve every task.
+\node[anchor=west,font=\headfont] at (1,88.4) {(c) Use the coordinates \ {\normalfont\smallfont step 6}};
+\draw[draw=ink!65,line width=.6pt] (74,77.2) -- (74,92.5);
+\draw[draw=ink!65,line width=.6pt] (28,92.5) -- (137,92.5);
+\fill[ink!65] (74,92.5) circle[radius=.55mm];
+\foreach \x in {28,82,137} \draw[flow] (\x,92.5) -- (\x,95.5);
+\node[card,minimum width=52mm,minimum height=17.5mm] (comp) at (28,104.5) {};
+\node[card,minimum width=52mm,minimum height=17.5mm] (inf) at (82,104.5) {};
+\node[card,minimum width=52mm,minimum height=17.5mm] (des) at (137,104.5) {};
+\node[font=\headfont] at (28,99.4) {Compute};
+\node[font=\mathfont] at (28,105.3) {$K_D=\Gamma\Gamma^\top,\ \ \Gamma Z$};
+\node[label] at (28,110.2) {covariances, spectra, brackets};
+\node[font=\headfont] at (82,99.4) {Infer};
+\node[font=\mathfont] at (82,105.3) {posterior in $D$ dimensions};
+\node[label] at (82,110.2) {residual-energy diagnostic $\rho$};
+\node[font=\headfont] at (137,99.4) {Design};
+\node[font=\mathfont] at (137,105.3) {$V_D(S)\le V(S)\le V^+(S)$};
+\node[label] at (137,110.2) {distance to the best design};
+\node[anchor=west,font=\smallfont] at (1,120.3) {Applications (Section 7)};
+\node[anchor=east,font=\smallfont,text=ink!80] at (163,120.3)
+ {representation \ $\cdot$\ computation \ $\cdot$\ inference \ $\cdot$\ measurement design};
 \end{tikzpicture}
 \end{document}

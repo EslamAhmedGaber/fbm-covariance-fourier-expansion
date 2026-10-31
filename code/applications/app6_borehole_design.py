@@ -71,7 +71,8 @@ def exact_check(H, prep, zc, tc, designs, n_exist):
     return out, t_ref, len(idx)
 
 
-def main(H=0.75, ns=(64, 128, 256, 512), n_main=256, dz=1.0, dt=0.25, seed=11, verify=True, fw_iters=400):
+def main(H=0.75, ns=(64, 128, 256, 512), n_main=256, dz=1.0, dt=0.25, seed=11, verify=True, fw_iters=400,
+         out_name='A6_borehole_design.json'):
     rng = np.random.default_rng(seed)
     zc, tc = BP.candidate_grid(dz=dz, dt=dt)
     res = {'config': {'H': H, 'sigma_T': SIGMA_T, 'noise_sd': NOISE, 'nuisance_sd': SB, 'z_exist': Z_EXIST.tolist(),
@@ -150,9 +151,15 @@ def main(H=0.75, ns=(64, 128, 256, 512), n_main=256, dz=1.0, dt=0.25, seed=11, v
                           b['Phi_U_post'], ver[name]['lower_holds'] and ver[name]['upper_holds']), flush=True)
                 res['verification'] = {'designs': ver, 'reference_s': t_ref, 'n_integrands': nint + len(Z_EXIST) + 3}
         res['refinement'].append(entry)
-        with open(os.path.join(RES, 'A6_borehole_design.json'), 'w') as fh:
+        with open(os.path.join(RES, out_name), 'w') as fh:
             json.dump(res, fh, indent=1)
 
 
 if __name__ == '__main__':
-    main()
+    if sys.argv[1:2] == ['H']:
+        # the same design under another Hurst index, one basis: python app6_borehole_design.py H 0.5 256
+        # (the independent reference khref covers H = 1/2, where <f, g>_H is the L2 product)
+        main(H=float(sys.argv[2]), ns=(int(sys.argv[3]),), n_main=int(sys.argv[3]), verify=True,
+             out_name='A6_borehole_design_H%s.json' % sys.argv[2].replace('.', ''))
+    else:
+        main()

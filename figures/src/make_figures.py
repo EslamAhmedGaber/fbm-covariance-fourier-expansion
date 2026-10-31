@@ -4,7 +4,7 @@ Run from the repository root or from this folder:   python figures/src/make_figu
 Each figure is written as PDF + SVG (vector) and PNG (300 dpi); the plotted numbers are written to
 figures/data/<figure>.json.  Figure 1 (method diagram) is built by build_fig1.py.
 Typography: if LaTeX (latex, dvipng) is on PATH, all text is typeset in Latin Modern, as in the manuscript;
-otherwise matplotlib's Computer Modern mathtext is used.  Colours: blue is always the covariance-Fourier expansion.
+otherwise matplotlib's Computer Modern mathtext is used.  Colours: blue is always CovFourier, the covariance-orthonormal Fourier expansion.
 """
 import json
 import math
@@ -28,7 +28,7 @@ DATA = os.path.join(FIG, 'data')
 os.makedirs(DATA, exist_ok=True)
 
 BASE, SMALL, TINY = 8.5, 7.5, 7
-C_OURS = '#1f5fa8'          # covariance-Fourier expansion (this work), every figure
+C_OURS = '#1f5fa8'          # CovFourier (this work), every figure
 C_OURS_LIGHT = '#8fb3dd'    # same, variant (fixed correction switch, cosine-only ablation, bands)
 C_QUAD = '#d17a00'          # triangle Gauss-Jacobi quadrature
 C_GREY = '#6b6b6b'          # cell averages + Toeplitz; Nystrom; exact GP (straightforward build)
@@ -190,7 +190,7 @@ def fig3():
     save(fig, 'fig3', out)
 
 
-def fig4():
+def fig5():
     RR = load('A4_richardson.json')
     arr = np.load(os.path.join(RES, 'A4_eigs_J4096.npz'))
     fig, axs = plt.subplots(1, 3, figsize=(7.3, 2.55), gridspec_kw={'wspace': 0.5})
@@ -239,10 +239,10 @@ def fig4():
     ax.set_title('Explicit bounds, every $n$ ($H=0.75$)')
     ax.legend(loc='upper right', fontsize=TINY - 0.5, handlelength=1.6, title='proved bounds' if False else None); letter(ax, 'c')
     out['normalized_mu_H075_first10'] = (m / scale)[:10].tolist(); out['upper_bound_n1_normalized'] = float(up1)
-    save(fig, 'fig4', out)
+    save(fig, 'fig5', out)
 
 
-def fig5():
+def fig6():
     A = load('A5_weighted_kl.json')
     MC = load('A5_mc_reference.json') if have('A5_mc_reference.json') else None
     fig, axs = plt.subplots(1, 3, figsize=(7.3, 2.6), gridspec_kw={'wspace': 0.5})
@@ -293,10 +293,10 @@ def fig5():
     ax.set_title('Weighted spectrum, $w=1/t$')
     ax.legend(fontsize=TINY - 0.5, loc='lower left'); letter(ax, 'c')
     ax.text(0.98, 0.97, 'faint: $J=256$\nfull: $J=1024$', transform=ax.transAxes, ha='right', va='top', fontsize=TINY - 0.5)
-    save(fig, 'fig5', out)
+    save(fig, 'fig6', out)
 
 
-def fig6():
+def fig7():
     V = load('A2_noisy_reconstruction_v2.json'); S = load('A2_v2_summary.json')
     fig, axs = plt.subplots(1, 3, figsize=(7.3, 2.65), gridspec_kw={'wspace': 0.5})
     import matplotlib.transforms as mtransforms
@@ -311,12 +311,12 @@ def fig6():
     mc = np.r_[m, [r['m'] for r in co]]; tc = np.r_[cf, [r['total_s'] for r in co]]
     tr = mtransforms.blended_transform_factory(ax.transData, ax.transAxes)
     ax.axvspan(380, 12800, color='#eeeeee', lw=0, zorder=0)
-    ax.text(17000, 0.03, 'expansion\nonly', transform=tr, fontsize=TINY - 0.5, va='bottom', ha='left', color='0.35')
+    ax.text(17000, 0.03, 'CovFourier\nonly', transform=tr, fontsize=TINY - 0.5, va='bottom', ha='left', color='0.35')
     ax.loglog(m, gp, 's-', color=C_GREY, ms=3, lw=1.0, label='GP, straightforward')
     ax.loglog(ms_, gs_, 'D-', color='k', ms=2.8, lw=1.0, label='GP, strengthened')
     ax.loglog([ms_[-1], 12000], [gs_[-1], g12], '-', color='k', lw=1.0)
     ax.plot([12000], [g12], 'D', color='k', mfc='white', ms=2.8)
-    ax.loglog(mc, tc, 'o-', color=C_OURS, ms=3, lw=1.6, label='expansion, $n=256$')
+    ax.loglog(mc, tc, 'o-', color=C_OURS, ms=3, lw=1.6, label='CovFourier, $n=256$')
     for r in rt:
         ax.plot([r['m']] * len(r['cf_total_s_reps']), r['cf_total_s_reps'], 'o', mfc='none', mec=C_OURS, ms=3.0, mew=0.6)
     ax.axvline(14000, ymax=0.62, color='k', lw=0.6, ls='--')
@@ -331,7 +331,7 @@ def fig6():
     xs = np.logspace(np.log10(2000), np.log10(1.45e5), 60)
     ax.loglog(xs, 8 * xs ** 2 / 2 ** 30, '-', color=C_GREY, lw=1.1, label='dense $K$ (calculated)')
     mm_ = np.array([p['m'] for p in probes]); pw = np.array([p['peak_working_set_GiB'] for p in probes])
-    ax.loglog(mm_, pw, 'o-', color=C_OURS, ms=3.4, lw=1.5, label='expansion (measured)')
+    ax.loglog(mm_, pw, 'o-', color=C_OURS, ms=3.4, lw=1.5, label='CovFourier (measured)')
     ax.axhline(2.0, color='k', lw=0.6, ls='--')
     ax.text(1.5e5, 1.75, '2 GiB budget', fontsize=TINY - 0.5, ha='right', va='top')
     if len(probes) and probes[-1]['m'] == 128000:
@@ -365,10 +365,10 @@ def fig6():
     ax.set_title('Agreement with the exact GP')
     ax.legend(loc='upper right', fontsize=TINY - 0.5, ncol=1); letter(ax, 'c')
     out['gp_floor'] = fl
-    save(fig, 'fig6', out)
+    save(fig, 'fig7', out)
 
 
-def fig7():
+def fig8():
     import matplotlib.transforms as mtransforms
     fig, axs = plt.subplots(1, 3, figsize=(7.3, 2.65), gridspec_kw={'wspace': 0.45, 'width_ratios': [1.3, 1.0, 1.0]})
     out = {}
@@ -396,8 +396,8 @@ def fig7():
         ok = r['n'] >= 64
         ax.loglog([r['rho']], [y], mk[r['tau']], color=C_OURS, mfc=C_OURS if ok else 'white', ms=3.6, mew=0.8)
     rr = np.logspace(-9, 5, 200)
-    ax.loglog(rr, rr * np.sqrt((1 + rr) / 2), 'k-', lw=0.9, label='bound, Proposition 5')
-    hl = [Line2D([], [], color='k', lw=0.9, label='bound, Prop.~5' if USETEX else 'bound, Prop. 5')]
+    ax.loglog(rr, rr * np.sqrt((1 + rr) / 2), 'k-', lw=0.9, label='bound, Proposition 4')
+    hl = [Line2D([], [], color='k', lw=0.9, label='bound, Prop.~4' if USETEX else 'bound, Prop. 4')]
     hl += [Line2D([], [], marker=mk[tv], color=C_OURS, ls='none', ms=3.6, label=f'$\\tau={tv}$') for tv in (0.003, 0.01, 0.03)]
     ax.legend(handles=hl, loc='upper left', fontsize=TINY - 0.5, handlelength=1.4)
     ax.set_xlim(1e-9, 1e5); ax.set_ylim(1e-11, 1e10)
@@ -412,7 +412,7 @@ def fig7():
                 ('add %d sensors' % I['added_sensors'], I['cf_add_sensors_s'], I['gp_add_sensors_s']),
                 ('add %d targets' % I['targets'], I['cf_targets_s'], I['gp_targets_s'])]
         y = np.arange(len(cats))[::-1]
-        ax.barh(y + 0.18, [c[1] for c in cats], height=0.34, color=C_OURS, label='expansion (basis reused)')
+        ax.barh(y + 0.18, [c[1] for c in cats], height=0.34, color=C_OURS, label='CovFourier (basis reused)')
         ax.barh(y - 0.18, [c[2] for c in cats], height=0.34, color=C_GREY, label='exact GP (block Cholesky)')
         for yy, c in zip(y, cats):
             ax.text(c[1] * 1.15, yy + 0.18, '%.2g s' % c[1], va='center', fontsize=TINY - 0.5)
@@ -424,25 +424,25 @@ def fig7():
         ax.set_ylim(-0.5, len(cats) - 0.15)
         ax.set_xlabel('wall time [s]')
         # direct labels inside the first pair of bars (the caption defines both methods)
-        ax.text(xl * 1.3, y[0] + 0.18, 'expansion', va='center', ha='left', fontsize=TINY - 0.5, color='white')
+        ax.text(xl * 1.3, y[0] + 0.18, 'CovFourier', va='center', ha='left', fontsize=TINY - 0.5, color='white')
         ax.text(xl * 1.3, y[0] - 0.18, 'exact GP', va='center', ha='left', fontsize=TINY - 0.5, color='white')
         out['incremental'] = I
     ax.set_title('Reuse at $m=%s$' % ('8000' if not have('A2_incremental_reuse.json') else str(load('A2_incremental_reuse.json')['m0'])))
     letter(ax, 'c')
-    save(fig, 'fig7', out)
+    save(fig, 'fig8', out)
 
 
-def fig8():
+def fig4():
     R = load('A1_memory_responses_v2.json')['results']
     fig, axs = plt.subplots(2, 3, figsize=(7.0, 4.5), sharex=True, sharey=True, gridspec_kw={'wspace': 0.08, 'hspace': 0.24})
     out = {}
     for i, fam in enumerate(('benign', 'stiff')):
         for j, H in enumerate(('0.55', '0.75', '0.95')):
             ax = axs[i, j]; key = f'{fam}_{H}'; rec = R[key]
-            series = [('CF_fixed_switch', rec['CF_fixed_switch'], C_OURS_LIGHT, 'o', 'expansion, fixed correction switch', 0.9, '--'),
+            series = [('CF_fixed_switch', rec['CF_fixed_switch'], C_OURS_LIGHT, 'o', 'CovFourier, fixed correction switch', 0.9, '--'),
                       ('TGJ', rec['TGJ'], C_QUAD, 's', 'triangle Gauss--Jacobi' if USETEX else 'triangle Gauss-Jacobi', 1.0, '-'),
                       ('CT', rec['CT'], C_GREY, '^', 'cells + Toeplitz', 1.0, '-'),
-                      ('CF', rec['CF'], C_OURS, 'o', 'expansion, a posteriori endpoint rule', 1.6, '-')]
+                      ('CF', rec['CF'], C_OURS, 'o', 'CovFourier, a posteriori endpoint rule', 1.6, '-')]
             out[key] = {}
             for nm, rows, col, mk_, lab, lw, ls in series:
                 fr = _front(rows)
@@ -460,7 +460,7 @@ def fig8():
                bbox_to_anchor=(0.5, -0.035), handlelength=2.0, columnspacing=1.4)
     axs[1, 1].text(0.97, 0.97, 'lower-left = better', transform=axs[1, 1].transAxes, ha='right', va='top', fontsize=TINY)
     axs[1, 2].text(0.03, 0.03, 'dotted: $10^{-9}$', transform=axs[1, 2].transAxes, ha='left', va='bottom', fontsize=TINY)
-    save(fig, 'fig8', out)
+    save(fig, 'fig4', out)
 
 
 if __name__ == '__main__':
@@ -469,3 +469,4 @@ if __name__ == '__main__':
     for name in chosen:
         globals()[name]()
     print('figures written to', FIG, '| LaTeX typography:', USETEX)
+# figures renumbered for the revised paper (CovFourier revision)

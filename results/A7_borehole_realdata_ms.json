@@ -1,0 +1,43 @@
+{
+ "config": {
+  "note": "hyperparameters of the single-history model from A7_model_selection.json (sigma_T grid extended until interior)"
+ },
+ "by_H": {
+  "0.5": {
+   "sigma_T": 4.0,
+   "sigma_g": 0.004,
+   "ll_train": 49878.09195369289,
+   "ll_test": 42133.14888624888
+  },
+  "0.55": {
+   "sigma_T": 4.0,
+   "sigma_g": 0.004,
+   "ll_train": 49808.3727152782,
+   "ll_test": 42086.55575605832
+  },
+  "0.65": {
+   "sigma_T": 5.6,
+   "sigma_g": 0.004,
+   "ll_train": 49677.54654697936,
+   "ll_test": 41955.572440235585
+  },
+  "0.75": {
+   "sigma_T": 8.0,
+   "sigma_g": 0.004,
+   "ll_train": 49517.41523432727,
+   "ll_test": 41799.981598119004
+  },
+  "0.85": {
+   "sigma_T": 11.3,
+   "sigma_g": 0.004,
+   "ll_train": 49325.42928887651,
+   "ll_test": 41623.35872718623
+  },
+  "0.95": {
+   "sigma_T": 22.6,
+   "sigma_g": 0.004,
+   "ll_train": 49028.41137277691,
+   "ll_test": 41335.152821724776
+  }
+ }
+}

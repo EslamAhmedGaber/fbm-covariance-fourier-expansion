@@ -94,7 +94,7 @@ def country_fit(sites, sC, sL, sG, predict=False):
     return ll, res, reg
 
 
-def main(H_list=None, n=256, src='A7_borehole_realdata_v2.json'):
+def main(H_list=None, n=256, src='A7_borehole_realdata_v2.json', out_name='A7_borehole_regional.json'):
     fit = json.load(open(os.path.join(RES, src)))
     cru = V1.Crutem()
     sites, _, _ = V1.select_sites(cru)
@@ -130,7 +130,7 @@ def main(H_list=None, n=256, src='A7_borehole_realdata_v2.json'):
         rec['seconds'] = time.perf_counter() - t0
         out['by_H'][str(H)] = rec
         print('H', H, 'sigma_C %.2f sigma_L %.2f sigma_g %.3f ll %.1f (%.0fs)' % (sC, sL, sG, rec['ll'], rec['seconds']), flush=True)
-        with open(os.path.join(RES, 'A7_borehole_regional.json'), 'w') as fh:
+        with open(os.path.join(RES, out_name), 'w') as fh:
             json.dump(out, fh, indent=0)
 
 

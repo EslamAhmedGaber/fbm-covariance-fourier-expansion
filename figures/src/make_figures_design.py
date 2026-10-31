@@ -23,7 +23,7 @@ def _load(name):
         return json.load(fh)
 
 
-def fig9():
+def fig10():
     d = _load('A6_borehole_design.json')
     main = d['main']; ks = d['config']['ks']
     ref = {r['n']: r for r in d['refinement']}
@@ -102,8 +102,8 @@ def fig9():
         de = sorted([r for r in recs if r['method'] != 'expansion'], key=lambda r: r['m'])
         if ex:
             m = np.array([r['m'] for r in ex])
-            ax.loglog(m, [r['build_s'] + r['greedy_s'] + r['fw_100_s'] for r in ex], 'o-', color=C_OURS, ms=3, label='expansion: coordinates + greedy + 100 FW')
-            ax.loglog(m, [r['greedy_s'] + r['fw_100_s'] for r in ex], 'o:', color=C_OURS, mfc='white', ms=3, label='expansion: greedy + 100 FW')
+            ax.loglog(m, [r['build_s'] + r['greedy_s'] + r['fw_100_s'] for r in ex], 'o-', color=C_OURS, ms=3, label='CovFourier: coordinates + greedy + 100 FW')
+            ax.loglog(m, [r['greedy_s'] + r['fw_100_s'] for r in ex], 'o:', color=C_OURS, mfc='white', ms=3, label='CovFourier: greedy + 100 FW')
         if de:
             m = np.array([r['m'] for r in de])
             ax.loglog(m, [r['factor_s'] + r['greedy_s'] for r in de], 's-', color=C_QUAD, ms=3, label='product quadrature: dense greedy')
@@ -128,11 +128,12 @@ def fig9():
         out['d'] = recs
     ax.set_title('Cost of a certified design')
     MF.letter(ax, 'd')
-    MF.save(fig, 'fig9', out)
+    MF.save(fig, 'fig10', out)
 
 
 if __name__ == '__main__':
     MF.style()
-    which = sys.argv[1:] or ['fig9']
+    which = sys.argv[1:] or ['fig10']
     for w in which:
         globals()[w]()
+# figures renumbered for the revised paper (CovFourier revision)

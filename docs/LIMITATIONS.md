@@ -14,11 +14,13 @@ Recorded timings are hardware-, workload- and configuration-dependent. A dense c
 
 ## Borehole case study
 
-- The real-data likelihood favors `H = 1/2` among the tested H values. This study demonstrates use of the framework; it does not establish empirical superiority of fractional long memory.
+- Fit (training restricted likelihood) and the likelihood of held-out profiles both select `H = 1/2` among the tested values, with the amplitude grid extended until every optimum is interior (`A7_model_selection.json`; in v1.1.0 the amplitude sat at its grid edge for `H >= 0.65`, which understated those likelihoods without changing the ranking). Prediction of the independent CRUTEM5 target does not separate the Hurst indices. This study demonstrates use of the framework; it does not establish empirical superiority of fractional long memory.
 - The first white-noise-only model is an adverse development step. Regional climate, local paths and geological components improve fit but do not establish a correct physical model.
 - Target-error estimates acknowledge that ground temperatures, gridded air temperatures and station observations are different quantities. Some choices were developed after inspecting discrepancies; the subsequent comparisons should not be described as an untouched prospective validation set.
 - Reported 90% site coverage of about 80% still undercovers. Japan remains discrepant; the urban-station checks support a possible explanation rather than proving the discrepancy fully resolved. Splitting China into regions is exploratory.
 - Only five re-logging pairs are available: the reconstruction improves on no-change for three, and the Brownian prior has higher predictive density than the fractional comparison for four. This is limited, mixed forecasting evidence.
 - The real-network design run in `A7_network_design.json` has a loose certificate; the strong design-gap result belongs to the controlled synthetic heat experiment.
+
+The worked example (`P1_worked_example.json`) is synthetic; its exact reference comes from the independent quadrature `covfourier.khref`.
 
 Adverse outputs are retained for transparency. Filenames containing `partial`, `window500`, or the earlier `v1` identify exploratory or sensitivity runs rather than replacements for the main stored results. Figure-to-result mappings are in `NEW_APPLICATIONS.md`.
