@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.3.0 — 2026-11-06
+
+Accompanies the repositioned paper (new title: *CovFourier: shared Gaussian coordinates with exact residual energies for fractional Brownian motion*).
+
+- Law of quadratic functionals from the bracketed spectra (Proposition 4, Section 6.4, Figure 6, Table 4, Supplementary Table S4): `code/studies/law_study.py`, `run_bracket_one.py`, `run_bracket_inv.py`, `check_inversion_dehoog.py`, `law_summary.py`; results `L1`-`L9`.
+- Condition number of the scaled computational core for Figure 3a (`scaled_conditioning.py`, `L6_scaled_conditioning.json`).
+- 30-digit check of the self-contained proof of the closed cosine Gram matrix (`check_prop1_proof.py`, `L0_prop1_proof_check.txt`).
+- Figures redrawn with one visual language (blue CovFourier, orange product quadrature, grey/black references, red open circles Monte Carlo, one sequential scale for `H`); new Figure 6; Figure 4 reduced to `H = 0.75` with the full grid as Supplementary Figure S1; the former Figure 6 is Supplementary Figure S2; Figure 10c adds the certificate under `H = 1/2`.
+- Documentation follows the section numbering of the repositioned paper. No change to `code/covfourier/` or to earlier results.
+
 ## v1.2.0 — 2026-10-31
 
 Accompanies the final revision of the paper (new title: *CovFourier: a covariance-orthonormal Fourier expansion for fractional Brownian motion with two-sided bounds, stable computation and measurement design*).

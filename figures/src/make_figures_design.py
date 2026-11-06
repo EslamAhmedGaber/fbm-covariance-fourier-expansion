@@ -54,7 +54,7 @@ def fig10():
         ax.plot([], [], 'o', color=C_OURS, mfc='white', ms=4.2, mew=0.8, label='exact (quadrature)')
     ax.set_xscale('log'); ax.set_xlabel('new readings $k$'); ax.set_ylabel('$\\Phi=\\sum_t V_t/V_t^{1985}$')
     ax.set_title('Target variance against budget')
-    ax.set_ylim(0.9, 4.15)
+    ax.set_ylim(0.9, 5.0)
     ax.legend(fontsize=TINY - 1.5, loc='upper center', handlelength=1.3, ncol=2, columnspacing=0.8)
     MF.letter(ax, 'a')
     out['a'] = {'k': ks, 'LB': lb.tolist(), 'Phi_D': phiD.tolist(), 'Phi_U': phiU.tolist(), 'random': rnd}
@@ -87,10 +87,18 @@ def fig10():
         ax.loglog(K, w, color=C_OURS, lw=0.6 + 0.35 * i, alpha=0.45 + 0.15 * i,
                   label='approximation: $(\\Phi^+-\\Phi_D)/L$' if i == len(ref) - 1 else None)
         ax.text(K[0] * 0.92, w[0], '$D=%d$' % (n + 2), ha='right', va='center', fontsize=TINY - 1.5, color=C_OURS)
+    # total certificates under both priors; H = 1/2 is the value selected by the real profiles (Section 7.5)
+    tot75 = gap_opt + gap_app
+    ax.loglog(K, tot75, ':', color='k', lw=0.9, label='total certificate, $H=0.75$')
+    d05 = _load('A6_borehole_design_H05.json')
+    tot05 = np.array([f['optim_part'] + f['approx_part'] for f in d05['main']['fw']])
+    ax.loglog(K, tot05, '-.', color=MF.HCOL[0.5], marker='x', ms=3.0, mew=0.7, lw=0.9, label='total certificate, $H=1/2$')
+    out['c_total'] = {'H075': tot75.tolist(), 'H05': tot05.tolist(), 'k': ks}
     ax.set_xlim(K[0] * 0.35, K[-1] * 1.3)
+    ax.set_ylim(5e-7, 1.5)
     ax.set_xlabel('new readings $k$'); ax.set_ylabel('relative size')
     ax.set_title('The two parts of the certificate')
-    ax.legend(fontsize=TINY - 1.5, loc='center right', handlelength=1.4, bbox_to_anchor=(1.0, 0.49))
+    ax.legend(fontsize=TINY - 1.8, loc='upper right', handlelength=1.8, ncol=1, bbox_to_anchor=(1.0, 1.03), labelspacing=0.25)
     MF.letter(ax, 'c')
     out['c'] = {'optim': gap_opt.tolist(), 'approx_by_n': {n: [r['rel_width'] for r in ref[n]['rows']] for n in ref}}
     # (d) cost against the number of candidates

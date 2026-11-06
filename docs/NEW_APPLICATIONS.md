@@ -21,7 +21,7 @@ British Crown Copyright, Met Office, provided under an Open Government License".
 | File | Role |
 |---|---|
 | `code/applications/p1_worked_example.py` | Section 3: worked example of the CovFourier procedure (Table 3) |
-| `code/applications/app7_model_selection.py` | Section 7.5, Table 5: model selection over `H` (sigma_T grid extended until interior), held-out profiles, independent target; regional model at `H = 0.75` |
+| `code/applications/app7_model_selection.py` | Section 6.6, Table 5: model selection over `H` (sigma_T grid extended until interior), held-out profiles, independent target; regional model at `H = 0.75` |
 | `code/covfourier/design.py` | `InfoDesign` (bracket, greedy, Frank-Wolfe lower bound), `DenseGreedy` (exact pivoted-Cholesky greedy), `BlockInfoDesign`, `exact_variances` |
 | `code/covfourier/khref.py` | independent composite quadrature of the covariance norm (reference; dense-GP covariance builder) |
 | `code/covfourier/heat.py` | half-space heat kernels, epoch-mean and heat-content integrands, `project_samples` (the paper's per-input rule on samples) |

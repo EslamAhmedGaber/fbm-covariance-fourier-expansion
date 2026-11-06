@@ -1,0 +1,2 @@
+{"note": "Wall times measured on 2026-11-06 (shared machine, other jobs running) with law_study.law_bracket after the spectrum: five quantile brackets for w=1, H=0.75 (M=4096) and w=1/t, H=0.75 (M=1024); one Talbot evaluation of F_S (M=4096).",
+ "five_quantile_brackets_w1_H075_s": 12.9, "five_quantile_brackets_winv_H075_s": 4.9, "one_cdf_value_s": 0.017}

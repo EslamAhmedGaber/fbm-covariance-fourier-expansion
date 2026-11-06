@@ -13,7 +13,7 @@ from scipy.stats import norm
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import make_figures as MF                                   # noqa: E402
-from make_figures import plt, C_OURS, C_OURS_LIGHT, C_QUAD, C_GREY, TINY   # noqa: E402
+from make_figures import plt, C_OURS, C_OURS_LIGHT, C_QUAD, C_GREY, TINY, HCOL   # noqa: E402
 
 RES = MF.RES
 
@@ -96,7 +96,7 @@ def fig9():
         pairs = rf['pairs']
         yy = np.arange(len(pairs))[::-1]
         priors = list(pairs[0]['by_prior'])
-        mk = {priors[0]: ('o', C_QUAD), priors[1]: ('o', C_OURS)}
+        mk = {priors[0]: ('s', HCOL[0.75]), priors[1]: ('o', C_OURS)}   # H = 0.75 in the Hurst scale; orange is reserved for quadrature
         for y0, p in zip(yy, pairs):
             for nm in priors:
                 r = p['by_prior'][nm]
@@ -110,7 +110,7 @@ def fig9():
         ax.set_xscale('log'); ax.set_ylim(-0.6, len(pairs) + 0.9)
         ax.set_xlabel('RMS error of the centred change profile [K]')
         ax.set_title('Forecast of the later log')
-        hl = [plt.Line2D([], [], marker='o', color=mk[nm][1], ls='none', ms=3.6, label=nm) for nm in priors[::-1]]
+        hl = [plt.Line2D([], [], marker=mk[nm][0], color=mk[nm][1], ls='none', ms=3.6, label=nm) for nm in priors[::-1]]
         hl += [plt.Line2D([], [], marker='x', color='k', ls='none', ms=3.6, label='no change'),
                plt.Line2D([], [], marker='o', color='0.4', mfc='white', ls='none', ms=3.6, label='$\\chi^2/$dof$>2$')]
         ax.legend(handles=hl, fontsize=TINY - 1.5, loc='upper center', handlelength=1.0, ncol=4, columnspacing=0.6,

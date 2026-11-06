@@ -8,7 +8,7 @@
    "type": "pfa"
   },
   {
-   "name": "BIOYKO+LMRoman9-Regular",
+   "name": "CNYERO+LMMathSymbols9-Regular",
    "type": "pfa"
   },
   {
@@ -24,6 +24,10 @@
    "type": "pfa"
   },
   {
+   "name": "HUUOUD+LMMathSymbols6-Regular",
+   "type": "pfa"
+  },
+  {
    "name": "IHIXKK+LMMathItalic7-Regular",
    "type": "pfa"
   },
@@ -32,15 +36,19 @@
    "type": "pfa"
   },
   {
-   "name": "JOPJNA+LMMathSymbols9-Regular",
-   "type": "pfa"
-  },
-  {
    "name": "KISNZV+LMRoman10-Bold",
    "type": "pfa"
   },
   {
+   "name": "LKXCKR+LMRoman9-Regular",
+   "type": "pfa"
+  },
+  {
    "name": "MYRQGH+LMRoman8-Regular",
+   "type": "pfa"
+  },
+  {
+   "name": "OWBMJH+LMMathItalic9-Regular",
    "type": "pfa"
   },
   {
@@ -61,10 +69,6 @@
   },
   {
    "name": "WEXKAH+LMMathSymbols7-Regular",
-   "type": "pfa"
-  },
-  {
-   "name": "YRMXLW+LMMathItalic9-Regular",
    "type": "pfa"
   }
  ],

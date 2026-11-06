@@ -1,12 +1,12 @@
 # CovFourier: covariance-orthonormal Fourier expansion for fractional Brownian motion
 
-Research software accompanying *CovFourier: a covariance-orthonormal Fourier expansion for fractional Brownian motion with two-sided bounds, stable computation and measurement design*, by Eslam Ahmed, Mohamed A. El-Beltagy, Ahmed Etman and Sroor M. Elnady.
+Research software accompanying *CovFourier: shared Gaussian coordinates with exact residual energies for fractional Brownian motion*, by Eslam Ahmed, Mohamed A. El-Beltagy, Ahmed Etman and Sroor M. Elnady.
 
-**v1.2.0 — 31 October 2026.** It accompanies the final revision of the paper: the CovFourier procedure with a worked example, model selection of the borehole study with an amplitude grid extended until every optimum is interior, and the measurement design repeated under the Hurst index selected by the data. Figure numbers follow the revised paper. It is a research-software release, not a claim of journal acceptance. v1.1.0 remains available unchanged.
+**v1.3.0 — 6 November 2026.** It accompanies the repositioned paper: the covariance ordering and the law of quadratic functionals (distribution functions, quantiles and tail probabilities with two-sided bounds, checked against the exact law at `H = 1/2`, the exact law of the discretized functional and Monte Carlo), a numerical check of the proof of the closed cosine Gram matrix, the condition number of the scaled computational core, and figures redrawn with one visual language. Section, figure and table numbers follow the repositioned paper. It is a research-software release, not a claim of journal acceptance. v1.1.0 and v1.2.0 remain available unchanged.
 
 ## One representation, several tasks
 
-CovFourier is a covariance-orthonormal Fourier expansion. For fractional Brownian motion with `1/2 <= H < 1`, it orthonormalizes a fixed nested family of cosines and two polynomial boundary modes in the covariance inner product. Each admissible deterministic integrand is mapped to shared white coordinates by the same coefficient rule. The coordinates support Wiener-integral simulation, covariance calculations, Gaussian conditioning and measurement design; residual energies quantify the projection error.
+CovFourier is a covariance-orthonormal Fourier expansion. For fractional Brownian motion with `1/2 <= H < 1`, it orthonormalizes a fixed nested family of cosines and two polynomial boundary modes in the covariance inner product. Each admissible deterministic integrand is mapped to shared white coordinates by the same coefficient rule. The coordinates support Wiener-integral simulation, covariance calculations, Gaussian conditioning and measurement design; residual energies quantify the projection error. Together, coordinates and residual energies place every covariance matrix of Wiener integrals between `G G^T` and `G G^T + R` (`G` the stacked coordinates, `R` positive semidefinite with the residual energies on its diagonal), so covariance entries, spectra, laws of quadratic functionals, posterior variances and design objectives receive two-sided brackets.
 
 The mathematical construction and its finite-precision implementation are distinguished throughout: arbitrary black-box samples cannot by themselves certify an unresolved function. Reported numerical certificates depend on resolved Fourier coefficients and the stated numerical-error allowances. At `H = 1/2`, the covariance norm becomes the ordinary `L2` norm; omitting the enrichment recovers the classical cosine system.
 
@@ -32,6 +32,7 @@ The worked example of Section 3 of the paper runs all six steps: `python code/ap
 | Worked example | Four observation types and one target through the six steps; the exact posterior variance (independent quadrature) inside the computed bracket for every `D` from 18 to 514 |
 | Stable expansion | Double-precision, matrix-free studies up to `D = 32,769`; comparisons with independent references |
 | Spectra and quadratic functionals | KL eigenvalue studies, weighted functionals including `w(t) = 1/t`, deterministic truncation brackets and Monte Carlo comparisons |
+| Laws of quadratic functionals | Two-sided brackets for distribution functions and quantiles of `int w B_H^2` (`w = 1` and `w = 1/t`); the exact quantiles at `H = 1/2` lie inside the brackets, extrapolated discretized-law quantiles inside in 24 of 25 cases (the last 3.7e-9 below, within the extrapolation uncertainty), Monte Carlo (10^6 paths) consistent in 30 of 30; two inversion routes agree to 3.3e-11. See [docs/LAWS.md](docs/LAWS.md) |
 | Noisy sensors | Experiments up to 128,000 sensors, measured peak RAM 0.68 GiB; a dense float64 covariance alone would occupy about 122 GiB |
 | Multiple responses | Smooth and stiff kernels, including cases where specialized quadrature is preferable |
 | Measurement design | A posterior-variance bracket and a computable bound on design suboptimality; 21,497-candidate synthetic heat experiment, with reported relative gaps 0.021–0.039% under the stated model (`H = 0.75`) and 0.018–0.066% under the `H = 1/2` selected by the real data, each with numerical allowances |
@@ -66,6 +67,7 @@ print(result["coords"] @ z)
 
 - [Original studies, four applications and Figures 1–8](docs/ORIGINAL_APPLICATIONS.md).
 - [Worked example, real-data and design applications, Figures 9–10](docs/NEW_APPLICATIONS.md).
+- [Law of quadratic functionals, Figure 6, Table 4 and Supplementary Table S4 (v1.3.0)](docs/LAWS.md).
 - [External data download and attribution](04_DATA/README.md).
 - [Checks performed for this release](docs/RELEASE_VALIDATION.md).
 
@@ -75,7 +77,7 @@ Stored result files are included. Large regenerable caches and external raw data
 python tools/fetch_data.py --dataset all
 ```
 
-For Figures 2–10 from stored results:
+For Figures 2–10 and Supplementary Figures S1–S2 from stored results:
 
 ```sh
 python figures/src/make_figures.py
@@ -99,6 +101,6 @@ The manuscript draft and private working notes are not distributed here. Scienti
 
 ## Citation and reuse
 
-Please cite the release you use, with [CITATION.cff](CITATION.cff); v1.2.0 accompanies the revised paper. No journal DOI or software DOI is assigned by this repository. The locally prepared v1.0.0 was not previously published at this GitHub address; v1.1.0 is the first public release here.
+Please cite the release you use, with [CITATION.cff](CITATION.cff); v1.3.0 accompanies the repositioned paper. No journal DOI or software DOI is assigned by this repository. The locally prepared v1.0.0 was not previously published at this GitHub address; v1.1.0 is the first public release here.
 
 The code is publicly accessible. A software reuse license has not yet been selected by the authors; public visibility alone does not grant an unrestricted software license. Third-party components retain their own licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). External datasets retain their source terms and attribution requirements.

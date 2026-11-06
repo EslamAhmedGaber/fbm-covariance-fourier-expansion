@@ -64,6 +64,7 @@
 \node[label,fill=white,inner sep=1pt] at (112.5,80.2) {refine $N$ or $D$};
 % (c) Shared coordinates serve every task.
 \node[anchor=west,font=\headfont] at (1,88.4) {(c) Use the coordinates \ {\normalfont\smallfont step 6}};
+\node[anchor=east,font=\smallfont,text=ink!85,fill=white,inner sep=1pt] at (163,88.4) {$\Gamma\Gamma^\top\preceq K\preceq\Gamma\Gamma^\top{+}R$: every quantity monotone in $K$ is bracketed};
 \draw[draw=ink!65,line width=.6pt] (74,77.2) -- (74,92.5);
 \draw[draw=ink!65,line width=.6pt] (28,92.5) -- (137,92.5);
 \fill[ink!65] (74,92.5) circle[radius=.55mm];
@@ -73,15 +74,15 @@
 \node[card,minimum width=52mm,minimum height=17.5mm] (des) at (137,104.5) {};
 \node[font=\headfont] at (28,99.4) {Compute};
 \node[font=\mathfont] at (28,105.3) {$K_D=\Gamma\Gamma^\top,\ \ \Gamma Z$};
-\node[label] at (28,110.2) {covariances, spectra, brackets};
+\node[label] at (28,110.2) {covariances, spectra and laws};
 \node[font=\headfont] at (82,99.4) {Infer};
 \node[font=\mathfont] at (82,105.3) {posterior in $D$ dimensions};
 \node[label] at (82,110.2) {residual-energy diagnostic $\rho$};
 \node[font=\headfont] at (137,99.4) {Design};
 \node[font=\mathfont] at (137,105.3) {$V_D(S)\le V(S)\le V^+(S)$};
 \node[label] at (137,110.2) {distance to the best design};
-\node[anchor=west,font=\smallfont] at (1,120.3) {Applications (Section 7)};
+\node[anchor=west,font=\smallfont] at (1,120.3) {Applications (Section 6)};
 \node[anchor=east,font=\smallfont,text=ink!80] at (163,120.3)
- {representation \ $\cdot$\ computation \ $\cdot$\ inference \ $\cdot$\ measurement design};
+ {representation \ $\cdot$\ spectra and laws \ $\cdot$\ inference \ $\cdot$\ measurement design};
 \end{tikzpicture}
 \end{document}
