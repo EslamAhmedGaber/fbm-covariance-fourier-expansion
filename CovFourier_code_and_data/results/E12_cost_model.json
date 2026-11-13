@@ -1,0 +1,93 @@
+{
+ "experiment": "E12",
+ "kind": "W",
+ "m": 2000,
+ "threads": "1",
+ "per_candidate": [
+  {
+   "H": 0.6,
+   "exact_K": 1.780127199992421,
+   "exact_chol": 0.3342335000052117,
+   "r64": {
+    "CF_prep": 1.7541964999982156,
+    "CF_moments": 2.8014583000040147,
+    "CF_coords": 0.006297899992205203,
+    "CF_bracket_with_U2": 0.03784070000983775,
+    "CF_lower_only": 0.015933499991660938,
+    "IP_features": 0.0547186000039801,
+    "IP_bound": 0.01625100000819657,
+    "CF_total_per_candidate": 4.599793400004273,
+    "IP_total_per_candidate": 0.07096960001217667
+   },
+   "r256": {
+    "CF_prep": 0.06389130000025034,
+    "CF_moments": 19.174322199993185,
+    "CF_coords": 0.02458179999666754,
+    "CF_bracket_with_U2": 0.18463530000008177,
+    "CF_lower_only": 0.12677540000004228,
+    "IP_features": 0.1879938000056427,
+    "IP_bound": 0.11614430000190623,
+    "CF_total_per_candidate": 19.447430599990184,
+    "IP_total_per_candidate": 0.30413810000754893
+   }
+  },
+  {
+   "H": 0.75,
+   "exact_K": 1.5835392000008142,
+   "exact_chol": 0.3787756999954581,
+   "r64": {
+    "CF_prep": 0.6024432999984128,
+    "CF_moments": 1.3174685999983922,
+    "CF_coords": 0.006824600000982173,
+    "CF_bracket_with_U2": 0.0204853000032017,
+    "CF_lower_only": 0.011429699996369891,
+    "IP_features": 0.043266000007861294,
+    "IP_bound": 0.012670299998717383,
+    "CF_total_per_candidate": 1.9472218000009889,
+    "IP_total_per_candidate": 0.055936300006578676
+   },
+   "r256": {
+    "CF_prep": 0.05972760000440758,
+    "CF_moments": 12.660263199999463,
+    "CF_coords": 0.012183300001197495,
+    "CF_bracket_with_U2": 0.09612010000273585,
+    "CF_lower_only": 0.08462510000390466,
+    "IP_features": 0.11002649999863934,
+    "IP_bound": 0.06552779999037739,
+    "CF_total_per_candidate": 12.828294200007804,
+    "IP_total_per_candidate": 0.17555429998901673
+   }
+  },
+  {
+   "H": 0.9,
+   "exact_K": 1.5486003999976674,
+   "exact_chol": 0.5067889000056311,
+   "r64": {
+    "CF_prep": 0.9732826999970712,
+    "CF_moments": 1.292365500004962,
+    "CF_coords": 0.002973900001961738,
+    "CF_bracket_with_U2": 0.010633700003381819,
+    "CF_lower_only": 0.0065128000132972375,
+    "IP_features": 0.018989599993801676,
+    "IP_bound": 0.00636790000135079,
+    "CF_total_per_candidate": 2.279255800007377,
+    "IP_total_per_candidate": 0.025357499995152466
+   },
+   "r256": {
+    "CF_prep": 0.052226599989808165,
+    "CF_moments": 8.93490570000722,
+    "CF_coords": 0.011062500008847564,
+    "CF_bracket_with_U2": 0.07467839999299031,
+    "CF_lower_only": 0.06803799999761395,
+    "IP_features": 0.10503890000109095,
+    "IP_bound": 0.06474720001278911,
+    "CF_total_per_candidate": 9.072873199998867,
+    "IP_total_per_candidate": 0.16978610001388006
+   }
+  }
+ ],
+ "cached_across_H": {
+  "classical_cosine_coefficients_seconds": 0.25038869999116287,
+  "note": "classical cosine coefficients and design arrays are H-free; moments, basis and coordinates are recomputed for every candidate H; IP refactors K_uu and K_fu"
+ }
+}

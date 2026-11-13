@@ -1,5 +1,9 @@
 # CovFourier: covariance-orthonormal Fourier expansion for fractional Brownian motion
 
+Release v1.4.0 accompanies *CovFourier: Gaussian-process learning with two-sided evidence bounds for fractional Brownian motion*. The [reproduction package](CovFourier_code_and_data/README.md) contains the implementation, experimental protocol, results, figures and public data. The [release archive](https://github.com/EslamAhmedGaber/fbm-covariance-fourier-expansion/releases/tag/v1.4.0) contains the same package as supplied with the manuscript. For the borehole study, follow the CRUTEM5 download instructions in the package.
+
+## Earlier CovFourier studies
+
 Research software accompanying *CovFourier: shared Gaussian coordinates with exact residual energies for fractional Brownian motion*, by Eslam Ahmed, Mohamed A. El-Beltagy, Ahmed Etman and Sroor M. Elnady.
 
 **v1.3.0 — 6 November 2026.** It accompanies the repositioned paper: the covariance ordering and the law of quadratic functionals (distribution functions, quantiles and tail probabilities with two-sided bounds, checked against the exact law at `H = 1/2`, the exact law of the discretized functional and Monte Carlo), a numerical check of the proof of the closed cosine Gram matrix, the condition number of the scaled computational core, and figures redrawn with one visual language. Section, figure and table numbers follow the repositioned paper. It is a research-software release, not a claim of journal acceptance. v1.1.0 and v1.2.0 remain available unchanged.

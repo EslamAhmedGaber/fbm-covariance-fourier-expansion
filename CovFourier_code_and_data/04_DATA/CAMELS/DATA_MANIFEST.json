@@ -1,0 +1,220 @@
+{
+  "record": "https://zenodo.org/records/15529996",
+  "dataset_doi": "10.5065/D6MW2F4D",
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "files": [
+    {
+      "file": "camels_clim.txt",
+      "bytes": 100673,
+      "official_checksum": "md5:67f22592f3fb72c57df81358ce68458b",
+      "verified": true,
+      "sha256": "6a3a80256afbaea13f59f279c174d3c010156b826ffb53a4cfb5508814404f5f",
+      "url": "https://zenodo.org/api/records/15529996/files/camels_clim.txt/content"
+    },
+    {
+      "file": "readme.txt",
+      "bytes": 1704,
+      "official_checksum": "md5:b37d64950e9d4c5c10a8b4ef82bc6219",
+      "verified": true,
+      "sha256": "fcdd3169b6b7c026358d605aee7acff419c332038fe41969afb93e4edac7370f",
+      "url": "https://zenodo.org/api/records/15529996/files/readme.txt/content"
+    },
+    {
+      "file": "camels_attributes_v2.0.pdf",
+      "bytes": 91532,
+      "official_checksum": "md5:77a6c084c798a31fbd05594ee58a90c7",
+      "verified": true,
+      "sha256": "7a36db576b3e2e63b9e010f269f627b6dfa76a73f6a41ca692d0c86e3989131c",
+      "url": "https://zenodo.org/api/records/15529996/files/camels_attributes_v2.0.pdf/content"
+    },
+    {
+      "file": "camels_geol.txt",
+      "bytes": 71583,
+      "official_checksum": "md5:f5ce5de53eb1ea2532cda7e3b4813993",
+      "verified": true,
+      "sha256": "2ffe3871541b93bde02f72df6c34933cb91edb45af363fd7d50c3eaa7da0b5e6",
+      "url": "https://zenodo.org/api/records/15529996/files/camels_geol.txt/content"
+    },
+    {
+      "file": "camels_name.txt",
+      "bytes": 30417,
+      "official_checksum": "md5:c96491b32c4df55a31bead7ceca7d64b",
+      "verified": true,
+      "sha256": "f3a85272cd934c6e12386db5f21979675fc891844250a335135786ad9a2de445",
+      "url": "https://zenodo.org/api/records/15529996/files/camels_name.txt/content"
+    },
+    {
+      "file": "camels_vege.txt",
+      "bytes": 107970,
+      "official_checksum": "md5:f40e843defc1e654a800be9fe5fd5090",
+      "verified": true,
+      "sha256": "ea97f5d91a2f5acccef21df08417729aade51afe9a2651ab30c2990e7ad63d74",
+      "url": "https://zenodo.org/api/records/15529996/files/camels_vege.txt/content"
+    },
+    {
+      "file": "camels_topo.txt",
+      "bytes": 38677,
+      "official_checksum": "md5:0f6267838c40b1507b64582433bc0b8e",
+      "verified": true,
+      "sha256": "b64ca9923bcaccf21dde33137903797919e8d6732edd7849f8534e0ddcbec8e8",
+      "url": "https://zenodo.org/api/records/15529996/files/camels_topo.txt/content"
+    },
+    {
+      "file": "camels_soil.txt",
+      "bytes": 109125,
+      "official_checksum": "md5:8edb46a363a20b466a4b7105ba633767",
+      "verified": true,
+      "sha256": "2acabec448fda2d7d93c2182a8a148e0f6a2dfc40f6f0944ec09eda6eeea0a6d",
+      "url": "https://zenodo.org/api/records/15529996/files/camels_soil.txt/content"
+    },
+    {
+      "file": "camels_hydro.txt",
+      "bytes": 122799,
+      "official_checksum": "md5:55ebdeb36c42ee7acdb998229c3edb3a",
+      "verified": true,
+      "sha256": "7dcae3ea8c28e6485fc9e39b3c5e8bb509d6354ebe9b0b98873ec47fa36e3c41",
+      "url": "https://zenodo.org/api/records/15529996/files/camels_hydro.txt/content"
+    },
+    {
+      "file": "camels_attributes_v2.0.xlsx",
+      "bytes": 16278,
+      "official_checksum": "md5:714c68bd5bb3314ca39b14f9467bd609",
+      "verified": true,
+      "sha256": "9da512f965923a20f6ad24390ead1209799b629524d311db13495fff9a5b0673",
+      "url": "https://zenodo.org/api/records/15529996/files/camels_attributes_v2.0.xlsx/content"
+    }
+  ],
+  "metadata_basin_count": 671,
+  "status": "downloaded",
+  "pilot": [
+    {
+      "gauge_id": "01013500",
+      "member": "basin_dataset_public_v1p2/usgs_streamflow/01/01013500_streamflow_qc.txt",
+      "file": "pilot_observed_streamflow\\01013500_streamflow_qc.txt",
+      "bytes": 402240,
+      "sha256": "bce4b441f9bdf8b22438d9106d9b049f5bbd57f6bd455330ee9dbf3941b8e12a",
+      "zip_crc32": "17482e9d",
+      "crc_verified": true,
+      "nonempty_rows": 12784
+    },
+    {
+      "gauge_id": "01333000",
+      "member": "basin_dataset_public_v1p2/usgs_streamflow/02/01333000_streamflow_qc.txt",
+      "file": "pilot_observed_streamflow\\01333000_streamflow_qc.txt",
+      "bytes": 399622,
+      "sha256": "83f54f19dfdb0cfd2ea74759898783c75ef373e03a62bacd854c8561ff9ab025",
+      "zip_crc32": "675e0752",
+      "crc_verified": true,
+      "nonempty_rows": 12784
+    },
+    {
+      "gauge_id": "02046000",
+      "member": "basin_dataset_public_v1p2/usgs_streamflow/03/02046000_streamflow_qc.txt",
+      "file": "pilot_observed_streamflow\\02046000_streamflow_qc.txt",
+      "bytes": 397418,
+      "sha256": "5dbc61d9d2f3266ded633a3f5a41df23306c85d0ae089d39a71c325c09712633",
+      "zip_crc32": "422e35e2",
+      "crc_verified": true,
+      "nonempty_rows": 12784
+    },
+    {
+      "gauge_id": "04015330",
+      "member": "basin_dataset_public_v1p2/usgs_streamflow/04/04015330_streamflow_qc.txt",
+      "file": "pilot_observed_streamflow\\04015330_streamflow_qc.txt",
+      "bytes": 400834,
+      "sha256": "7285ac91528209e82c51b4c0ff618323d40b29535e13d98619ea35b06bbac3bd",
+      "zip_crc32": "2f3676a2",
+      "crc_verified": true,
+      "nonempty_rows": 12784
+    },
+    {
+      "gauge_id": "03010655",
+      "member": "basin_dataset_public_v1p2/usgs_streamflow/05/03010655_streamflow_qc.txt",
+      "file": "pilot_observed_streamflow\\03010655_streamflow_qc.txt",
+      "bytes": 399070,
+      "sha256": "78e5a0087e8e60e954c46f92181ee2bb7f2997419e67075b8aa17e9d5a73894c",
+      "zip_crc32": "0fb9456f",
+      "crc_verified": true,
+      "nonempty_rows": 12784
+    },
+    {
+      "gauge_id": "03439000",
+      "member": "basin_dataset_public_v1p2/usgs_streamflow/06/03439000_streamflow_qc.txt",
+      "file": "pilot_observed_streamflow\\03439000_streamflow_qc.txt",
+      "bytes": 396586,
+      "sha256": "5ec167a6dc0a834df9a7ce0935bace464b555ffb96bb2d1ca73d0c4cd4a97a2a",
+      "zip_crc32": "98a7fc61",
+      "crc_verified": true,
+      "nonempty_rows": 12784
+    },
+    {
+      "gauge_id": "05291000",
+      "member": "basin_dataset_public_v1p2/usgs_streamflow/07/05291000_streamflow_qc.txt",
+      "file": "pilot_observed_streamflow\\05291000_streamflow_qc.txt",
+      "bytes": 401836,
+      "sha256": "7429049203d5d752e07c80bad38a4cb4dc85e3fb9a29f98d1614474395c336f5",
+      "zip_crc32": "0f54d0c6",
+      "crc_verified": true,
+      "nonempty_rows": 12784
+    },
+    {
+      "gauge_id": "07290650",
+      "member": "basin_dataset_public_v1p2/usgs_streamflow/08/07290650_streamflow_qc.txt",
+      "file": "pilot_observed_streamflow\\07290650_streamflow_qc.txt",
+      "bytes": 397254,
+      "sha256": "4f6f3f8c938f607214116e51ba34e720e974252df4884b37b5a624c96edb9b64",
+      "zip_crc32": "e1ffb13f",
+      "crc_verified": true,
+      "nonempty_rows": 12784
+    },
+    {
+      "gauge_id": "05056000",
+      "member": "basin_dataset_public_v1p2/usgs_streamflow/09/05056000_streamflow_qc.txt",
+      "file": "pilot_observed_streamflow\\05056000_streamflow_qc.txt",
+      "bytes": 399860,
+      "sha256": "5689c79db072f65604b5964ab3759954d2aa46a9fe540cabc85323f67d9198a5",
+      "zip_crc32": "70835a76",
+      "crc_verified": true,
+      "nonempty_rows": 12784
+    },
+    {
+      "gauge_id": "06037500",
+      "member": "basin_dataset_public_v1p2/usgs_streamflow/10/06037500_streamflow_qc.txt",
+      "file": "pilot_observed_streamflow\\06037500_streamflow_qc.txt",
+      "bytes": 356748,
+      "sha256": "1294aa551e3a077d177f756bb0eb0c05a9701ebc2423f5e81053fb990a79d718",
+      "zip_crc32": "6a7f46d3",
+      "crc_verified": true,
+      "nonempty_rows": 11476
+    },
+    {
+      "gauge_id": "07056000",
+      "member": "basin_dataset_public_v1p2/usgs_streamflow/11/07056000_streamflow_qc.txt",
+      "file": "pilot_observed_streamflow\\07056000_streamflow_qc.txt",
+      "bytes": 396514,
+      "sha256": "5115eddf43a66b264ed73db62f01a5d2492040cda6ce4beff94cca997f209e15",
+      "zip_crc32": "409b4919",
+      "crc_verified": true,
+      "nonempty_rows": 12784
+    },
+    {
+      "gauge_id": "08023080",
+      "member": "basin_dataset_public_v1p2/usgs_streamflow/12/08023080_streamflow_qc.txt",
+      "file": "pilot_observed_streamflow\\08023080_streamflow_qc.txt",
+      "bytes": 396999,
+      "sha256": "2b6aaa5c7878220d53cde58826a37a4595f6342b7300f6432ff8169ddbbfbf81",
+      "zip_crc32": "23320d87",
+      "crc_verified": true,
+      "nonempty_rows": 12775
+    }
+  ],
+  "selection_rule": "First gauge ID in each HUC02 group; first 12 sorted groups. Convenience geographic pilot, not a representative inference sample.",
+  "archive_url": "https://zenodo.org/api/records/15529996/files/basin_timeseries_v1p2_metForcing_obsFlow.zip/content",
+  "archive_bytes": 3406626583,
+  "archive_official_checksum": "md5:8e9a466710e8270b58f01d332a87184f",
+  "archive_full_md5_verified": false,
+  "range_bytes_downloaded": 3529624,
+  "integrity_scope": "Metadata files: official MD5. Selected ZIP members: ZIP CRC plus recorded SHA256. Full 3.4 GB archive not downloaded."
+}

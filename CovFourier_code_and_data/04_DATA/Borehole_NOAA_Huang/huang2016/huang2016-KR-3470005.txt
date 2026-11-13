@@ -1,0 +1,338 @@
+# Global Database of Borehole Temperatures and Climate Reconstructions - KR-3470005
+#---------------------------------------------------------------
+#           World Data Service for Paleoclimatology, Boulder
+#                             and
+#                NOAA Paleoclimatology Program
+#         National Centers for Environmental Information (NCEI)
+#---------------------------------------------------------------
+#
+# NOTE: Please cite Publication, and Online_Resource and date accessed when using these data. 
+# If there is no publication information, please cite Investigators, Title, and Online_Resource and date accessed.
+#
+# Online_Resource: https://www.ncdc.noaa.gov/paleo/study/1004878
+# Online_Resource: http://www.earth.lsa.umich.edu/climate/RECONSTRUCTION/KR-3470005.html
+#
+# Archive: Borehole
+#
+# Parameter_Keywords: reconstruction
+#-------------------------
+# Contribution_Date
+#   Date: 2016-10-16
+#-------------------------
+# Title
+#   Study_Name: Global Database of Borehole Temperatures and Climate Reconstructions - KR-3470005
+#-------------------------
+# Investigators
+#   Investigators: Huang, S.; Pollack, H.N.; Shen, P.Y.
+#-------------------------
+# Description_Notes_and_Keywords
+#   Description: This project has as its goal the design, assembly, analysis and interpretation of geothermal observations on 
+#      continents relevant to understanding the nature and causes of climate change over the past five centuries. The project was 
+#      inititated by the Geothermal Laboratory of the University of Michigan, USA. Important collaborations have been developed 
+#      with the Geophysical Institute of the Czech Academy of Sciences, and with a working group of the International Heat Flow 
+#      Commission of IASPEI. Funding for this project has come from the U.S. National Science Foundation, the U.S. National 
+#      Oceanic and Atmospheric Administration, the International Geological Correlation Program, and the Czech - U.S. Science and 
+#      Technology Program. The principal components of the database are: 
+#          (1) Basic geothermal observations from field surveys and laboratory measurements, principally comprising borehole 
+#      temperature logs and thermophysical properties. This section includes data only from boreholes at least 200 m deep. The 
+#      data listed are restricted to the range 20-600 meters. Data above 20 m have been omitted because they include annual 
+#      variability, and data below 600 m have not been included because they contain no information about the past 500 
+#      years.Quality control measures have occasionally required the deletion of other data within the 20-600 m range. 
+#          (2) A five-century ground surface temperature history derived for each site by a standardized inversion procedure 
+#      operating on the basic observations. The derived history is presented as century-long temperature trends for each of the 
+#      past five centuries. This representation emphasizes longer term variations of the climate history, and thus is 
+#      complementary to high resolution proxies such as tree rings, ice cores, corals and lake sediments. 
+#          (3) The name of the person who can be contacted to learn more about the data and the site. This is either the name of the 
+#      original investigator who made the observations, or the name of a regional or national data compiler. Some data remain 
+#      proprietary, and therefore are not accessible directly from this database. Database users desiring access to these data 
+#      should request the data directly from the person listed as the data contact. A list of investigators engaged in climate 
+#      studies involving geothermal data can be found at the original web site of this database at the University of Michigan. 
+# 
+# Updated version of dataset submitted by Huang in October 2016.
+#-------------------- 
+# Publication  
+#       Authors: Huang, S., Pollack, H. N., and Shen, P.Y. 
+#       Published_Date_or_Year: 2000-02-17 
+#       Published_Title: Temperature trends over the past five centuries reconstructed from borehole temperatures 
+#       Journal_Name: Nature 
+#       Volume: 403 
+#       Edition: 
+#       Issue: 
+#       Pages: 756-758 
+#       DOI: 10.1038/35001556 
+#       Abstract: For an accurate assessment of the relative roles of natural variability and anthropogenic influence in the Earth's climate, reconstructions of past temperatures from the pre-industrial as well as the industrial period are essential. But instrumental records are typically available for no more than the past 150 years. Therefore reconstructions of pre-industrial climate rely principally on traditional climate proxy records, each with particular strengths and limitations in representing climatic variability. Subsurface temperatures comprise an independent archive of past surface temperature changes that is complementary to both the instrumental record and the climate proxies. Here we use present-day temperatures in 616 boreholes from all continents except Antarctica to reconstruct century-long trends in temperatures over the past 500 years at global, hemispheric and continental scales. The results confirm the unusual warming of the twentieth century revealed by the instrumental record6, but suggest that the cumulative change over the past five centuries amounts to about 1 K, exceeding recent estimates from conventional climate proxies. The strength of temperature reconstructions from boreholes lies in the detection of long-term trends, complementary to conventional climate proxies, but to obtain a complete picture of past warming, the differences between the approaches need to be investigated in detail. 
+#---------------------- 
+# Funding_Agency  
+#       Funding_Agency_Name: US National Science Foundation 
+#       Grant: 1202673 
+#---------------------- 
+# Site_Information
+#   Site_Name: KR-3470005
+#    Location: South Korea
+#    Northernmost_Latitude: 37.5457
+#    Southernmost_Latitude: 37.5457
+#    Easternmost_Longitude: 127.1950
+#    Westernmost_Longitude: 127.1950
+#    Elevation:
+#-------------------------
+# Data_Collection
+#    Collection_Name: KR-3470005-borehole
+#    Earliest_Year: 1500
+#    Most_Recent_Year: 1988
+#    Time_Unit: AD
+#    Core_Length:
+#    Notes: Data Contact:  Hyoung-Chan Kim (KR) 
+#  Pre-1500 Baseline GST (oC):  12.27
+#  Date (Century)    Rate of GST Change(K/100a)
+#       16th                 1.380
+#       17th                 1.030
+#       18th                 0.253
+#       19th                -0.831
+#       20th                -0.857
+#  Date of logging (Year):       1987.377
+#  Thermal Conductivity (W/m/K):    2.78
+#  Geothermal Gradient (K/km):     25.71
+#  
+#-------------------------
+# Chronology_Information
+#       Chronology:
+#-------------------------
+# Variables
+#
+# Data variables follow (marked with '##')
+# Variables list: shortname-tab- 9 components: what, material, error, units, seasonality, archive, detail, method, Temperature for Character or Numeric data
+## depth_m    depth,,, m,,,below surface,,N
+## temp_meas	temperature,,,degrees Celsius,,borehole,measured,,N
+#-------------------------
+# Data:
+# Missing Values: NA
+depth_m	temp_meas
+   46.00     14.900
+   48.00     14.900
+   50.00     15.000
+   52.00     15.000
+   54.00     15.000
+   56.00     15.000
+   58.00     15.100
+   60.00     15.100
+   62.00     15.200
+   64.00     15.200
+   66.00     15.300
+   68.00     15.300
+   70.00     15.300
+   72.00     15.400
+   74.00     15.400
+   76.00     15.500
+   78.00     15.500
+   80.00     15.500
+   82.00     15.600
+   84.00     15.600
+   86.00     15.700
+   88.00     15.700
+   90.00     15.700
+   92.00     15.800
+   94.00     15.800
+   96.00     15.800
+   98.00     15.900
+  100.00     15.900
+  102.00     16.000
+  104.00     16.000
+  106.00     16.100
+  108.00     16.100
+  110.00     16.100
+  112.00     16.100
+  114.00     16.200
+  116.00     16.200
+  118.00     16.300
+  120.00     16.300
+  122.00     16.300
+  124.00     16.400
+  126.00     16.400
+  128.00     16.500
+  130.00     16.500
+  132.00     16.500
+  134.00     16.600
+  136.00     16.600
+  138.00     16.700
+  140.00     16.700
+  142.00     16.800
+  144.00     16.800
+  146.00     16.800
+  148.00     16.900
+  150.00     16.900
+  152.00     17.000
+  154.00     17.000
+  156.00     17.000
+  158.00     17.100
+  160.00     17.200
+  162.00     17.200
+  164.00     17.200
+  166.00     17.300
+  168.00     17.300
+  170.00     17.400
+  172.00     17.400
+  174.00     17.400
+  176.00     17.500
+  178.00     17.500
+  180.00     17.500
+  182.00     17.600
+  184.00     17.600
+  186.00     17.600
+  188.00     17.700
+  190.00     17.700
+  192.00     17.800
+  194.00     17.800
+  196.00     17.800
+  198.00     17.900
+  200.00     17.900
+  202.00     18.000
+  204.00     18.000
+  206.00     18.000
+  208.00     18.100
+  210.00     18.100
+  212.00     18.100
+  214.00     18.200
+  216.00     18.200
+  218.00     18.200
+  220.00     18.300
+  222.00     18.300
+  224.00     18.400
+  226.00     18.400
+  228.00     18.400
+  230.00     18.500
+  232.00     18.500
+  234.00     18.600
+  236.00     18.600
+  238.00     18.700
+  240.00     18.700
+  242.00     18.700
+  244.00     18.800
+  246.00     18.800
+  248.00     18.900
+  250.00     18.900
+  252.00     19.000
+  254.00     19.000
+  256.00     19.100
+  258.00     19.100
+  260.00     19.200
+  262.00     19.200
+  264.00     19.200
+  266.00     19.300
+  268.00     19.400
+  270.00     19.500
+  272.00     19.500
+  274.00     19.600
+  276.00     19.600
+  278.00     19.700
+  280.00     19.700
+  282.00     19.800
+  284.00     19.800
+  286.00     19.900
+  288.00     19.900
+  290.00     19.900
+  292.00     20.000
+  294.00     20.000
+  296.00     20.100
+  298.00     20.100
+  300.00     20.200
+  302.00     20.200
+  304.00     20.200
+  306.00     20.300
+  308.00     20.400
+  310.00     20.400
+  312.00     20.400
+  314.00     20.500
+  316.00     20.500
+  318.00     20.600
+  320.00     20.600
+  322.00     20.700
+  324.00     20.700
+  326.00     20.800
+  328.00     20.800
+  330.00     20.800
+  332.00     20.900
+  334.00     20.900
+  336.00     21.000
+  338.00     21.000
+  340.00     21.000
+  342.00     21.100
+  344.00     21.100
+  346.00     21.200
+  348.00     21.200
+  350.00     21.300
+  352.00     21.300
+  354.00     21.400
+  356.00     21.400
+  358.00     21.500
+  360.00     21.500
+  362.00     21.600
+  364.00     21.600
+  366.00     21.700
+  368.00     21.700
+  370.00     21.800
+  372.00     21.800
+  374.00     21.900
+  376.00     21.900
+  378.00     22.000
+  380.00     22.000
+  382.00     22.100
+  384.00     22.100
+  386.00     22.200
+  388.00     22.200
+  390.00     22.300
+  392.00     22.400
+  394.00     22.500
+  396.00     22.500
+  398.00     22.500
+  400.00     22.600
+  402.00     22.700
+  404.00     22.700
+  406.00     22.800
+  408.00     22.900
+  410.00     22.900
+  412.00     23.000
+  414.00     23.000
+  416.00     23.100
+  418.00     23.100
+  420.00     23.100
+  422.00     23.200
+  424.00     23.300
+  426.00     23.300
+  428.00     23.300
+  430.00     23.400
+  432.00     23.400
+  434.00     23.500
+  436.00     23.500
+  438.00     23.600
+  440.00     23.600
+  442.00     23.600
+  444.00     23.700
+  446.00     23.800
+  448.00     23.800
+  450.00     23.900
+  452.00     23.900
+  454.00     24.000
+  456.00     24.000
+  458.00     24.100
+  460.00     24.100
+  462.00     24.200
+  464.00     24.200
+  466.00     24.300
+  468.00     24.300
+  470.00     24.400
+  472.00     24.400
+  474.00     24.500
+  476.00     24.500
+  478.00     24.600
+  480.00     24.600
+  482.00     24.600
+  484.00     24.700
+  486.00     24.800
+  488.00     24.800
+  490.00     24.800
+  492.00     24.900
+  494.00     24.900
+  496.00     25.000
+  498.00     25.100
+  500.00     25.100
+

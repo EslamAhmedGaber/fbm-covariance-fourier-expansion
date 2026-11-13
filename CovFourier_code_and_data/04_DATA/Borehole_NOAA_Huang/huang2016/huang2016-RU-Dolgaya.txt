@@ -1,0 +1,224 @@
+# Global Database of Borehole Temperatures and Climate Reconstructions - RU-Dolgaya
+#---------------------------------------------------------------
+#           World Data Service for Paleoclimatology, Boulder
+#                             and
+#                NOAA Paleoclimatology Program
+#         National Centers for Environmental Information (NCEI)
+#---------------------------------------------------------------
+#
+# NOTE: Please cite Publication, and Online_Resource and date accessed when using these data. 
+# If there is no publication information, please cite Investigators, Title, and Online_Resource and date accessed.
+#
+# Online_Resource: https://www.ncdc.noaa.gov/paleo/study/1000817
+# Online_Resource: http://www.earth.lsa.umich.edu/climate/RECONSTRUCTION/RU-Dolgaya.html
+#
+# Archive: Borehole
+#
+# Parameter_Keywords: reconstruction
+#-------------------------
+# Contribution_Date
+#   Date: 2016-10-16
+#-------------------------
+# Title
+#   Study_Name: Global Database of Borehole Temperatures and Climate Reconstructions - RU-Dolgaya
+#-------------------------
+# Investigators
+#   Investigators: Huang, S.; Pollack, H.N.; Shen, P.Y.
+#-------------------------
+# Description_Notes_and_Keywords
+#   Description: This project has as its goal the design, assembly, analysis and interpretation of geothermal observations on 
+#      continents relevant to understanding the nature and causes of climate change over the past five centuries. The project was 
+#      inititated by the Geothermal Laboratory of the University of Michigan, USA. Important collaborations have been developed 
+#      with the Geophysical Institute of the Czech Academy of Sciences, and with a working group of the International Heat Flow 
+#      Commission of IASPEI. Funding for this project has come from the U.S. National Science Foundation, the U.S. National 
+#      Oceanic and Atmospheric Administration, the International Geological Correlation Program, and the Czech - U.S. Science and 
+#      Technology Program. The principal components of the database are: 
+#          (1) Basic geothermal observations from field surveys and laboratory measurements, principally comprising borehole 
+#      temperature logs and thermophysical properties. This section includes data only from boreholes at least 200 m deep. The 
+#      data listed are restricted to the range 20-600 meters. Data above 20 m have been omitted because they include annual 
+#      variability, and data below 600 m have not been included because they contain no information about the past 500 
+#      years.Quality control measures have occasionally required the deletion of other data within the 20-600 m range. 
+#          (2) A five-century ground surface temperature history derived for each site by a standardized inversion procedure 
+#      operating on the basic observations. The derived history is presented as century-long temperature trends for each of the 
+#      past five centuries. This representation emphasizes longer term variations of the climate history, and thus is 
+#      complementary to high resolution proxies such as tree rings, ice cores, corals and lake sediments. 
+#          (3) The name of the person who can be contacted to learn more about the data and the site. This is either the name of the 
+#      original investigator who made the observations, or the name of a regional or national data compiler. Some data remain 
+#      proprietary, and therefore are not accessible directly from this database. Database users desiring access to these data 
+#      should request the data directly from the person listed as the data contact. A list of investigators engaged in climate 
+#      studies involving geothermal data can be found at the original web site of this database at the University of Michigan. 
+# 
+# Updated version of dataset submitted by Huang in October 2016.
+#-------------------- 
+# Publication  
+#       Authors: Huang, S., Pollack, H. N., and Shen, P.Y. 
+#       Published_Date_or_Year: 2000-02-17 
+#       Published_Title: Temperature trends over the past five centuries reconstructed from borehole temperatures 
+#       Journal_Name: Nature 
+#       Volume: 403 
+#       Edition: 
+#       Issue: 
+#       Pages: 756-758 
+#       DOI: 10.1038/35001556 
+#       Abstract: For an accurate assessment of the relative roles of natural variability and anthropogenic influence in the Earth's climate, reconstructions of past temperatures from the pre-industrial as well as the industrial period are essential. But instrumental records are typically available for no more than the past 150 years. Therefore reconstructions of pre-industrial climate rely principally on traditional climate proxy records, each with particular strengths and limitations in representing climatic variability. Subsurface temperatures comprise an independent archive of past surface temperature changes that is complementary to both the instrumental record and the climate proxies. Here we use present-day temperatures in 616 boreholes from all continents except Antarctica to reconstruct century-long trends in temperatures over the past 500 years at global, hemispheric and continental scales. The results confirm the unusual warming of the twentieth century revealed by the instrumental record6, but suggest that the cumulative change over the past five centuries amounts to about 1 K, exceeding recent estimates from conventional climate proxies. The strength of temperature reconstructions from boreholes lies in the detection of long-term trends, complementary to conventional climate proxies, but to obtain a complete picture of past warming, the differences between the approaches need to be investigated in detail. 
+#---------------------- 
+# Funding_Agency  
+#       Funding_Agency_Name: US National Science Foundation 
+#       Grant: 1202673 
+#---------------------- 
+# Site_Information
+#   Site_Name: RU-Dolgaya
+#    Location: Russia
+#    Northernmost_Latitude: 49.50
+#    Southernmost_Latitude: 49.50
+#    Easternmost_Longitude: 83.67
+#    Westernmost_Longitude: 83.67
+#    Elevation:
+#-------------------------
+# Data_Collection
+#    Collection_Name: RU-Dolgaya-borehole
+#    Earliest_Year: 1500
+#    Most_Recent_Year: 1991
+#    Time_Unit: AD
+#    Core_Length:
+#    Notes: Data Contact:  A.D. Duchkov (RU) 
+#  Pre-1500 Baseline GST (oC):  7.364
+#  Date (Century)    Rate of GST Change(K/100a)
+#       16th                 0.288
+#       17th                 0.333
+#       18th                 0.351
+#       19th                 0.198
+#       20th                -0.167
+#  Date of logging (Year):       1990.0
+#  Thermal Conductivity (W/m/K):    2.86
+#  Geothermal Gradient (K/km):     14.61
+#  
+#-------------------------
+# Chronology_Information
+#       Chronology:
+#-------------------------
+# Variables
+#
+# Data variables follow (marked with '##')
+# Variables list: shortname-tab- 9 components: what, material, error, units, seasonality, archive, detail, method, Temperature for Character or Numeric data
+## depth_m    depth,,, m,,,below surface,,N
+## temp_meas	temperature,,,degrees Celsius,,borehole,measured,,N
+#-------------------------
+# Data:
+# Missing Values: NA
+depth_m	temp_meas
+   20.34      8.800
+   22.33      8.790
+   24.33      8.780
+   26.32      8.780
+   28.32      8.790
+   30.31      8.810
+   32.30      8.820
+   34.30      8.840
+   36.29      8.850
+   38.29      8.860
+   40.28      8.880
+   42.27      8.890
+   44.27      8.900
+   46.26      8.910
+   48.26      8.920
+   50.25      8.930
+   52.24      8.940
+   54.24      8.950
+   56.23      8.970
+   58.23      8.990
+   60.22      8.990
+   62.21      9.000
+   64.21      9.020
+   66.20      9.040
+   68.20      9.050
+   70.19      9.060
+   72.18      9.070
+   74.18      9.090
+   76.17      9.110
+   78.17      9.130
+   80.16      9.160
+   82.15      9.170
+   84.15      9.190
+   86.14      9.220
+   88.14      9.230
+   90.13      9.240
+   92.12      9.260
+   94.12      9.280
+   96.11      9.300
+   98.11      9.320
+  100.10      9.340
+  102.09      9.360
+  104.09      9.390
+  106.08      9.410
+  108.08      9.430
+  110.07      9.460
+  112.06      9.490
+  114.06      9.510
+  116.05      9.540
+  118.05      9.560
+  120.04      9.570
+  122.03      9.580
+  124.03      9.600
+  126.02      9.610
+  128.02      9.630
+  130.01      9.650
+  132.00      9.670
+  134.00      9.690
+  135.99      9.710
+  137.99      9.730
+  139.98      9.750
+  141.97      9.770
+  143.97      9.790
+  145.96      9.820
+  147.96      9.840
+  149.95      9.860
+  151.94      9.870
+  153.94      9.890
+  155.93      9.920
+  157.93      9.950
+  159.92      9.980
+  161.91     10.010
+  163.91     10.030
+  165.90     10.050
+  167.90     10.070
+  169.89     10.090
+  171.88     10.100
+  173.88     10.130
+  175.87     10.140
+  177.87     10.160
+  179.86     10.190
+  181.85     10.210
+  183.85     10.240
+  185.84     10.260
+  187.84     10.290
+  189.83     10.310
+  191.82     10.330
+  193.82     10.360
+  195.81     10.390
+  197.81     10.420
+  199.80     10.440
+  201.79     10.470
+  203.79     10.490
+  205.78     10.520
+  207.78     10.540
+  209.77     10.570
+  211.76     10.600
+  213.76     10.620
+  215.75     10.650
+  217.75     10.680
+  219.74     10.700
+  221.73     10.730
+  223.73     10.760
+  225.72     10.790
+  227.72     10.830
+  229.71     10.850
+  231.70     10.880
+  233.70     10.900
+  235.69     10.910
+  237.69     10.940
+  239.68     10.970
+  241.67     11.000
+  243.67     11.030
+  245.66     11.060
+

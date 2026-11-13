@@ -1,0 +1,208 @@
+# Global Database of Borehole Temperatures and Climate Reconstructions - JP-Itabashi
+#---------------------------------------------------------------
+#           World Data Service for Paleoclimatology, Boulder
+#                             and
+#                NOAA Paleoclimatology Program
+#         National Centers for Environmental Information (NCEI)
+#---------------------------------------------------------------
+#
+# NOTE: Please cite Publication, and Online_Resource and date accessed when using these data. 
+# If there is no publication information, please cite Investigators, Title, and Online_Resource and date accessed.
+#
+# Online_Resource: https://www.ncdc.noaa.gov/paleo/study/1000583
+# Online_Resource: http://www.earth.lsa.umich.edu/climate/RECONSTRUCTION/JP-Itabashi.html
+#
+# Archive: Borehole
+#
+# Parameter_Keywords: reconstruction
+#-------------------------
+# Contribution_Date
+#   Date: 2016-10-16
+#-------------------------
+# Title
+#   Study_Name: Global Database of Borehole Temperatures and Climate Reconstructions - JP-Itabashi
+#-------------------------
+# Investigators
+#   Investigators: Huang, S.; Pollack, H.N.; Shen, P.Y.
+#-------------------------
+# Description_Notes_and_Keywords
+#   Description: This project has as its goal the design, assembly, analysis and interpretation of geothermal observations on 
+#      continents relevant to understanding the nature and causes of climate change over the past five centuries. The project was 
+#      inititated by the Geothermal Laboratory of the University of Michigan, USA. Important collaborations have been developed 
+#      with the Geophysical Institute of the Czech Academy of Sciences, and with a working group of the International Heat Flow 
+#      Commission of IASPEI. Funding for this project has come from the U.S. National Science Foundation, the U.S. National 
+#      Oceanic and Atmospheric Administration, the International Geological Correlation Program, and the Czech - U.S. Science and 
+#      Technology Program. The principal components of the database are: 
+#          (1) Basic geothermal observations from field surveys and laboratory measurements, principally comprising borehole 
+#      temperature logs and thermophysical properties. This section includes data only from boreholes at least 200 m deep. The 
+#      data listed are restricted to the range 20-600 meters. Data above 20 m have been omitted because they include annual 
+#      variability, and data below 600 m have not been included because they contain no information about the past 500 
+#      years.Quality control measures have occasionally required the deletion of other data within the 20-600 m range. 
+#          (2) A five-century ground surface temperature history derived for each site by a standardized inversion procedure 
+#      operating on the basic observations. The derived history is presented as century-long temperature trends for each of the 
+#      past five centuries. This representation emphasizes longer term variations of the climate history, and thus is 
+#      complementary to high resolution proxies such as tree rings, ice cores, corals and lake sediments. 
+#          (3) The name of the person who can be contacted to learn more about the data and the site. This is either the name of the 
+#      original investigator who made the observations, or the name of a regional or national data compiler. Some data remain 
+#      proprietary, and therefore are not accessible directly from this database. Database users desiring access to these data 
+#      should request the data directly from the person listed as the data contact. A list of investigators engaged in climate 
+#      studies involving geothermal data can be found at the original web site of this database at the University of Michigan. 
+# 
+# Updated version of dataset submitted by Huang in October 2016.
+#-------------------- 
+# Publication  
+#       Authors: Huang, S., Pollack, H. N., and Shen, P.Y. 
+#       Published_Date_or_Year: 2000-02-17 
+#       Published_Title: Temperature trends over the past five centuries reconstructed from borehole temperatures 
+#       Journal_Name: Nature 
+#       Volume: 403 
+#       Edition: 
+#       Issue: 
+#       Pages: 756-758 
+#       DOI: 10.1038/35001556 
+#       Abstract: For an accurate assessment of the relative roles of natural variability and anthropogenic influence in the Earth's climate, reconstructions of past temperatures from the pre-industrial as well as the industrial period are essential. But instrumental records are typically available for no more than the past 150 years. Therefore reconstructions of pre-industrial climate rely principally on traditional climate proxy records, each with particular strengths and limitations in representing climatic variability. Subsurface temperatures comprise an independent archive of past surface temperature changes that is complementary to both the instrumental record and the climate proxies. Here we use present-day temperatures in 616 boreholes from all continents except Antarctica to reconstruct century-long trends in temperatures over the past 500 years at global, hemispheric and continental scales. The results confirm the unusual warming of the twentieth century revealed by the instrumental record6, but suggest that the cumulative change over the past five centuries amounts to about 1 K, exceeding recent estimates from conventional climate proxies. The strength of temperature reconstructions from boreholes lies in the detection of long-term trends, complementary to conventional climate proxies, but to obtain a complete picture of past warming, the differences between the approaches need to be investigated in detail. 
+#---------------------- 
+# Funding_Agency  
+#       Funding_Agency_Name: US National Science Foundation 
+#       Grant: 1202673 
+#---------------------- 
+# Site_Information
+#   Site_Name: JP-Itabashi
+#    Location: Japan
+#    Northernmost_Latitude: 35.76
+#    Southernmost_Latitude: 35.76
+#    Easternmost_Longitude: 139.70
+#    Westernmost_Longitude: 139.70
+#    Elevation:
+#-------------------------
+# Data_Collection
+#    Collection_Name: JP-Itabashi-borehole
+#    Earliest_Year: 1500
+#    Most_Recent_Year: 2002
+#    Time_Unit: AD
+#    Core_Length:
+#    Notes: Data Contact:  M. Taniguchi (JP) 
+#  Pre-1500 Baseline GST (oC):  15.45
+#  Date (Century)    Rate of GST Change(K/100a)
+#       16th                -0.241
+#       17th                -0.321
+#       18th                -0.423
+#       19th                -0.393
+#       20th                 0.673
+#  Date of logging (Year):       2001.85
+#  Thermal Conductivity (W/m/K):    1.36
+#  Geothermal Gradient (K/km):     13.07
+#  
+#-------------------------
+# Chronology_Information
+#       Chronology:
+#-------------------------
+# Variables
+#
+# Data variables follow (marked with '##')
+# Variables list: shortname-tab- 9 components: what, material, error, units, seasonality, archive, detail, method, Temperature for Character or Numeric data
+## depth_m    depth,,, m,,,below surface,,N
+## temp_meas	temperature,,,degrees Celsius,,borehole,measured,,N
+#-------------------------
+# Data:
+# Missing Values: NA
+depth_m	temp_meas
+   76.00     15.910
+   78.00     15.920
+   80.00     15.930
+   82.00     15.940
+   84.00     15.960
+   86.00     15.980
+   88.00     16.010
+   90.00     16.020
+   92.00     16.060
+   94.00     16.090
+   96.00     16.120
+   98.00     16.150
+  100.00     16.160
+  102.00     16.200
+  104.00     16.230
+  106.00     16.270
+  108.00     16.300
+  110.00     16.340
+  112.00     16.380
+  114.00     16.410
+  116.00     16.460
+  118.00     16.500
+  120.00     16.550
+  122.00     16.590
+  124.00     16.640
+  126.00     16.680
+  128.00     16.740
+  130.00     16.770
+  132.00     16.810
+  134.00     16.850
+  136.00     16.880
+  138.00     16.900
+  140.00     16.920
+  142.00     16.950
+  144.00     16.990
+  146.00     17.030
+  148.00     17.070
+  150.00     17.110
+  152.00     17.150
+  154.00     17.180
+  156.00     17.210
+  158.00     17.240
+  160.00     17.270
+  162.00     17.300
+  164.00     17.330
+  166.00     17.370
+  168.00     17.400
+  170.00     17.440
+  172.00     17.470
+  174.00     17.510
+  176.00     17.550
+  178.00     17.570
+  180.00     17.600
+  182.00     17.640
+  184.00     17.680
+  186.00     17.710
+  188.00     17.730
+  190.00     17.760
+  192.00     17.780
+  194.00     17.810
+  196.00     17.830
+  198.00     17.840
+  200.00     17.860
+  202.00     17.890
+  204.00     17.910
+  206.00     17.950
+  208.00     17.970
+  210.00     17.990
+  212.00     18.030
+  214.00     18.070
+  216.00     18.100
+  218.00     18.140
+  220.00     18.160
+  222.00     18.200
+  224.00     18.220
+  226.00     18.260
+  228.00     18.290
+  230.00     18.320
+  232.00     18.350
+  234.00     18.380
+  236.00     18.420
+  238.00     18.450
+  240.00     18.490
+  242.00     18.520
+  244.00     18.550
+  246.00     18.570
+  248.00     18.590
+  250.00     18.620
+  252.00     18.650
+  254.00     18.690
+  256.00     18.720
+  258.00     18.750
+  260.00     18.780
+  262.00     18.820
+  264.00     18.850
+  266.00     18.880
+  268.00     18.910
+  270.00     18.930
+

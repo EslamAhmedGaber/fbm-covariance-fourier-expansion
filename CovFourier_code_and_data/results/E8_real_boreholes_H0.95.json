@@ -1,0 +1,35 @@
+{
+ "experiment": "E8",
+ "n_sites": 690,
+ "n_train": 345,
+ "n_readings": 37814,
+ "by_H": {
+  "0.95": {
+   "sigma_T_hat": 22.6,
+   "sigma_g_hat": 0.004,
+   "W_train": 49028.41137293825,
+   "W_test_at_hat": 41335.152821779906,
+   "Ld_train_max": 49028.15430743567,
+   "U_train_max": 49028.63874626438,
+   "Ld_train_at_hat": 49028.15430743567,
+   "U_train_at_hat": 49028.63874626438,
+   "Ld_test_at_hat": 41334.94549555681,
+   "U_test_at_hat": 41335.25205194274,
+   "W_inside_bracket_all_grid": true,
+   "ref_ll_train": 49028.41137277691,
+   "ref_ll_test": 41335.152821724776,
+   "ref_sigma_T": 22.6,
+   "ref_sigma_g": 0.004,
+   "max_E2_over_var": 2.3288589936461648e-11,
+   "seconds_coords": 809.5198702000052,
+   "seconds_total": 1674.6564050000015
+  }
+ },
+ "enclosure_H_grid": [
+  0.95
+ ],
+ "decision": {
+  "H_best_lower": "0.95",
+  "excluded": []
+ }
+}

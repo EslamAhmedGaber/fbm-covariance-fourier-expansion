@@ -1,0 +1,194 @@
+# Global Database of Borehole Temperatures and Climate Reconstructions - UK-CLITHEROE
+#---------------------------------------------------------------
+#           World Data Service for Paleoclimatology, Boulder
+#                             and
+#                NOAA Paleoclimatology Program
+#         National Centers for Environmental Information (NCEI)
+#---------------------------------------------------------------
+#
+# NOTE: Please cite Publication, and Online_Resource and date accessed when using these data. 
+# If there is no publication information, please cite Investigators, Title, and Online_Resource and date accessed.
+#
+# Online_Resource: https://www.ncdc.noaa.gov/paleo/study/1001084
+# Online_Resource: http://www.earth.lsa.umich.edu/climate/RECONSTRUCTION/UK-CLITHEROE.html
+#
+# Archive: Borehole
+#
+# Parameter_Keywords: reconstruction
+#-------------------------
+# Contribution_Date
+#   Date: 2016-10-16
+#-------------------------
+# Title
+#   Study_Name: Global Database of Borehole Temperatures and Climate Reconstructions - UK-CLITHEROE
+#-------------------------
+# Investigators
+#   Investigators: Huang, S.; Pollack, H.N.; Shen, P.Y.
+#-------------------------
+# Description_Notes_and_Keywords
+#   Description: This project has as its goal the design, assembly, analysis and interpretation of geothermal observations on 
+#      continents relevant to understanding the nature and causes of climate change over the past five centuries. The project was 
+#      inititated by the Geothermal Laboratory of the University of Michigan, USA. Important collaborations have been developed 
+#      with the Geophysical Institute of the Czech Academy of Sciences, and with a working group of the International Heat Flow 
+#      Commission of IASPEI. Funding for this project has come from the U.S. National Science Foundation, the U.S. National 
+#      Oceanic and Atmospheric Administration, the International Geological Correlation Program, and the Czech - U.S. Science and 
+#      Technology Program. The principal components of the database are: 
+#          (1) Basic geothermal observations from field surveys and laboratory measurements, principally comprising borehole 
+#      temperature logs and thermophysical properties. This section includes data only from boreholes at least 200 m deep. The 
+#      data listed are restricted to the range 20-600 meters. Data above 20 m have been omitted because they include annual 
+#      variability, and data below 600 m have not been included because they contain no information about the past 500 
+#      years.Quality control measures have occasionally required the deletion of other data within the 20-600 m range. 
+#          (2) A five-century ground surface temperature history derived for each site by a standardized inversion procedure 
+#      operating on the basic observations. The derived history is presented as century-long temperature trends for each of the 
+#      past five centuries. This representation emphasizes longer term variations of the climate history, and thus is 
+#      complementary to high resolution proxies such as tree rings, ice cores, corals and lake sediments. 
+#          (3) The name of the person who can be contacted to learn more about the data and the site. This is either the name of the 
+#      original investigator who made the observations, or the name of a regional or national data compiler. Some data remain 
+#      proprietary, and therefore are not accessible directly from this database. Database users desiring access to these data 
+#      should request the data directly from the person listed as the data contact. A list of investigators engaged in climate 
+#      studies involving geothermal data can be found at the original web site of this database at the University of Michigan. 
+# 
+# Updated version of dataset submitted by Huang in October 2016.
+#-------------------- 
+# Publication  
+#       Authors: Huang, S., Pollack, H. N., and Shen, P.Y. 
+#       Published_Date_or_Year: 2000-02-17 
+#       Published_Title: Temperature trends over the past five centuries reconstructed from borehole temperatures 
+#       Journal_Name: Nature 
+#       Volume: 403 
+#       Edition: 
+#       Issue: 
+#       Pages: 756-758 
+#       DOI: 10.1038/35001556 
+#       Abstract: For an accurate assessment of the relative roles of natural variability and anthropogenic influence in the Earth's climate, reconstructions of past temperatures from the pre-industrial as well as the industrial period are essential. But instrumental records are typically available for no more than the past 150 years. Therefore reconstructions of pre-industrial climate rely principally on traditional climate proxy records, each with particular strengths and limitations in representing climatic variability. Subsurface temperatures comprise an independent archive of past surface temperature changes that is complementary to both the instrumental record and the climate proxies. Here we use present-day temperatures in 616 boreholes from all continents except Antarctica to reconstruct century-long trends in temperatures over the past 500 years at global, hemispheric and continental scales. The results confirm the unusual warming of the twentieth century revealed by the instrumental record6, but suggest that the cumulative change over the past five centuries amounts to about 1 K, exceeding recent estimates from conventional climate proxies. The strength of temperature reconstructions from boreholes lies in the detection of long-term trends, complementary to conventional climate proxies, but to obtain a complete picture of past warming, the differences between the approaches need to be investigated in detail. 
+#---------------------- 
+# Funding_Agency  
+#       Funding_Agency_Name: US National Science Foundation 
+#       Grant: 1202673 
+#---------------------- 
+# Site_Information
+#   Site_Name: UK-CLITHEROE
+#    Location: United Kingdom
+#    Northernmost_Latitude: 53.86
+#    Southernmost_Latitude: 53.86
+#    Easternmost_Longitude: -2.37
+#    Westernmost_Longitude: -2.37
+#    Elevation:
+#-------------------------
+# Data_Collection
+#    Collection_Name: UK-CLITHEROE-borehole
+#    Earliest_Year: 1500
+#    Most_Recent_Year: 1986
+#    Time_Unit: AD
+#    Core_Length:
+#    Notes: Data Contact:  K.E. Rollin (UK) 
+#  Pre-1500 Baseline GST (oC):  8.426
+#  Date (Century)    Rate of GST Change(K/100a)
+#       16th                 0.435
+#       17th                 0.445
+#       18th                 0.316
+#       19th                -0.306
+#       20th                -1.622
+#  Date of logging (Year):       1985.5
+#  Thermal Conductivity (W/m/K):    2.02
+#  Geothermal Gradient (K/km):     22.96
+#  
+#-------------------------
+# Chronology_Information
+#       Chronology:
+#-------------------------
+# Variables
+#
+# Data variables follow (marked with '##')
+# Variables list: shortname-tab- 9 components: what, material, error, units, seasonality, archive, detail, method, Temperature for Character or Numeric data
+## depth_m    depth,,, m,,,below surface,,N
+## temp_meas	temperature,,,degrees Celsius,,borehole,measured,,N
+#-------------------------
+# Data:
+# Missing Values: NA
+depth_m	temp_meas
+   39.70      9.760
+   42.75      9.840
+   45.80      9.900
+   48.86      9.960
+   51.91     10.020
+   54.96     10.080
+   58.02     10.160
+   61.07     10.240
+   64.12     10.320
+   67.18     10.380
+   70.23     10.450
+   73.28     10.520
+   76.34     10.580
+   79.39     10.650
+   82.44     10.720
+   85.50     10.790
+   88.55     10.870
+   91.61     10.940
+   94.66     11.020
+   97.71     11.080
+  100.77     11.150
+  103.82     11.220
+  106.87     11.320
+  109.93     11.370
+  112.98     11.440
+  116.03     11.510
+  119.09     11.570
+  122.14     11.630
+  125.19     11.700
+  128.25     11.780
+  131.30     11.850
+  134.36     11.910
+  137.41     11.980
+  140.46     12.040
+  143.52     12.090
+  146.57     12.170
+  149.62     12.220
+  152.68     12.280
+  155.73     12.330
+  158.78     12.390
+  161.84     12.450
+  164.89     12.500
+  167.94     12.550
+  171.00     12.610
+  174.05     12.660
+  177.10     12.710
+  180.16     12.770
+  183.21     12.840
+  186.26     12.890
+  192.37     13.000
+  195.43     13.050
+  198.48     13.110
+  201.53     13.180
+  204.59     13.240
+  207.64     13.310
+  210.69     13.370
+  213.75     13.450
+  216.80     13.520
+  219.85     13.600
+  222.91     13.680
+  225.96     13.750
+  229.01     13.820
+  232.07     13.900
+  235.12     13.960
+  238.17     14.030
+  241.23     14.100
+  244.28     14.170
+  247.34     14.240
+  250.39     14.310
+  253.44     14.370
+  256.50     14.450
+  259.55     14.520
+  262.60     14.570
+  265.66     14.640
+  268.71     14.710
+  271.76     14.780
+  274.82     14.850
+  277.87     14.910
+  280.92     14.960
+  283.98     15.010
+  287.03     15.060
+  290.08     15.120
+  293.14     15.170
+  293.96     15.200
+

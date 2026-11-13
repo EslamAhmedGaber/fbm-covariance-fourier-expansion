@@ -1,0 +1,216 @@
+# Global Database of Borehole Temperatures and Climate Reconstructions - JP-Shinjuku
+#---------------------------------------------------------------
+#           World Data Service for Paleoclimatology, Boulder
+#                             and
+#                NOAA Paleoclimatology Program
+#         National Centers for Environmental Information (NCEI)
+#---------------------------------------------------------------
+#
+# NOTE: Please cite Publication, and Online_Resource and date accessed when using these data. 
+# If there is no publication information, please cite Investigators, Title, and Online_Resource and date accessed.
+#
+# Online_Resource: https://www.ncdc.noaa.gov/paleo/study/1000600
+# Online_Resource: http://www.earth.lsa.umich.edu/climate/RECONSTRUCTION/JP-Shinjuku.html
+#
+# Archive: Borehole
+#
+# Parameter_Keywords: reconstruction
+#-------------------------
+# Contribution_Date
+#   Date: 2016-10-16
+#-------------------------
+# Title
+#   Study_Name: Global Database of Borehole Temperatures and Climate Reconstructions - JP-Shinjuku
+#-------------------------
+# Investigators
+#   Investigators: Huang, S.; Pollack, H.N.; Shen, P.Y.
+#-------------------------
+# Description_Notes_and_Keywords
+#   Description: This project has as its goal the design, assembly, analysis and interpretation of geothermal observations on 
+#      continents relevant to understanding the nature and causes of climate change over the past five centuries. The project was 
+#      inititated by the Geothermal Laboratory of the University of Michigan, USA. Important collaborations have been developed 
+#      with the Geophysical Institute of the Czech Academy of Sciences, and with a working group of the International Heat Flow 
+#      Commission of IASPEI. Funding for this project has come from the U.S. National Science Foundation, the U.S. National 
+#      Oceanic and Atmospheric Administration, the International Geological Correlation Program, and the Czech - U.S. Science and 
+#      Technology Program. The principal components of the database are: 
+#          (1) Basic geothermal observations from field surveys and laboratory measurements, principally comprising borehole 
+#      temperature logs and thermophysical properties. This section includes data only from boreholes at least 200 m deep. The 
+#      data listed are restricted to the range 20-600 meters. Data above 20 m have been omitted because they include annual 
+#      variability, and data below 600 m have not been included because they contain no information about the past 500 
+#      years.Quality control measures have occasionally required the deletion of other data within the 20-600 m range. 
+#          (2) A five-century ground surface temperature history derived for each site by a standardized inversion procedure 
+#      operating on the basic observations. The derived history is presented as century-long temperature trends for each of the 
+#      past five centuries. This representation emphasizes longer term variations of the climate history, and thus is 
+#      complementary to high resolution proxies such as tree rings, ice cores, corals and lake sediments. 
+#          (3) The name of the person who can be contacted to learn more about the data and the site. This is either the name of the 
+#      original investigator who made the observations, or the name of a regional or national data compiler. Some data remain 
+#      proprietary, and therefore are not accessible directly from this database. Database users desiring access to these data 
+#      should request the data directly from the person listed as the data contact. A list of investigators engaged in climate 
+#      studies involving geothermal data can be found at the original web site of this database at the University of Michigan. 
+# 
+# Updated version of dataset submitted by Huang in October 2016.
+#-------------------- 
+# Publication  
+#       Authors: Huang, S., Pollack, H. N., and Shen, P.Y. 
+#       Published_Date_or_Year: 2000-02-17 
+#       Published_Title: Temperature trends over the past five centuries reconstructed from borehole temperatures 
+#       Journal_Name: Nature 
+#       Volume: 403 
+#       Edition: 
+#       Issue: 
+#       Pages: 756-758 
+#       DOI: 10.1038/35001556 
+#       Abstract: For an accurate assessment of the relative roles of natural variability and anthropogenic influence in the Earth's climate, reconstructions of past temperatures from the pre-industrial as well as the industrial period are essential. But instrumental records are typically available for no more than the past 150 years. Therefore reconstructions of pre-industrial climate rely principally on traditional climate proxy records, each with particular strengths and limitations in representing climatic variability. Subsurface temperatures comprise an independent archive of past surface temperature changes that is complementary to both the instrumental record and the climate proxies. Here we use present-day temperatures in 616 boreholes from all continents except Antarctica to reconstruct century-long trends in temperatures over the past 500 years at global, hemispheric and continental scales. The results confirm the unusual warming of the twentieth century revealed by the instrumental record6, but suggest that the cumulative change over the past five centuries amounts to about 1 K, exceeding recent estimates from conventional climate proxies. The strength of temperature reconstructions from boreholes lies in the detection of long-term trends, complementary to conventional climate proxies, but to obtain a complete picture of past warming, the differences between the approaches need to be investigated in detail. 
+#---------------------- 
+# Funding_Agency  
+#       Funding_Agency_Name: US National Science Foundation 
+#       Grant: 1202673 
+#---------------------- 
+# Site_Information
+#   Site_Name: JP-Shinjuku
+#    Location: Japan
+#    Northernmost_Latitude: 35.60
+#    Southernmost_Latitude: 35.60
+#    Easternmost_Longitude: 140.12
+#    Westernmost_Longitude: 140.12
+#    Elevation:
+#-------------------------
+# Data_Collection
+#    Collection_Name: JP-Shinjuku-borehole
+#    Earliest_Year: 1500
+#    Most_Recent_Year: 1999
+#    Time_Unit: AD
+#    Core_Length:
+#    Notes: Data Contact:  M. Taniguchi (JP) 
+#  Pre-1500 Baseline GST (oC):  15.61
+#  Date (Century)    Rate of GST Change(K/100a)
+#       16th                -0.174
+#       17th                -0.217
+#       18th                -0.261
+#       19th                -0.167
+#       20th                 1.589
+#  Date of logging (Year):       1998.326
+#  Thermal Conductivity (W/m/K):    1.31
+#  Geothermal Gradient (K/km):      5.42
+#  
+#-------------------------
+# Chronology_Information
+#       Chronology:
+#-------------------------
+# Variables
+#
+# Data variables follow (marked with '##')
+# Variables list: shortname-tab- 9 components: what, material, error, units, seasonality, archive, detail, method, Temperature for Character or Numeric data
+## depth_m    depth,,, m,,,below surface,,N
+## temp_meas	temperature,,,degrees Celsius,,borehole,measured,,N
+#-------------------------
+# Data:
+# Missing Values: NA
+depth_m	temp_meas
+   16.00     16.670
+   18.00     16.590
+   20.00     16.570
+   22.00     16.500
+   24.00     16.440
+   26.00     16.380
+   28.00     16.310
+   30.00     16.260
+   32.00     16.210
+   34.00     16.160
+   36.00     16.110
+   38.00     16.070
+   40.00     16.040
+   42.00     16.020
+   44.00     15.990
+   46.00     15.960
+   48.00     15.940
+   50.00     15.920
+   52.00     15.900
+   54.00     15.880
+   56.00     15.860
+   58.00     15.840
+   60.00     15.820
+   62.00     15.810
+   64.00     15.800
+   66.00     15.790
+   68.00     15.790
+   70.00     15.790
+   72.00     15.790
+   74.00     15.790
+   76.00     15.800
+   78.00     15.800
+   80.00     15.810
+   82.00     15.820
+   84.00     15.830
+   86.00     15.840
+   88.00     15.860
+   90.00     15.870
+   92.00     15.880
+   94.00     15.890
+   96.00     15.900
+   98.00     15.910
+  100.00     15.920
+  102.00     15.940
+  104.00     15.940
+  106.00     15.960
+  108.00     15.970
+  110.00     15.980
+  112.00     16.000
+  114.00     16.010
+  116.00     16.020
+  118.00     16.030
+  120.00     16.050
+  122.00     16.060
+  124.00     16.080
+  126.00     16.090
+  128.00     16.100
+  130.00     16.110
+  132.00     16.120
+  134.00     16.130
+  136.00     16.150
+  138.00     16.160
+  140.00     16.170
+  142.00     16.190
+  144.00     16.200
+  146.00     16.210
+  148.00     16.230
+  150.00     16.240
+  152.00     16.250
+  154.00     16.260
+  156.00     16.270
+  158.00     16.290
+  160.00     16.300
+  162.00     16.310
+  164.00     16.330
+  166.00     16.340
+  168.00     16.350
+  170.00     16.370
+  172.00     16.380
+  174.00     16.400
+  176.00     16.420
+  178.00     16.420
+  180.00     16.440
+  182.00     16.460
+  184.00     16.470
+  186.00     16.480
+  188.00     16.500
+  190.00     16.510
+  192.00     16.530
+  194.00     16.540
+  196.00     16.550
+  198.00     16.570
+  200.00     16.590
+  202.00     16.590
+  204.00     16.610
+  206.00     16.620
+  208.00     16.630
+  210.00     16.640
+  212.00     16.680
+  214.00     16.680
+  216.00     16.700
+  218.00     16.710
+  220.00     16.720
+  222.00     16.730
+  224.00     16.740
+  226.00     16.750
+

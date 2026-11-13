@@ -1,0 +1,111 @@
+[
+ {
+  "fig2_E3_ratio_within_factor2": 1.0,
+  "n_cells": 28
+ },
+ {
+  "figure": "Figure_2",
+  "text_overlaps": [
+   [
+    "guides $D^{-2H}$",
+    "features $D$"
+   ],
+   [
+    "mean residual energy $\\bar e^{\\,2}$",
+    "$\\mathdefault{10^{-8}}$"
+   ],
+   [
+    "mean residual energy $\\bar e^{\\,2}$",
+    "$\\mathdefault{10^{-6}}$"
+   ],
+   [
+    "mean residual energy $\\bar e^{\\,2}$",
+    "$\\mathdefault{10^{-4}}$"
+   ],
+   [
+    "mean residual energy $\\bar e^{\\,2}$",
+    "$\\mathdefault{10^{-2}}$"
+   ],
+   [
+    "guides $D^{-2H-2}$",
+    "features $D$"
+   ],
+   [
+    "(b)",
+    "$\\mathdefault{10^{0}}$"
+   ],
+   [
+    "guides $D^{-2H-6}$",
+    "features $D$"
+   ],
+   [
+    "(c)",
+    "$\\mathdefault{10^{-2}}$"
+   ],
+   [
+    "1000",
+    "$\\mathdefault{10^{0}}$"
+   ],
+   [
+    "predicted $D$",
+    "$\\mathdefault{10^{2}}$"
+   ]
+  ]
+ },
+ {
+  "fig3_points_in_d": 648
+ },
+ {
+  "figure": "Figure_3",
+  "text_overlaps": [
+   [
+    "(a)",
+    "distance to exact evidence (nats)"
+   ],
+   [
+    "(a)",
+    "$\\mathdefault{10^{5}}$"
+   ],
+   [
+    "distance to exact evidence (nats)",
+    "$\\mathdefault{10^{-2}}$"
+   ],
+   [
+    "distance to exact evidence (nats)",
+    "$\\mathdefault{10^{-1}}$"
+   ],
+   [
+    "distance to exact evidence (nats)",
+    "$\\mathdefault{10^{0}}$"
+   ],
+   [
+    "distance to exact evidence (nats)",
+    "$\\mathdefault{10^{1}}$"
+   ],
+   [
+    "distance to exact evidence (nats)",
+    "$\\mathdefault{10^{2}}$"
+   ],
+   [
+    "distance to exact evidence (nats)",
+    "$\\mathdefault{10^{3}}$"
+   ],
+   [
+    "distance to exact evidence (nats)",
+    "$\\mathdefault{10^{4}}$"
+   ],
+   [
+    "distance to exact evidence (nats)",
+    "$\\mathdefault{10^{5}}$"
+   ],
+   [
+    "(b)",
+    "$\\mathdefault{10^{6}}$"
+   ],
+   [
+    "(c)",
+    "$\\mathdefault{10^{5}}$"
+   ]
+  ]
+ }
+]

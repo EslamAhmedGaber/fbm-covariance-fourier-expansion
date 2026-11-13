@@ -1,0 +1,233 @@
+# Global Database of Borehole Temperatures and Climate Reconstructions - DE-FalkNB3
+#---------------------------------------------------------------
+#           World Data Service for Paleoclimatology, Boulder
+#                             and
+#                NOAA Paleoclimatology Program
+#         National Centers for Environmental Information (NCEI)
+#---------------------------------------------------------------
+#
+# NOTE: Please cite Publication, and Online_Resource and date accessed when using these data. 
+# If there is no publication information, please cite Investigators, Title, and Online_Resource and date accessed.
+#
+# Online_Resource: https://www.ncdc.noaa.gov/paleo/study/1000743
+# Online_Resource: http://www.earth.lsa.umich.edu/climate/RECONSTRUCTION/DE-FalkNB3.html
+#
+# Archive: Borehole
+#
+# Parameter_Keywords: reconstruction
+#-------------------------
+# Contribution_Date
+#   Date: 2016-10-16
+#-------------------------
+# Title
+#   Study_Name: Global Database of Borehole Temperatures and Climate Reconstructions - DE-FalkNB3
+#-------------------------
+# Investigators
+#   Investigators: Huang, S.; Pollack, H.N.; Shen, P.Y.
+#-------------------------
+# Description_Notes_and_Keywords
+#   Description: This project has as its goal the design, assembly, analysis and interpretation of geothermal observations on 
+#      continents relevant to understanding the nature and causes of climate change over the past five centuries. The project was 
+#      inititated by the Geothermal Laboratory of the University of Michigan, USA. Important collaborations have been developed 
+#      with the Geophysical Institute of the Czech Academy of Sciences, and with a working group of the International Heat Flow 
+#      Commission of IASPEI. Funding for this project has come from the U.S. National Science Foundation, the U.S. National 
+#      Oceanic and Atmospheric Administration, the International Geological Correlation Program, and the Czech - U.S. Science and 
+#      Technology Program. The principal components of the database are: 
+#          (1) Basic geothermal observations from field surveys and laboratory measurements, principally comprising borehole 
+#      temperature logs and thermophysical properties. This section includes data only from boreholes at least 200 m deep. The 
+#      data listed are restricted to the range 20-600 meters. Data above 20 m have been omitted because they include annual 
+#      variability, and data below 600 m have not been included because they contain no information about the past 500 
+#      years.Quality control measures have occasionally required the deletion of other data within the 20-600 m range. 
+#          (2) A five-century ground surface temperature history derived for each site by a standardized inversion procedure 
+#      operating on the basic observations. The derived history is presented as century-long temperature trends for each of the 
+#      past five centuries. This representation emphasizes longer term variations of the climate history, and thus is 
+#      complementary to high resolution proxies such as tree rings, ice cores, corals and lake sediments. 
+#          (3) The name of the person who can be contacted to learn more about the data and the site. This is either the name of the 
+#      original investigator who made the observations, or the name of a regional or national data compiler. Some data remain 
+#      proprietary, and therefore are not accessible directly from this database. Database users desiring access to these data 
+#      should request the data directly from the person listed as the data contact. A list of investigators engaged in climate 
+#      studies involving geothermal data can be found at the original web site of this database at the University of Michigan. 
+# 
+# Updated version of dataset submitted by Huang in October 2016.
+#-------------------- 
+# Publication  
+#       Authors: Huang, S., Pollack, H. N., and Shen, P.Y. 
+#       Published_Date_or_Year: 2000-02-17 
+#       Published_Title: Temperature trends over the past five centuries reconstructed from borehole temperatures 
+#       Journal_Name: Nature 
+#       Volume: 403 
+#       Edition: 
+#       Issue: 
+#       Pages: 756-758 
+#       DOI: 10.1038/35001556 
+#       Abstract: For an accurate assessment of the relative roles of natural variability and anthropogenic influence in the Earth's climate, reconstructions of past temperatures from the pre-industrial as well as the industrial period are essential. But instrumental records are typically available for no more than the past 150 years. Therefore reconstructions of pre-industrial climate rely principally on traditional climate proxy records, each with particular strengths and limitations in representing climatic variability. Subsurface temperatures comprise an independent archive of past surface temperature changes that is complementary to both the instrumental record and the climate proxies. Here we use present-day temperatures in 616 boreholes from all continents except Antarctica to reconstruct century-long trends in temperatures over the past 500 years at global, hemispheric and continental scales. The results confirm the unusual warming of the twentieth century revealed by the instrumental record6, but suggest that the cumulative change over the past five centuries amounts to about 1 K, exceeding recent estimates from conventional climate proxies. The strength of temperature reconstructions from boreholes lies in the detection of long-term trends, complementary to conventional climate proxies, but to obtain a complete picture of past warming, the differences between the approaches need to be investigated in detail. 
+#---------------------- 
+# Funding_Agency  
+#       Funding_Agency_Name: US National Science Foundation 
+#       Grant: 1202673 
+#---------------------- 
+# Site_Information
+#   Site_Name: DE-FalkNB3
+#    Location: Germany
+#    Northernmost_Latitude: 49.86
+#    Southernmost_Latitude: 49.86
+#    Easternmost_Longitude: 12.20
+#    Westernmost_Longitude: 12.20
+#    Elevation:
+#-------------------------
+# Data_Collection
+#    Collection_Name: DE-FalkNB3-borehole
+#    Earliest_Year: 1500
+#    Most_Recent_Year: 1985
+#    Time_Unit: AD
+#    Core_Length:
+#    Notes: Data Contact:  C. Clauser (DE) 
+#  Pre-1500 Baseline GST (oC):  7.399
+#  Date (Century)    Rate of GST Change(K/100a)
+#       16th                 0.119
+#       17th                 0.132
+#       18th                 0.137
+#       19th                 0.127
+#       20th                 0.091
+#  Date of logging (Year):       1984.00
+#  Thermal Conductivity (W/m/K):    3.45
+#  Geothermal Gradient (K/km):     22.96
+#  
+#-------------------------
+# Chronology_Information
+#       Chronology:
+#-------------------------
+# Variables
+#
+# Data variables follow (marked with '##')
+# Variables list: shortname-tab- 9 components: what, material, error, units, seasonality, archive, detail, method, Temperature for Character or Numeric data
+## depth_m    depth,,, m,,,below surface,,N
+## temp_meas	temperature,,,degrees Celsius,,borehole,measured,,N
+#-------------------------
+# Data:
+# Missing Values: NA
+depth_m	temp_meas
+   21.72      8.461
+   23.95      8.484
+   26.21      8.504
+   29.09      8.538
+   31.28      8.572
+   33.50      8.599
+   35.76      8.642
+   37.96      8.680
+   40.18      8.732
+   42.45      8.783
+   44.16      8.829
+   47.19      8.869
+   49.44      8.930
+   51.70      8.969
+   53.92      9.014
+   56.19      9.057
+   58.39      9.105
+   60.67      9.146
+   62.88      9.195
+   65.12      9.233
+   68.04      9.290
+   70.25      9.335
+   72.50      9.375
+   74.73      9.417
+   76.99      9.456
+   79.20      9.504
+   81.44      9.544
+   83.74      9.595
+   86.67      9.654
+   88.91      9.699
+   91.16      9.744
+   93.42      9.783
+   95.65      9.831
+   97.91      9.871
+  100.17      9.914
+  102.39      9.966
+  104.75     10.012
+  107.71     10.078
+  109.93     10.110
+  112.17     10.166
+  114.44     10.211
+  116.71     10.258
+  118.93     10.310
+  121.16     10.347
+  123.40     10.399
+  126.35     10.459
+  128.58     10.510
+  130.81     10.555
+  133.10     10.598
+  135.33     10.653
+  137.62     10.696
+  139.85     10.760
+  142.13     10.809
+  144.38     10.855
+  147.29     10.911
+  149.57     10.954
+  151.80     11.000
+  154.09     11.055
+  156.34     11.097
+  158.62     11.157
+  160.87     11.198
+  163.10     11.250
+  166.31     11.314
+  168.57     11.370
+  170.86     11.426
+  173.10     11.475
+  175.39     11.522
+  177.64     11.576
+  179.94     11.625
+  182.20     11.666
+  184.42     11.717
+  187.38     11.785
+  189.61     11.834
+  191.87     11.890
+  194.08     11.938
+  196.34     11.981
+  198.56     12.029
+  200.79     12.079
+  203.04     12.131
+  205.95     12.198
+  208.20     12.240
+  210.42     12.294
+  212.68     12.338
+  214.89     12.381
+  217.12     12.440
+  219.39     12.485
+  221.61     12.539
+  223.86     12.589
+  226.76     12.650
+  229.00     12.702
+  231.23     12.754
+  233.47     12.799
+  235.75     12.850
+  237.96     12.907
+  240.21     12.950
+  242.42     13.000
+  244.67     13.042
+  247.54     13.109
+  249.76     13.159
+  251.99     13.200
+  254.16     13.255
+  256.36     13.311
+  258.55     13.354
+  260.78     13.399
+  262.98     13.452
+  266.15     13.522
+  268.39     13.573
+  270.63     13.623
+  272.89     13.668
+  275.13     13.717
+  277.40     13.788
+  279.64     13.861
+  281.93     13.905
+  284.17     13.955
+  286.42     14.014
+  289.39     14.068
+  291.64     14.117
+  293.78     14.185
+  295.33     14.217
+  296.91     14.235
+  298.44     14.260
+  299.90     14.308
+  301.10     14.312
+

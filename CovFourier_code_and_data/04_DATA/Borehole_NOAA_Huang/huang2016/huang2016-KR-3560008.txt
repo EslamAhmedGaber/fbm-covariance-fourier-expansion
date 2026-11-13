@@ -1,0 +1,474 @@
+# Global Database of Borehole Temperatures and Climate Reconstructions - KR-3560008
+#---------------------------------------------------------------
+#           World Data Service for Paleoclimatology, Boulder
+#                             and
+#                NOAA Paleoclimatology Program
+#         National Centers for Environmental Information (NCEI)
+#---------------------------------------------------------------
+#
+# NOTE: Please cite Publication, and Online_Resource and date accessed when using these data. 
+# If there is no publication information, please cite Investigators, Title, and Online_Resource and date accessed.
+#
+# Online_Resource: https://www.ncdc.noaa.gov/paleo/study/1004885
+# Online_Resource: http://www.earth.lsa.umich.edu/climate/RECONSTRUCTION/KR-3560008.html
+#
+# Archive: Borehole
+#
+# Parameter_Keywords: reconstruction
+#-------------------------
+# Contribution_Date
+#   Date: 2016-10-16
+#-------------------------
+# Title
+#   Study_Name: Global Database of Borehole Temperatures and Climate Reconstructions - KR-3560008
+#-------------------------
+# Investigators
+#   Investigators: Huang, S.; Pollack, H.N.; Shen, P.Y.
+#-------------------------
+# Description_Notes_and_Keywords
+#   Description: This project has as its goal the design, assembly, analysis and interpretation of geothermal observations on 
+#      continents relevant to understanding the nature and causes of climate change over the past five centuries. The project was 
+#      inititated by the Geothermal Laboratory of the University of Michigan, USA. Important collaborations have been developed 
+#      with the Geophysical Institute of the Czech Academy of Sciences, and with a working group of the International Heat Flow 
+#      Commission of IASPEI. Funding for this project has come from the U.S. National Science Foundation, the U.S. National 
+#      Oceanic and Atmospheric Administration, the International Geological Correlation Program, and the Czech - U.S. Science and 
+#      Technology Program. The principal components of the database are: 
+#          (1) Basic geothermal observations from field surveys and laboratory measurements, principally comprising borehole 
+#      temperature logs and thermophysical properties. This section includes data only from boreholes at least 200 m deep. The 
+#      data listed are restricted to the range 20-600 meters. Data above 20 m have been omitted because they include annual 
+#      variability, and data below 600 m have not been included because they contain no information about the past 500 
+#      years.Quality control measures have occasionally required the deletion of other data within the 20-600 m range. 
+#          (2) A five-century ground surface temperature history derived for each site by a standardized inversion procedure 
+#      operating on the basic observations. The derived history is presented as century-long temperature trends for each of the 
+#      past five centuries. This representation emphasizes longer term variations of the climate history, and thus is 
+#      complementary to high resolution proxies such as tree rings, ice cores, corals and lake sediments. 
+#          (3) The name of the person who can be contacted to learn more about the data and the site. This is either the name of the 
+#      original investigator who made the observations, or the name of a regional or national data compiler. Some data remain 
+#      proprietary, and therefore are not accessible directly from this database. Database users desiring access to these data 
+#      should request the data directly from the person listed as the data contact. A list of investigators engaged in climate 
+#      studies involving geothermal data can be found at the original web site of this database at the University of Michigan. 
+# 
+# Updated version of dataset submitted by Huang in October 2016.
+#-------------------- 
+# Publication  
+#       Authors: Huang, S., Pollack, H. N., and Shen, P.Y. 
+#       Published_Date_or_Year: 2000-02-17 
+#       Published_Title: Temperature trends over the past five centuries reconstructed from borehole temperatures 
+#       Journal_Name: Nature 
+#       Volume: 403 
+#       Edition: 
+#       Issue: 
+#       Pages: 756-758 
+#       DOI: 10.1038/35001556 
+#       Abstract: For an accurate assessment of the relative roles of natural variability and anthropogenic influence in the Earth's climate, reconstructions of past temperatures from the pre-industrial as well as the industrial period are essential. But instrumental records are typically available for no more than the past 150 years. Therefore reconstructions of pre-industrial climate rely principally on traditional climate proxy records, each with particular strengths and limitations in representing climatic variability. Subsurface temperatures comprise an independent archive of past surface temperature changes that is complementary to both the instrumental record and the climate proxies. Here we use present-day temperatures in 616 boreholes from all continents except Antarctica to reconstruct century-long trends in temperatures over the past 500 years at global, hemispheric and continental scales. The results confirm the unusual warming of the twentieth century revealed by the instrumental record6, but suggest that the cumulative change over the past five centuries amounts to about 1 K, exceeding recent estimates from conventional climate proxies. The strength of temperature reconstructions from boreholes lies in the detection of long-term trends, complementary to conventional climate proxies, but to obtain a complete picture of past warming, the differences between the approaches need to be investigated in detail. 
+#---------------------- 
+# Funding_Agency  
+#       Funding_Agency_Name: US National Science Foundation 
+#       Grant: 1202673 
+#---------------------- 
+# Site_Information
+#   Site_Name: KR-3560008
+#    Location: South Korea
+#    Northernmost_Latitude: 37.7564
+#    Southernmost_Latitude: 37.7564
+#    Easternmost_Longitude: 127.5071
+#    Westernmost_Longitude: 127.5071
+#    Elevation:
+#-------------------------
+# Data_Collection
+#    Collection_Name: KR-3560008-borehole
+#    Earliest_Year: 1500
+#    Most_Recent_Year: 1993
+#    Time_Unit: AD
+#    Core_Length:
+#    Notes: Data Contact:  Hyoung-Chan Kim (KR) 
+#  Pre-1500 Baseline GST (oC):  12.09
+#  Date (Century)    Rate of GST Change(K/100a)
+#       16th                 0.063
+#       17th                 0.274
+#       18th                -0.070
+#       19th                -0.169
+#       20th                 0.318
+#  Date of logging (Year):       1992.160
+#  Thermal Conductivity (W/m/K):    2.68
+#  Geothermal Gradient (K/km):     27.94
+#  
+#-------------------------
+# Chronology_Information
+#       Chronology:
+#-------------------------
+# Variables
+#
+# Data variables follow (marked with '##')
+# Variables list: shortname-tab- 9 components: what, material, error, units, seasonality, archive, detail, method, Temperature for Character or Numeric data
+## depth_m    depth,,, m,,,below surface,,N
+## temp_meas	temperature,,,degrees Celsius,,borehole,measured,,N
+#-------------------------
+# Data:
+# Missing Values: NA
+depth_m	temp_meas
+   20.00     12.870
+   22.00     12.930
+   24.00     12.950
+   26.00     13.010
+   28.00     13.050
+   30.00     13.110
+   32.00     13.120
+   34.00     13.140
+   36.00     13.220
+   38.00     13.240
+   40.00     13.320
+   42.00     13.360
+   44.00     13.390
+   46.00     13.690
+   48.00     13.620
+   50.00     13.620
+   52.00     13.690
+   54.00     13.750
+   56.00     13.820
+   58.00     13.850
+   60.00     13.960
+   62.00     14.000
+   64.00     14.070
+   66.00     14.120
+   68.00     14.160
+   70.00     14.200
+   72.00     14.250
+   74.00     14.310
+   76.00     14.340
+   78.00     14.420
+   80.00     14.550
+   82.00     14.550
+   84.00     14.550
+   86.00     14.610
+   88.00     14.670
+   90.00     14.750
+   92.00     14.760
+   94.00     14.850
+   96.00     14.850
+   98.00     14.920
+  100.00     15.070
+  102.00     15.070
+  104.00     15.090
+  106.00     15.150
+  108.00     15.210
+  110.00     15.250
+  112.00     15.270
+  114.00     15.400
+  116.00     15.420
+  118.00     15.480
+  120.00     15.520
+  122.00     15.630
+  124.00     15.640
+  126.00     15.650
+  128.00     15.730
+  130.00     15.810
+  132.00     15.860
+  134.00     15.930
+  136.00     15.960
+  138.00     16.030
+  140.00     16.060
+  142.00     16.110
+  144.00     16.160
+  146.00     16.180
+  148.00     16.280
+  150.00     16.340
+  152.00     16.410
+  154.00     16.480
+  156.00     16.532
+  158.00     16.584
+  160.00     16.636
+  162.00     16.688
+  164.00     16.740
+  166.00     16.792
+  168.00     16.844
+  170.00     16.896
+  172.00     16.948
+  174.00     17.000
+  176.00     17.052
+  178.00     17.104
+  180.00     17.156
+  182.00     17.208
+  184.00     17.260
+  186.00     17.380
+  188.00     17.400
+  190.00     17.460
+  192.00     17.510
+  194.00     17.560
+  196.00     17.610
+  198.00     17.680
+  200.00     17.760
+  202.00     17.770
+  204.00     17.860
+  206.00     17.870
+  208.00     17.920
+  210.00     18.030
+  212.00     18.080
+  214.00     18.160
+  216.00     18.180
+  218.00     18.260
+  220.00     18.280
+  222.00     18.380
+  224.00     18.420
+  226.00     18.450
+  228.00     18.530
+  230.00     18.600
+  232.00     18.710
+  234.00     18.720
+  236.00     18.750
+  238.00     18.830
+  240.00     18.860
+  242.00     18.940
+  244.00     18.960
+  246.00     19.030
+  248.00     19.070
+  250.00     19.230
+  252.00     19.240
+  254.00     19.240
+  256.00     19.280
+  258.00     19.340
+  260.00     19.410
+  262.00     19.480
+  264.00     19.530
+  266.00     19.590
+  268.00     19.630
+  270.00     19.680
+  272.00     19.720
+  274.00     19.810
+  276.00     19.830
+  278.00     19.870
+  280.00     19.930
+  282.00     20.000
+  284.00     20.170
+  286.00     20.170
+  288.00     20.170
+  290.00     20.190
+  292.00     20.240
+  294.00     20.310
+  296.00     20.360
+  298.00     20.400
+  300.00     20.460
+  302.00     20.530
+  304.00     20.560
+  306.00     20.670
+  308.00     20.680
+  310.00     20.730
+  312.00     20.800
+  314.00     20.860
+  316.00     20.930
+  318.00     20.990
+  320.00     21.000
+  322.00     21.050
+  324.00     21.110
+  326.00     21.190
+  328.00     21.220
+  330.00     21.280
+  332.00     21.350
+  334.00     21.380
+  336.00     21.440
+  338.00     21.500
+  340.00     21.570
+  342.00     21.600
+  344.00     21.660
+  346.00     21.710
+  348.00     21.760
+  350.00     21.820
+  352.00     21.880
+  354.00     21.940
+  356.00     22.000
+  358.00     22.055
+  360.00     22.110
+  362.00     22.165
+  364.00     22.220
+  366.00     22.275
+  368.00     22.330
+  370.00     22.385
+  372.00     22.440
+  374.00     22.480
+  376.00     22.540
+  378.00     22.600
+  380.00     22.660
+  382.00     22.760
+  384.00     22.780
+  386.00     22.840
+  388.00     22.910
+  390.00     22.930
+  392.00     22.990
+  394.00     23.070
+  396.00     23.100
+  398.00     23.180
+  400.00     23.210
+  402.00     23.290
+  404.00     23.360
+  406.00     23.420
+  408.00     23.460
+  410.00     23.500
+  412.00     23.550
+  414.00     23.640
+  416.00     23.730
+  418.00     23.730
+  420.00     23.800
+  422.00     23.880
+  424.00     23.900
+  426.00     23.960
+  428.00     24.050
+  430.00     24.100
+  432.00     24.140
+  434.00     24.210
+  436.00     24.310
+  438.00     24.310
+  440.00     24.360
+  442.00     24.460
+  444.00     24.500
+  446.00     24.540
+  448.00     24.610
+  450.00     24.660
+  452.00     24.720
+  454.00     24.790
+  456.00     24.850
+  458.00     24.900
+  460.00     25.000
+  462.00     25.050
+  464.00     25.070
+  466.00     25.130
+  468.00     25.190
+  470.00     25.270
+  472.00     25.320
+  474.00     25.370
+  476.00     25.440
+  478.00     25.510
+  480.00     25.530
+  482.00     25.620
+  484.00     25.670
+  486.00     25.710
+  488.00     25.780
+  490.00     25.830
+  492.00     25.880
+  494.00     25.940
+  496.00     25.980
+  498.00     26.060
+  500.00     26.130
+  502.00     26.180
+  504.00     26.220
+  506.00     26.280
+  508.00     26.330
+  510.00     26.390
+  512.00     26.450
+  514.00     26.540
+  516.00     26.660
+  518.00     26.660
+  520.00     26.680
+  522.00     26.720
+  524.00     26.780
+  526.00     26.840
+  528.00     26.900
+  530.00     26.970
+  532.00     27.060
+  534.00     27.080
+  536.00     27.140
+  538.00     27.190
+  540.00     27.270
+  542.00     27.350
+  544.00     27.410
+  546.00     27.430
+  548.00     27.480
+  550.00     27.530
+  552.00     27.580
+  554.00     27.640
+  556.00     27.730
+  558.00     27.750
+  560.00     27.800
+  562.00     27.870
+  564.00     27.920
+  566.00     27.970
+  568.00     28.050
+  570.00     28.110
+  572.00     28.150
+  574.00     28.200
+  576.00     28.250
+  578.00     28.310
+  580.00     28.380
+  582.00     28.500
+  584.00     28.540
+  586.00     28.540
+  588.00     28.580
+  590.00     28.640
+  592.00     28.720
+  594.00     28.770
+  596.00     28.820
+  598.00     28.870
+  600.00     28.900
+  602.00     28.970
+  604.00     29.080
+  606.00     29.080
+  608.00     29.130
+  610.00     29.210
+  612.00     29.250
+  614.00     29.310
+  616.00     29.380
+  618.00     29.430
+  620.00     29.530
+  622.00     29.530
+  624.00     29.570
+  626.00     29.630
+  628.00     29.710
+  630.00     29.770
+  632.00     29.800
+  634.00     29.900
+  636.00     29.920
+  638.00     29.980
+  640.00     30.040
+  642.00     30.080
+  644.00     30.060
+  646.00     30.160
+  648.00     30.210
+  650.00     30.280
+  652.00     30.360
+  654.00     30.410
+  656.00     30.430
+  658.00     30.510
+  660.00     30.570
+  662.00     30.620
+  664.00     30.650
+  666.00     30.710
+  668.00     30.770
+  670.00     30.800
+  672.00     30.880
+  674.00     30.970
+  676.00     30.990
+  678.00     31.040
+  680.00     31.090
+  682.00     31.170
+  684.00     31.220
+  686.00     31.280
+  688.00     31.310
+  690.00     31.400
+  692.00     31.430
+  694.00     31.480
+  696.00     31.560
+  698.00     31.570
+  700.00     31.620
+  702.00     31.690
+  704.00     31.730
+  706.00     31.810
+  708.00     31.830
+  710.00     31.900
+  712.00     31.960
+  714.00     31.990
+  716.00     32.060
+  718.00     32.120
+  720.00     32.160
+  722.00     32.230
+  724.00     32.270
+  726.00     32.330
+  728.00     32.380
+  730.00     32.420
+  732.00     32.480
+  734.00     32.540
+  736.00     32.600
+  738.00     32.660
+  740.00     32.720
+  742.00     32.780
+  744.00     32.840
+  746.00     32.900
+

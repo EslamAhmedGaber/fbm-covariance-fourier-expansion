@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.4.0 — 2026-11-13
+
+Adds the self-contained CovFourier_code_and_data package for the Gaussian-process evidence paper, including the directional residual bound, model-selection experiments, CAMELS and borehole studies, and figure reproduction. The numerical core included with this study is based on v1.3.0.
+
 ## v1.3.0 — 2026-11-06
 
 Accompanies the repositioned paper (new title: *CovFourier: shared Gaussian coordinates with exact residual energies for fractional Brownian motion*).
